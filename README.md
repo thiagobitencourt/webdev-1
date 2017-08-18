@@ -1,3 +1,3 @@
-# webdev-1
+webdev-1
 
 Repositório oficial do curso de desenvolvimento web I
