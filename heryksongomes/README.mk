@@ -1,1 +1,0 @@
-# Herykson de Souza Gomes
