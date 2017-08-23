@@ -50,8 +50,12 @@ Acesse a sua conta no Github e crie um repositório chamado _aulagit_, vamos pre
 
 **Aula**
 
+Nesta aula vamos trabalhar com um repositório centralizado, vamos usar o Github como servidor e vamos a aprender os comandos do Git para nos comunicar e sincronizar o repositório com o Github.
 
 **Pós-aula**
+
+Agora que você já sabe como criar repositório no Github e como interagir com este repositório remoto através dos comandos Git, já poderá utilizar estas ferramentas para os seus prócimos projetos de desenvolvimento.
+
 
 - [Voltar ao topo](#indice)
 
@@ -59,8 +63,14 @@ Acesse a sua conta no Github e crie um repositório chamado _aulagit_, vamos pre
 
 **Pré-aula**
 
+A partir desta aula vamos trabalhar em um único depositório centralizado, portanto todo o conteúdo das nossas aulas estarão disponíveis no Github e todos terão acesso. Portanto, acesse o repositório da disciplina no Github e faça clone deste repositório.
+
 **Aula**
 
+Nesta aula vamos conhecer e entender qual é a estrutura básica de uma página web. Vamos entender como construir páginas com HTML e entender detalhadamente como funciona cada elemento da página.
+
 **Pós-aula**
+
+Durante a aula, vimos algumas tags HTML, porém existem muitas outras que infelizmente não teremos tempo de ver em detalhes. Portanto, pesquise sobre tagas HTML para entender um pouco mais sobre elas e conhecer algumas outras tags que serão bastante úteis ao desenvolver uma página web.
 
 - [Voltar ao topo](#indice)
