@@ -6,12 +6,20 @@
 </head>
 <body>
 
-	<h2>
-		<font face= "Trebuchet MS" color="purple"> <i> <strong> <center> Cadastre - se!</i> </strong> <center> </font>
-	</h2>
+	<section>
+		<header>
+			<h2>
+				<font face= "Trebuchet MS" color="purple"> <i> <strong> <center> Cadastre - se!</i> </strong> <center> </font>
+			</h2>
 
+			<hr />
+		</header>
+
+	</section>
+	
 	<form name="perfil-form" action="index.html" method="get"> 
 
+		<main>
 		<h3>
 			<font face= "Futura Md BT"> <li> Acesso </li> </font>
 		</h3>
@@ -26,13 +34,14 @@
 			<input type="login" placeholder= "seu login" required/>
 	
 			<label for="input-text">Senha:</label> 
-			<input type="password" placeholder= "******" required/> <label><h6> 6 caracteres numericos</h6></label>
+			<input type="password" placeholder= "******" required/> 
 		</div>
 
 		<div>
 			<label for="input-img">Foto:</label>
 			<input type="file" name="foto" >
 		</div>
+		</main>
 
 		<br />
 
@@ -90,7 +99,9 @@
 			<option selected> selecione uma opção</option>
 			<option> rock </option>
 			<option> clássico </option>
-			<option> </option>
+			<option> samba </option>
+			<option> rap </option>
+			<option> hip-hop </option>
 		</select>
 
 		<br />
@@ -100,5 +111,9 @@
 		<button type="reset"> limpar </button>
 
 		</form>
+
+		<footer> 
+		<p> © WEBDEV1
+		</footer>
 </body>
 </html>
