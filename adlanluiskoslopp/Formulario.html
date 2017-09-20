@@ -1,110 +1,144 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 	<head>
-	<meta charset="UTF-8">
-		<title>
-			Formulario
-		</title>
-		<body>
-		<h3>Pagina Formulario</h3>
-		<input id="inp-teste" Type="Texto" values="Escreveu Errado" placeholder="Campo texto"/>
-		</br>
-		<label for="inp-teste" >Texto</label>
-		<input for="inp-num" type="number" placeholder="Campo de Número"/>
-		<label id="inp-num" placeholder="Campo de numero" />
-		</br>
-		<label>Senha</label>
-		<input type="pasworld"/>
-		</br>
-		<label>Email</label>
-		<input type="email"/>
-		</br>
-		<label>Telefone</label>
-		<input type="tel"/>
-		</br>
-		<label>url</label>
-		<input type"url"/>
-		</br>
-		<label>hidden</label>
-		<input type="hidden"/>
-		</br>
-		<label>range</label>
-		<input type="range"/>
-		</br>
-		<label>Arquivo</label>
-		<input type="file"/>
-		</br>
-		<label>Imagem</label>
-		<input type="image"/>
-		</br>
-		<label>Cor</label>
-		<input type="color"/>
-		</br>
-		<label>data</label>
-		<input type="Date"/>
-		</br>
-		<label>Time</label>
-		<input type="time"/>
-		</br>
-		<label>datatime local</label>
-		<input type="datetime-local"/>
-		</br>
-		<label>radio</label>
-		<input type="radio"/>
-		</br>
-		<input name="item" type="radio"/>Item1
-		<input name="item" type="radio"/>Item2
-		<input name="item" type="radio"/>Item3
-		<input name="item" type="radio"/>item4
-		</br>
+		<meta charset="UTF-8">
+		<title>Crie Seu Perfil</title>
 		
-		<label>Checkbox</label>
-		<input name="item" type="Checkbox"/>Item1
-		<input name="item" type="checkbox"/>Item2
-		<input name="item" type="Checkbox"/>Item3
-		<input name="item" type="Checkbox"/>item4
-		
-		</br>
-		<label>Botão</label>
-		<input type="button" value="Cliquime"/>
-		
-		</br>
-		<label>Botão submit</label>
-		<input type="submit"/>
-		
-		</br>
-		<label>Botão reset</label>
-		<input type="reset"/>
-		
-		</br>
-		<button type="button">Botao de botão</button>
-		
-		</br>
-		
-		<button type="reset">Botao de reset</button>
-		
-		</br>
-		<button type="submit">Botao de reset</button>
-		
-		</br>
-		<label>Barra de status</label>
-		<progress value="30" max="100"/>
-		</br>
+		<style type="text/css">
+			a:link{
+				text-decoration: none;
+				color: #0099ff;	
+			}
+			
+			a:visited {
+				text-decoration: underline;
+				color: #ff0066;
+			}
+
+			a:hover{
+				text-decoration: underline, overline;
+				color: #000000;
+				background: #ffff00;
+			}
+		</style>
 	
-		<label>Area de texto</label>
-		<textarea maxlength="25"></textarea>
-		
-		</br>
-		<label>Campo de seleção</label>
-		<select>
-		  <option select>Selecione Uma Opção</option>
-		  <option>opção 1</option>
-		  <option>opção 2</option>
-		  <option>opção 3</option>
-		</select>
-		
-		</br>
-		<a href="index.html">Voltar a página anteriro</a>
-		</BODY>
 	</head>
+	
+	<body bgcolor="#3333ff">
+		<main>
+			<nav>
+				<table border="1">
+					<thead>
+						<tr>
+							<th>Voltar</th>
+							<th>Ler Termos</th>
+						</tr>
+					</thead>			  
+					<tbody>
+						<tr>
+							<td><a href="PaginaInicial.html">PaginaInicial</a></td>
+							<td><a href="TermosDeUso.html" target="blank">Termos de Uso</a></td>
+						</tr>
+					</tbody>
+				</table>
+			
+			</nav>
+			<h1>Crie aqui seu Perfil para Página</h1>		
+		</main>
+		
+		<form>
+			<label id="nome">Digite seu Nome</label>
+			<input for="nome" type="texto" placeholder="Escerva seu nome"/>
+			
+			<br>
+			<br>
+			
+			<label id="email">Digite seu email</label>
+			<input for="email" type="texto" placeholder="Escreva seu nome"/>
+			
+			<br>
+			<br>
+			
+			<label id="cell">Digite seu telefone</label>
+			<input for="cell" type="number" placeholder="Escreva seu numero de celular"/>
+			
+			<br>
+			<br>
+			
+			<label id="Endereco">Digite seu Endereco</label>
+			<input for="Endereco" type="texto" placeholder="Escreva seu Endereco"/>
+			<label id="casa">Numero</label>
+			<input for="casa"type="number" placeholder="Numero da casa ou apartamento"/>
+			
+			<br>
+			<br>
+			
+			<label>Selecione seu Estado</label>
+			<select>
+				<option select>Selecione Estado</option>
+				<option>AC</option>
+				<option>AL</option>
+				<option>AP</option>
+				<option>AM</option>
+				<option>CE</option>
+				<option>DF</option>
+				<option>CF</option>
+				<option>GO</option>
+				<option>MA</option>
+				<option>MT</option>
+				<option>MS</option>
+				<option>MG</option>
+				<option>PA</option>
+				<option>PB</option>
+				<option>PR</option>
+				<option>PE</option>
+				<option>PI</option>
+				<option>RJ</option>
+				<option>RN</option>
+				<option>RS</option>
+				<option>RO</option>
+				<option>RR</option>
+				<option>SC</option>
+				<option>SP</option>
+				<option>SE</option>
+				<option>TO</option>
+			</select>
+			
+			<br>
+			<br>
+			
+			<label id="email">Digite seu email</label>
+			<input for="email" type="texto" placeholder="Escreva seu nome"/>
+			
+			<br>
+			<br>
+			
+			<label id="data">Digite sua data de nascimento</label>
+			<input for="data" type="Date" placeholder="Selecione sua data"/>
+			
+			<br>
+			<br>
+			
+			<label>Selecione seu sexo</label>
+			<input name="Masculino" type="radio"/>Masculino
+			<input name="Masculino" type="radio"/>Feminino
+			
+			<br>
+			<br>
+			
+			<label>Imagem</label>
+			<input type="file" accept="image/png, image/jpeg"/> 
+			
+			<br>
+			<br>
+			
+			<center>
+				<button type="Button"><a href="Agradecimento.html">Salvar</a></button>
+				<button type="reset">Limpar Campos</button>
+			</center>
+		
+		</form>
+	
+	</body>
+
 </html>
