@@ -9,18 +9,17 @@
 	<section>
 		<header>
 			<h2>
-				<font face= "Trebuchet MS" color="purple"> <i> <strong> <center> Cadastre - se!</i> </strong> <center> </font>
+				<font face= "Let That Be Enough" color="purple" font size = "10"><i><strong><center> Cadastre - se!</i></strong><center></font>
 			</h2>
 			<figure>
-				<center><img src="gatinho1.png" alt="imagem local" width="140x" height="100x"></center>
+				<center> <img src="gatinho1.png" alt="imagem local" width="240x" height="200x"></center>
 			</figure>
-			<hr />
 		</header>
 	</section>
 	<main>
 		<form name="perfil-form" action="index.html" method="get">
 			<h3>
-				<font face= "Futura Md BT"> <li> Acesso </li> </font>
+				<font face= "Futura Md BT" color= "pink" size = "4"> <li> Seu acesso</li></font></font>
 			</h3>
 
 			<div>
@@ -45,7 +44,7 @@
 			<br />
 
 			<h3>
-				<font face= "Futura Md BT"> <li>Dados pessoais</li> </font>
+				<font face= "Futura Md BT" font color="blue" font size= "4"> <li> Seus dados pessoais</li> </font>
 			</h3>
 
 			<div>
@@ -63,11 +62,22 @@
 			</div>
 
 			<div>
+				<label for="endereço">  Endereço: </label>
+				<input name= "endereco_usuario" id="endereco_usuario" type="address" maxlength="20" size="20" placeholder="rua" required /> 
+				<input name= "endereco_usuario" id="endereco_usuario" type="address" maxlength="20" size="20" placeholder="bairro" required /> 
+				<input name= "endereco_usuario" id="endereco_usuario" type="address" maxlength="5" size="5" placeholder="nº" required />
+				<input name= "endereco_usuario" id="endereco_usuario" type="address" maxlength="20" size="20" placeholder="cidade" required />
+				<input name= "endereco_usuario" id="endereco_usuario" type="address" maxlength="2" size= "2" placeholder="UF" required />
+			</div>
+
+
+			<div>
 				<label for="aniver_usuario">  Aniversário: </label>
 				<input name= "aniversário" id="aniver_usuario" type="date" placeholder="digite seu aniversário" required /> 
 
 				<label for="idade_usuario">  Idade: </label>
 				<input name= "idade" id="idade_usuario" type="text" maxlength="3" size="3" required /> 
+
 			</div>
 
 			<div>
@@ -76,11 +86,12 @@
 				<option> selecione uma opção </option>
 				<option> F </option>
 				<option> M </option>
+				<option> Outro </option>
 				</select>
 			</div>
 
 			<h3>
-				<font face= "Futura Md BT"> <li> Sobre você </li></font>
+				<font face= "Futura Md BT" font color="yellow" font size="4"> <li> Sobre você </li></font>
 			</h3>
 
 			<div>
@@ -90,7 +101,7 @@
 
 			<div>
 				<label for="filme">  Filme favorito: </label>
-				<input name= "filme_favorito" id="filme_favorito" type="text" placeholder="digite seu filme favorito" required /> 
+				<input name= "filme_favorito" id="filme_favorito" type="text" maxlength="30" size= "30" placeholder="digite seu filme favorito" required /> 
 			</div>
 
 			<label>  Selecione o genero musical: </label>
@@ -106,15 +117,19 @@
 			<br />
 			<br />
 
-			<button type="submit"> salvar </button>
-			<button type="reset"> limpar </button>
+			<button type="submit"> Salvar </button>
+			<button type="reset"> Limpar </button>
 	</main>
+		
 		</form>
-
-			<br />
-
+	
+	<br />
+	
+	<hr />
+	
 	<footer> 
 		<p><center> ©webedev1 </center>
 	</footer>
+
 </body>
 </html>
