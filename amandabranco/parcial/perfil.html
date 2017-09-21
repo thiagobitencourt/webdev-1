@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<title> perfil </title>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<section>
+		<header>
+			<h2>
+				<font face= "Let That Be Enough" color="purple" font size = "10"><i><strong><center> Cadastre - se!</i></strong><center></font>
+			</h2>
+			<figure>
+				<center> <img src="gatinho1.png" alt="imagem local" width="240x" height="200x"></center>
+			</figure>
+		</header>
+	</section>
+	<main>
+		<form name="perfil-form" action="index.html" method="get">
+			<h3>
+				<font face= "Futura Md BT" color= "pink" size = "4"> <li> Seu acesso</li></font></font>
+			</h3>
+
+			<div>
+				<label for="input-text"> E-mail: </label>
+				<input type="email" placeholder="exemplo@exemplo.com" required />
+			</div>
+			
+			<div>
+				<label for="input-text">Login:</label>
+				<input type="login" placeholder= "seu login" required/>
+		
+				<label for="input-text">Senha:</label> 
+				<input type="password" placeholder= "******" required/> 
+			</div>
+
+			<div>
+				<label for="input-img">Foto:</label>
+				<input type="file" name="foto" >
+			</div>
+			</main>
+
+			<br />
+
+			<h3>
+				<font face= "Futura Md BT" font color="blue" font size= "4"> <li> Seus dados pessoais</li> </font>
+			</h3>
+
+			<div>
+				<label for="nome_usuario">  Nome: </label>
+				<input name="nome" id="nome_usuario" type="text" placeholder="digite seu nome" required/> 
+
+				<label for="sobrenome_usuario">  Sobrenome: </label>
+				<input name= "sobrenome" id="sobrenome_usuario" type="text" placeholder="digite seu sobrenome" required /> 
+			</div>
+
+			<div>
+				<label for="telefone">  Tel: </label>
+				<input name= "tel_usuario" id="tel_usuario" type="tell" maxlength="2" size="2" placeholder="(99)" required /> 
+				<input name= "tel_usuario" id="tel_usuario" type="tell" maxlength="7" size="7" placeholder="999-9999" required /> 
+			</div>
+
+			<div>
+				<label for="endereço">  Endereço: </label>
+				<input name= "endereco_usuario" id="endereco_usuario" type="address" maxlength="20" size="20" placeholder="rua" required /> 
+				<input name= "endereco_usuario" id="endereco_usuario" type="address" maxlength="20" size="20" placeholder="bairro" required /> 
+				<input name= "endereco_usuario" id="endereco_usuario" type="address" maxlength="5" size="5" placeholder="nº" required />
+				<input name= "endereco_usuario" id="endereco_usuario" type="address" maxlength="20" size="20" placeholder="cidade" required />
+				<input name= "endereco_usuario" id="endereco_usuario" type="address" maxlength="2" size= "2" placeholder="UF" required />
+			</div>
+
+
+			<div>
+				<label for="aniver_usuario">  Aniversário: </label>
+				<input name= "aniversário" id="aniver_usuario" type="date" placeholder="digite seu aniversário" required /> 
+
+				<label for="idade_usuario">  Idade: </label>
+				<input name= "idade" id="idade_usuario" type="text" maxlength="3" size="3" required /> 
+
+			</div>
+
+			<div>
+				<label>  Sexo: </label>
+				<select>
+				<option> selecione uma opção </option>
+				<option> F </option>
+				<option> M </option>
+				<option> Outro </option>
+				</select>
+			</div>
+
+			<h3>
+				<font face= "Futura Md BT" font color="yellow" font size="4"> <li> Sobre você </li></font>
+			</h3>
+
+			<div>
+				<label for="cor">  Cor favorita: </label>
+				<input name= "cor_favorita" id="cor_favorita" type="color" placeholder="digite sua cor favorita" required /> 
+			</div>
+
+			<div>
+				<label for="filme">  Filme favorito: </label>
+				<input name= "filme_favorito" id="filme_favorito" type="text" maxlength="30" size= "30" placeholder="digite seu filme favorito" required /> 
+			</div>
+
+			<label>  Selecione o genero musical: </label>
+			<select>
+				<option selected> selecione uma opção</option>
+				<option> rock </option>
+				<option> clássico </option>
+				<option> samba </option>
+				<option> rap </option>
+				<option> hip-hop </option>
+			</select>
+
+			<br />
+			<br />
+
+			<button type="submit"> Salvar </button>
+			<button type="reset"> Limpar </button>
+	</main>
+		
+		</form>
+	
+	<br />
+	
+	<hr />
+	
+	<footer> 
+		<p><center> ©webedev1 </center>
+	</footer>
+
+</body>
+</html>
