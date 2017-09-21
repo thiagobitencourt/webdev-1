@@ -15,45 +15,89 @@
 
 <body> <!--  INICIO body -->
 
+<fieldset> <!-- Borda tabela Inicio  -->
 <h1> Seja bem vindo, realize seu cadastro para continuar </h1>
+<p> <i> Registre-se e tenha acesso ao mundo virtual.</i></p>
 <br/>
 
-<main>
+<section id="Inicio_Corpo"> <!-- Inicio Section  -->
+<main>  <!-- Inicio MAIN  -->
 
-<form>
-<section id="main">
-First name:
-<input type="text" name="firstname" placeholder="Nome" required />
+<hr/><br/>
+ <legend>Dados Pessoais:</legend> 
+ <br/>
+ <table cellspacing="10"> <!-- Tabela Inicio -->
+  <tr>
+   <td>
 
-Last name:
-<input type="text" name="lastname"  placeholder="Sobrenome" required/>
-</section>
+    <label for="nome">Nome: </label>  <!-- Nome -->
+   </td>
+   <td align="left">
 
-<br/>
-<fieldset>
-<legend>Sexo</legend>
-<input type="radio" name="sex" value="male">Male <br>
-<input type="radio" name="sex" value="female">Female
-</fieldset>
+    <input type="text" name="email">  <!-- Enail -->
+   </td>
+   <td>
+    
+    <label for="sobrenome">Sobrenome: </label>  <!-- Sobrenome -->
+   </td>
+   <td align="left">
+    <input type="text" name="sobrenome">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    
+    <label>Nascimento: </label>  <!-- Nascimento -->
+   </td>
+   <td align="left">
+    <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
+   <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
+   <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    
+    <label for="rg">RG: </label>    <!-- RG -->
+   </td>
+   <td align="left">
+    <input type="text" name="rg" size="13" maxlength="13"> 
+   </td>
+  </tr>
+  <tr>
+   <td>
+  
+    <label>CPF:</label> <!-- CPF -->
+   </td>
+   <td align="left">
+    <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+   </td>
+  </tr>
+ </table>  <!-- Tabela Fim -->
 
-</form>
-</section>
+<label>E-mail:</label> <!-- CPF -->
+</td>
+<td align="left">
+	<input type="text"  size="0" maxlength="40"> 
+</td>
+</tr>
+</fieldset> <!-- borda tabela FIM -->
+<br />
 
-
-</main>
-
-
-
+</main>  <!-- Fim MAIN  -->
+</section> <!-- fim Section  -->
 <br/> 
-<article>
 
-<fieldset>
-<legend>Sua opinião</legend>
+
+<article>  <!-- Artigo-->
+
+<fieldset> <!-- Borda tabela Inicio -->
+<legend>Quem é você?</legend>
 <label for ="opiniao"></label>
-O que você mais gostou no evento ? <br>
+Descreva-se <br>
 <textarea cols=60 id="opiniao" rows="5" name="opiniao" maxlength="300" wrap="hard" ></textarea>
 
-</fieldset>
+</fieldset>  <!-- Borda tabela Fim -->
 </article>
 
 
@@ -70,7 +114,6 @@ O que você mais gostou no evento ? <br>
 
 </body>
 
-
 <br/><br/><hr/><br/><br/>
 <div>    <!--  Quebra linha INICIA  -->
 <button type="submit"> Salvar </button>   <!--  Botão salva  -->
@@ -81,7 +124,7 @@ O que você mais gostou no evento ? <br>
 
 <br/><br/><br/><br/>
 
-<span> Direitos reservados</span>
+<span> <strong>Direitos reservados®</strong></span>
 
 </footer>
 
