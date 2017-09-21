@@ -1,4 +1,1 @@
-
 # Adlan Luis Koslopp
-
-
