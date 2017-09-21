@@ -3,26 +3,34 @@
 <html>
 	<head>
 		<title> Login </title>
+		<meta charset="UTF-8">
 	</head>
 	</body>
-		<section>
-			<label for = "inp-txt"><strong>Login:</strong> </label>
-			<input id="inp-txt" type ="text"  value= ""/>
+		<form name = "perfil-form" action = "perfil.html" method = "GET">
+			<section>
+				<label for = "inp-txt"><strong>Login:</strong> </label>
+				<input id="inp-txt" type ="text"  value= ""/>
 		
-			<br />
-			<br />
-			<label for = "inp-txt"><strong>Senha:<strong> </label>
-			<input id="inp-txt" type ="text"  value= "" />
+				<br />
+				<br />
+				<label for = "inp-txt"><strong>Senha:<strong> </label>
+				<input id="inp-txt" type ="text"  value= "" />
 		
-			<br />
-			<br />
-		</section>	
+				<br />
+				<br />
+			</section>	
 		
-		<button input type = "submit"><a href = "C:\Users\hique\Desktop\Faculdade\Aula quinta\webdev-1\henriqueazevedo\henrique_azevedo_atividade1\perfil.html">Entrar</a href></button>
-		<button input type = "submit"><a href = "C:\Users\hique\Desktop\Faculdade\Aula quinta\webdev-1\henriqueazevedo\henrique_azevedo_atividade1\cadastro.html">Cadastrar</a href></button>
-		<button type = "reset">Limpar</button>
-	
-	
+			<button input type = "submit">Entrar</button>
+
+			<button type = "reset">Limpar</button>
+		</form>
+		
+		
+		<form name = "perfil-form" action = "cadastro.html" method = "GET">
+				<p><font color = "blue">Caso ainda não seja cadastrado clique no botão abaixo</font></p>
+			<button input type = "submit">Cadastrar</button>
+			
+		</form>
 	</body>
 	
 </html>
