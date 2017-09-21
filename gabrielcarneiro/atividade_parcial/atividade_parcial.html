@@ -7,19 +7,132 @@
 <body>
 
     <header>
-    <h1><strong>Cadastre-se!</strong></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Quem Somos</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section>
-    <main>
+
+    <h1><strong><i>Cadastre-se!</i></strong></h1>
+
         <form>
-            <label>Sobre mim:</label>
-            <textarea maxlength="300" placeholder="Conte-nos um pouco sobre você!"></textarea>
+
+        <h3>Informações gerais</h3>
+
+            <label>Nome: </label>
+            <input type="text" name="" placeholder="Digite seu nome">
+
+            <label>Sobrenome: </label>
+            <input type="text" name="" placeholder="Digite seu sobrenome">
+
+            <label>Data Nascimento: </label>
+            <input type="date" name="" >
+
+            </br>
+            </br>
+
+            <label>Sexo: </label>
+            <select>
+                <option selected>Masculino</option>
+                <option>Feminino</option>
+            </select>
+
+            </br>
+            </br>
+
+            <label for="lista-escolaridade">Escolaridade:</label>
+            <ul name="lista-escolaridade">
+                <li>
+                    <input type="radio" name="escolaridade"  id="radio-1/>
+                    <label for="radio-1">Ensino Fundamental</label>
+                </li>
+                <li>
+                    <input type="radio" name="escolaridade" id="" >
+                    <label for="radio-2">Ensino Médio</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="escolaridade" id="" >
+                    <label for="radio-2">Ensino Superior</label>
+                </li>
+            </ul>
+
+            <h3>Informações de contato</h3>
+
+            <label>Email: </label>
+            <input type="tel" name="" placeholder="Digite seu e-mail" maxlength="10">
+
+            <label>Telefone: </label>
+            <input type="tel" name="" placeholder="Telefone" maxlength="10">
+
+            <label>Site/Mídia Social: </label>
+            <input type="URL" name="" placeholder="exemplo.com/usuario" maxlength="10">
+
+
+            <h3>Sobre mim</h3>
+
+            <label for="sobre-mim">Quem sou: </label>
+            <textarea name="sobre-mim" maxlength="400" placeholder="Conte-nos um pouco sobre você!"></textarea>
+
+            <h4>Principais interesses: </h4>
+
+                <label for="lista-escolaridade">Interesses: </label>
+                <ul name="lista-escolaridade"  >
+                    <li>
+                        <input type="checkbox" name="interesses" id="" >
+                        <label for="">Música</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="interesses" id="" >
+                        <label for="">Arte</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="interesses" id="" >
+                        <label for="">Tecnologia</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="interesses" id="" >
+                        <label for="">Esporte</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="interesses" id="" >
+                        <label for="">Cinema</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="interesses" id="" >
+                        <label for="">Literatura</label>
+                    </li>
+                </ul>
+
+
+            <h4>Escolha a sua senha: </h4>
+            <label>Senha: </label>
+            <input type="password" name="" placeholder="Senha" >
+
+            <label>Digite novamente: </label>
+            <input type="password" name="" placeholder="Digite novamente" >
+
+            </br>
+            </br>
+
+            <button type="submit" value="submit">Enviar</button>
+            <button type="reset" value="reset">Limpar</button>
+
         </form>
-    </main>
     </section>
 
     <footer>
+
+    <small><p>Venha nos visitar: Rua XV de Novembro, 261</p></small>
+
+    </br>
+    <p></p>
+    <a href=""><img src="img/facebook.png"></a>
+    <a href=""><img src="img/twitter.png"></a>
 
     </footer>
 
