@@ -1,0 +1,44 @@
+<style>
+  h1 {
+    color: red;
+  }
+
+  h4 {
+    color: blue;
+  }
+
+  .artigo {
+    background-color: #cccccc;
+    border: 3px solid #000000;
+    border-radius: 5px;
+  }
+
+  header {
+    color: #e6e600;
+    background-color: #cccccc;
+    background-image: url(Fundo.png);
+  }
+
+  .importante {
+    color: red;
+  }
+
+  #rodape {
+    /*todas essas linhas fora subtituida por uma so
+    border-style: dashed;
+    border-width: 1px;
+    border-color: green;
+    */
+    border: 1px dotted green;
+  }
+
+  .btn{
+    background-color: #3cb371;
+    border: 3px solid  #2e8b57;
+    color: #ffffff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+
+</Style>
