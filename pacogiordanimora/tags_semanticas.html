@@ -2,6 +2,47 @@
 <html>
   <head>
       <title>Trabalhando com tags semânticas</title>
+
+      <style>
+        h1 {
+          color: red;
+        }
+
+        h3 {
+          color: blue;
+        }
+
+        h2 {
+          color: pink;
+        }
+
+        header {
+          color: #ffff1a;
+          background-color: rgba(0, 0, 0, 0.5);
+          background-repeat: no-repeat;
+          background-image: url("1.png");
+        }
+
+        .artigo {
+            background-color: #cccccc;
+        }
+
+        .importante {
+          color: #4b0082;
+        }
+
+        #rodape {
+          border-style: solid;
+          border-color: 1px solid green;
+        }
+
+        .btn {
+          background-color: blue;
+          border-color: 1px solid green;
+        }
+
+      </style>
+
   </head>
 
   <body>
@@ -22,7 +63,7 @@
       <hr />
 
       <aside>
-        <header>
+        <header class="importante">
             <h4>Eu vou ficar na parte lateral da página</h4>
         </header>
 
@@ -70,7 +111,7 @@
 
       <hr />
 
-      <article>
+      <article class="artigo importante">
         <header>
           <h1>Um artigo da minha página</h1>
           <span>Autor: Eu mesmo</span>
@@ -119,13 +160,13 @@
 
       <hr />
 
-      <section>
+      <section class="artigo">
         <h3>Está é uma outra parte da minha página</h3>
       </section>
 
       <hr />
 
-      <footer>
+      <footer id="rodape" class="artigo">
         <p>Endereço: Rua das Bananas Verdes</p>
       </footer>
 
