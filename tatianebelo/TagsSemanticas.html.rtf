@@ -3,54 +3,9 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>Trabalhando com Semantica</title>
-
-	<style>
-		h1 {
-			color: red;
-		}
-
-		h4 {
-			color: blue;
-		}
-
-		.artigo {
-			background-color: #cccccc;
-			border: 3px solid #000000;
-			border-radius: 5px;
-		}
-
-		header {
-			color: #e6e600;
-			background-color: #cccccc;
-			background-image: url(Fundo.png);
-		}
-
-		.importante {
-			color: red;
-		}
-
-		#rodape {
-			/*todas essas linhas fora subtituida por uma so
-			border-style: dashed;
-			border-width: 1px;
-			border-color: green;
-			*/
-			border: 1px dotted green;
-		}
-
-		.btn{
-			background-color: #3cb371;
-			border: 3px solid  #2e8b57;
-			color: #ffffff;
-			border-radius: 10px;
-			text-transform: uppercase;
-			text-decoration: underline;
-		}
-
-	</Style>
-
+		
 	</head>
-
+	
 	<body>
 		<header>
 			<h1>Título mais Importante da página</h1>
@@ -64,49 +19,48 @@
 			</nav>
 		</header>
 		<hr>
-
-		<article class="artigo">
+		<article>
 			<header>
 				<h1>Um artigo da minha pagina</h1>
-				<span>Autor: Adlan</span>
+				<span>Autor: Tatiane</span>
 				<span>Publicação: hoje</span>
 			</header>
 		</article>
-
+		
 		<hr>
 		<aside>
 			<h4>Vou Ficar nas laterias da página</h4>
-			<header class:"importante">
+			<header>
 				Aqui vai ter um menu
 			</header>
 			<nav>
 				<a href="https://www.google.com.br/?gws_rd=cr&ei=SfBCWdSUGsKnwATewbuACQ" target="blank">Pequisa google</a>
-				<footer class="artigo importante">
+				<footer>
 					<span>EU sou o rodpá do conteudo "aside"</span>
 				</footer>
 			</nav>
 		</aside>
 		<footer>
 		<hr>
-
+		
 		<section>
 			<figure>
-				<img src="Imagem1.jpg" alt="Uma Imagem de Paisagem" whidth></img>
-				<figcaption>Figura1. Ponte em uma beira de mar</figcaption>
+				<img src="Imagem1.jpg" alt="Uma Imagem de Paisagem"></img>
+				<figcaption>Figura1. Rei da Selva </figcaption>
 			</figure>
 		</section>
-
+		
 		<hr>
 			<form>
 				<div>
 					<label>Nome:</label>
 					<input type="text" placeholder="Escreva seu nome"></input>
-
+				
 				</div>
-				<div id = "rodape">
+				<div> 
 					<label>Comentário</label>
 					<textarea max-lenght = "140"></textarea>
-					<button class="btn">Comentar</button>
+					<button>Comentar</button>
 				</div>
 			</form>
 	</body>
