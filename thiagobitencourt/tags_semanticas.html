@@ -2,9 +2,7 @@
 <html>
 	<head>
 		<title>Trabalhando com tags semanticas</title>
-
 		<style>
-
 			h1 {
 				color: red;
 			}
@@ -22,12 +20,41 @@
 				background-color: rgba(0, 0, 0, 0.5);
 			}
 
+			.artigo {
+				background-color: #cccccc;
+			}
+
+			.importante {
+				color: #4B0082;
+			}
+
+			#rodape {
+				/* style espe.. cor */
+				/*
+					border-style: dashed;
+					border-width: 1px;
+					border-color: green;
+				*/
+				border: 1px solid green;
+				border-radius: 15px;
+				/*border-radius: 100px;*/
+			}
+
+			.btn {
+				background-color: #3CB371;
+				border: 3px solid #2E8B57;
+				color: #ffffff;
+				border-radius: 10px;
+				text-transform: uppercase;
+				text-decoration: underline;
+			}
+
 		</style>
 
 	</head>
 	<body>
 			<header>
-					<h1> Título mais importante da minha página</h1>
+					<h1 class="importante"> Título mais importante da minha página</h1>
 					<p> Esta página é importante porque está cheio de loren ipsun</p>
 
 					<nav>
@@ -47,7 +74,7 @@
 			</header>
 			<hr />
 			<aside>
-				<header>
+				<header class="importante">
 					Aqui vai ter um menu
 				</header>
 
@@ -106,7 +133,7 @@
 
 			<hr />
 
-			<article>
+			<article class="artigo importante">
 
 				<header>
 
@@ -146,7 +173,8 @@
 							<textarea max-lenght="140"></textarea>
 						</div>
 
-						<button type="submit">Comentar</button>
+						<button class="btn" type="submit">Comentar</button>
+						<button type="reset">Limpar</button>
 					</form>
 
 				</footer>
@@ -156,7 +184,7 @@
 
 			<hr />
 
-			<section>
+			<section class="artigo">
 
 				<h3>Está é uma outra parte da minha página</h3>
 
@@ -164,7 +192,7 @@
 
 			<hr />
 
-			<footer>
+			<footer id="rodape" class="artigo">
 				<p>Endereço: Rua das bananas verdes, 16.</p>
 			</footer>
 
