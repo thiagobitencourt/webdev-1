@@ -3,6 +3,42 @@
 <head>
     <meta charset="utf-8">
     <title>Tags semanticas</title>
+
+    <style media="screen">
+
+      h1 {
+        color : red;
+      }
+
+      h3 {
+        color : blue;
+      }
+
+      header {
+        color : #008000;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .artigo{
+        border: 1px solid #000000;
+        border-radius: 10px;
+      }
+
+      .importante {
+        color: #080808;
+      }
+
+      .btn{
+        background-color: #2E8B57;
+        border : 1px solid #3CB371;
+        color: white;
+        border-radius: 10px;
+        text-transform: uppercase;
+        text-decoration: underline;
+      }
+
+    </style>
+
 </head>
 <body>
 
@@ -67,7 +103,7 @@
             <span>Publicação: hoje</span>
         </header>
         <main>
-            <p>
+            <p class="artigo">
              Existem <strong>muitas</strong> variações disponíveis de passagens de Lorem Ipsum,
              mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor,
              ou palavras aleatórias que não parecem nem um pouco convincentes. S
@@ -85,7 +121,7 @@
 
                 <div>
                     <label>Nome:</label>
-                    <input type="text" name="" placeholder="Escreva seu nome">
+                    <input type="text" placeholder="Escreva seu nome">
                 </div>
 
                 <div>
@@ -93,7 +129,7 @@
                     <textarea max-length="140"></textarea>
                 </div>
 
-                <button type="submit">Comentar</button>
+                <button type="submit" class="btn">Comentar</button>
 
             </form>
 
