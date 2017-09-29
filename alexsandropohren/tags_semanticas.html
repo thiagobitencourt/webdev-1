@@ -3,23 +3,11 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>Trabalhando com Semantica</title>
-
-	<style media="screen">
-		h1 {
-			color: red;
-		}
-
-		h3 {
-			color: blue;
-		}
-		.importante {
-			background-color: #cccccc;
-		}
-	</style>
+	<link rel="stylesheet" href="style.css">
 
 	</head>
 
-	<body class="importante">
+	<body>
 		<header>
 			<h1>Título mais Importante da página</h1>
 			<p>Esse e um titulo importante</p>
@@ -32,9 +20,10 @@
 			</nav>
 		</header>
 		<hr>
-		<article>
-			<header >
-				<h3>Um artigo da minha pagina</h3>
+
+		<article class="artigo">
+			<header>
+				<h1>Um artigo da minha pagina</h1>
 				<span>Autor: Alexsandro</span>
 				<span>Publicação: hoje</span>
 			</header>
@@ -43,12 +32,12 @@
 		<hr>
 		<aside>
 			<h4>Vou Ficar nas laterias da página</h4>
-			<header>
+			<header class:"importante">
 				Aqui vai ter um menu
 			</header>
 			<nav>
 				<a href="https://www.google.com.br/?gws_rd=cr&ei=SfBCWdSUGsKnwATewbuACQ" target="blank">Pequisa google</a>
-				<footer>
+				<footer class="artigo importante">
 					<span>EU sou o rodpá do conteudo "aside"</span>
 				</footer>
 			</nav>
@@ -58,7 +47,7 @@
 
 		<section>
 			<figure>
-				<img src="Sniper.jpg" alt="Uma Imagem de um Sniper"></img>
+				<img src="Sniper.jpg" alt="Uma imagem de um Sniper" whidth></img>
 				<figcaption>Figura1. Um Sniper</figcaption>
 			</figure>
 		</section>
@@ -70,10 +59,10 @@
 					<input type="text" placeholder="Escreva seu nome"></input>
 
 				</div>
-				<div>
+				<div id = "rodape">
 					<label>Comentário</label>
 					<textarea max-lenght = "140"></textarea>
-					<button>Comentar</button>
+					<button class="btn">Comentar</button>
 				</div>
 			</form>
 	</body>
