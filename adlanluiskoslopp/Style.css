@@ -45,6 +45,33 @@ header {
   height: 200px;
 }
 
+.div1{
+  border: 5px solid blue;
+  border-left: 10px solid black;
+
+  background-color: #ffff00;
+  height: 50%;
+/*  margin: 50px;para a tag inteira */
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: 60px;
+  margin-right: 40px;
+  /*poderiamos fazer assim atmbém em uma so linha
+  margin: 40px 30px 40px 60px
+  a sequencia de cima coresponde a mesma da linha escrita nesse bloco
+  se escrevermos assim
+  margin: 40px 70px;
+  ele ira aplicar 40px em cima e em baixo e 70px no dois lados*/
+  padding-top: 50px; /* o mesmo se aplica ao pagging */
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.div div.div2{
+  background-color: #7cfc00;
+}
+
 .perfil img{
   width: 100px;
   height: 50px;
@@ -53,4 +80,11 @@ header {
 .perfil img.perfil-imagem{
   width: 100px;
   height: 50px;
+}
+
+.perfil img#perfil-imagem-2{
+  width: 100px;
+  height: 75px;
+
+  border-radius: 30px;
 }
