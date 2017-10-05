@@ -1,5 +1,5 @@
 h1 {
-  color: red;
+  color: yellow;
 }
 
 h4 {
@@ -38,4 +38,19 @@ header {
   border-radius: 10px;
   text-transform: uppercase;
   text-decoration: underline;
+}
+
+.Figuras {
+  width: 300px;
+  height: 200px;
+}
+
+.perfil img{
+  width: 100px;
+  height: 50px;
+}
+/*no caso se tivermos uma outra classe dentro de outra teremos que aplicar esse tipo de herarquia */
+.perfil img.perfil-imagem{
+  width: 100px;
+  height: 50px;
 }
