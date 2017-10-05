@@ -43,3 +43,18 @@ header {
   text-transform: uppercase;
   text-decoration: underline;
 }
+
+.figuras {
+  width: 300px;
+  height: 200px;
+}
+
+.perfil img.perfil-imagem {
+  width: 100px;
+  height: 100px;
+}
+
+.perfil img#perfil-imagem-2 {
+  width: 150px;
+  height: 100;
+}
