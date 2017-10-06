@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Perfil</title>
+
+<link rel="stylesheet" type="text/css" href="estilo.css"/>
+
+<style>
+
+form {
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    width: 500px;
+    /* Para ver as bordas do formulário */
+    padding: 1em;
+    border: 5px solid #CCC;
+    border-radius: 1em;
+}
+form div + div {
+    margin-top: 1em;
+}
+label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+
+input, textarea {
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1em sans-serif;
+
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+}
+input:focus, textarea:focus {
+    /* Dar um pouco de destaque nos elementos ativos */
+    border-color: #000;
+}
+
+textarea {
+    /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+    vertical-align: top;
+
+    /* Para dar espaço suficiente para digitar algum texto */
+    height: 5em;
+
+    /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+    resize: vertical;
+}
+.button {
+    /* Para posicionar os botões para a mesma posição dos campos de texto */
+    padding-left: 90px; /* mesmo tamanho que os elementos do tipo label */
+}
+button {
+    /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+    margin-left: 15em;
+}
+</style>
+
+</head>
+<body>
+
+  <header>
+  					<h2>Home</h2>
+  					<nav>
+  						<ul>
+  							<li>
+  								<a href="index.html">Inicio</a>
+  							</li>
+  							<li>
+  								<a href="formulario.html">Formulário</a>
+  							</li>
+  						</ul>
+  					</nav>
+
+  			</header>
+
+<h1>Crie seu Perfil:</h1>
+
+<form action="index.html" method="post">
+
+  <div>
+      <label for="Foto">Foto Perfil:</label>
+       <label action="envia_foto.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="Arquivo" id="Arquivo"><br>
+
+  </div>
+
+    <div>
+        <label for="name">Nome:<i style="color: red">*</i> </label>
+        <input type="text" id="name" placeholder="Exemplo.: Djiovani"  maxlength="40" pattern="[a-zA-Z\s]+$" required />
+    </div>
+
+    <div>
+        <label for="Sobrenome">Sobrenome:<i style="color: red">*</i> </label>
+        <input type="text" id="Sobrenome" placeholder="Exemplo.: Douglas"  maxlength="30" pattern="[a-zA-Z\s]+$" required />
+    </div>
+
+    <div>
+              <label for="Sexo">Gênero:</label>
+              <select name="Sexo">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+              </select>
+          </div>
+
+    <div>
+        <label for="Data" >Data Nascimento:</label>
+        <input type="date" id="Data" required />
+    </div>
+
+    <div>
+        <label for="Endereço">Endereço:</label>
+        <input type="text" id="Endereço"  maxlength="40" />
+    </div>
+
+    <div>
+        <label for="Rua">Rua:</label>
+        <input type="text" id="Rua"   maxlength="40"/>
+    </div>
+
+    <div>
+        <label for="CEP">CEP:</label>
+        <input type="text" name="cep" onKeyPress="MascaraCep(form1.cep);"
+        maxlength="9" onBlur="ValidaCep(form1.cep)" placeholder="Exemplo.: 89251-201">
+    </div>
+
+    <div>
+              <label for="UF">UF:</label>
+              <select name="estado">
+              <option value="ac">Acre</option>
+              <option value="al">Alagoas</option>
+              <option value="am">Amazonas</option>
+              <option value="ap">Amapá</option>
+              <option value="ba">Bahia</option>
+              <option value="ce">Ceará</option>
+              <option value="df">Distrito Federal</option>
+              <option value="es">Espírito Santo</option>
+              <option value="go">Goiás</option>
+              <option value="ma">Maranhão</option>
+              <option value="mt">Mato Grosso</option>
+              <option value="ms">Mato Grosso do Sul</option>
+              <option value="mg">Minas Gerais</option>
+              <option value="pa">Pará</option>
+              <option value="pb">Paraíba</option>
+              <option value="pr">Paraná</option>
+              <option value="pe">Pernambuco</option>
+              <option value="pi">Piauí</option>
+              <option value="rj">Rio de Janeiro</option>
+              <option value="rn">Rio Grande do Norte</option>
+              <option value="ro">Rondônia</option>
+              <option value="rs">Rio Grande do Sul</option>
+              <option value="rr">Roraima</option>
+              <option value="sc">Santa Catarina</option>
+              <option value="se">Sergipe</option>
+              <option value="sp">São Paulo</option>
+              <option value="to">Tocantins</option>
+            </select>
+    </div>
+
+    <div>
+        <label for="Emprego">Emprego:</label>
+        <input type="text" id="Emprego" maxlength="40" />
+    </div>
+
+    <div>
+        <label for="telefone">Telefone:</label>
+        <input type="Tel" id="Telefone" maxlength="13" placeholder="Ex.: (99)9999-9999"/>
+    </div>
+    <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" />
+    </div>
+
+    <div>
+              <label for="Idiomas">Idiomas:</label>
+              <select name="Idioma">
+                <option value="I">Inglês</option>
+                <option value="P">Português</option>
+                <option value="A">Ambos</option>
+              </select>
+          </div>
+
+<div>
+    <button type="reset" > Limpar </button>
+</div>
+
+<div>
+    <button type="submit"> Enviar </button>
+</div>
+
+</form>
+
+<footer>
+  <p><strong>Rodovia BR 280, 15885 - Imigrantes, Guaramirim - SC, 89270-000</strong></p>
+</footer>
