@@ -30,6 +30,18 @@ header {
   */
   border: 1px dotted green;
 }
+/*
+.escondido{
+  display:none;
+}*/
+
+.escondido:hover {
+  display: block;
+}
+
+.btn{
+  cursor: pointer;
+}
 
 .btn{
   background-color: #3cb371;
@@ -45,9 +57,17 @@ header {
   height: 200px;
 }
 
+.div1:hover {
+  background-color: red;
+  border-left: 20px solid blue;
+
+}
+
 .div1{
+  float: left;
+
   border: 5px solid blue;
-  border-left: 10px solid black;
+  border-left: 20px solid black;
 
   background-color: #ffff00;
   height: 50%;
@@ -72,6 +92,10 @@ header {
   background-color: #7cfc00;
 }
 
+.textoComum:hover {
+  border: 20px solid blue;
+}
+
 .perfil img{
   width: 100px;
   height: 50px;
@@ -87,4 +111,9 @@ header {
   height: 75px;
 
   border-radius: 30px;
+}
+
+.flutuando div{
+  float:left;
+  width: 30%;
 }
