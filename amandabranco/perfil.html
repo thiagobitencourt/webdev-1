@@ -4,8 +4,12 @@
 	<title>perfil</title>
 </head>
 <body>
-	<h2> Meu perfil </h2>
+	<h2> Seu perfil </h2>
 	<a href="index.html">voltar</a>	
+
+	<ul>
+		<li>Cadastre - se! Preencha o formulário:</li>
+	</ul>
 
 	<form name="perfil-form" action="index.html" method="get"> 
 
@@ -21,6 +25,41 @@
 			<input name= "sobrenome" id="sobrenome_usuario" type="text" placeholder="digite seu sobrenome" required /> 
 		</div>
 
+		<div>
+			<label for="endereço"> <strong> Filme favorito: </strong> </label>
+			<input name= "endereco_usuario" id="endereco_usuario" type="text" placeholder="digite seu filme_favorito" required /> 
+		</div>
+
+		<div>
+			<label for="idade_usuario"> <strong> Idade: </strong> </label>
+			<input name= "idade" id="idade_usuario" type="text" placeholder="digite sua idade" required /> 
+		</div>
+
+		<div>
+			<label for="aniver_usuario"> <strong> Aniversário: </strong> </label>
+			<input name= "aniversário" id="aniver_usuario" type="text" placeholder="digite seu aniversário" required /> 
+		</div>
+
+		<div>
+			<label for="cor"> <strong> Cor favorita: </strong> </label>
+			<input name= "cor_favorita" id="cor_favorita" type="color" placeholder="digite sua cor favorita" required /> 
+		</div>
+
+		<div>
+			<label for="filme"> <strong> Filme favorito: </strong> </label>
+			<input name= "filme_favorito" id="filme_favorito" type="text" placeholder="digite seu filme_favorito" required /> 
+		</div>
+
+		<div>
+		<label for="input-num">Crie sua senha: </label>
+		<input type="password" placeholder= "******"/>
+		</div>
+
+		<div>
+		<label for="input-text">E-mail: </label>
+		<input type="email" placeholder="exemplo@exemplo.com" />
+		</div>
+		
 		<div>
 		<button type="submit"> salvar </button>
 		<button type="reset"> apagar</button>

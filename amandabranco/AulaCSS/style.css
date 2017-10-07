@@ -1,0 +1,31 @@
+			h1 {
+				color: red;
+			}
+
+			.importante {
+				color: blue;
+			}
+
+			#rodape{
+				/*style espessura, cor*/
+				border-style: solid green;
+				/*border-style:dashed;
+				border-width:1px;
+				border-color:green;
+				border-radius: 15px;*/
+			}
+
+			.artigo{
+			 
+				border:1px solid;
+				border-radius: 15px;
+			}
+
+			.btn{
+				background-color:#2E8B57;
+				border: 1px solid #3CB371;
+				color: #ffffff;
+				border-radius:15px;
+				text-transform: uppercase;
+				text-decoration: underline;
+			}
