@@ -1,0 +1,36 @@
+<style media="screen">
+  h1{
+    color: red;
+  }
+  h3 {
+    color: blue;
+  }
+  h2 {
+    color: pink;
+  }
+  header {
+    color:  #00ff00;
+    background-color: grey;
+  }
+  .artigo{
+    background-color: #666666;
+    border-style: solid;
+    border-width: 15px;
+  }
+  .importante{
+    color: #ff00ff;
+  }
+  #rodape {
+    border-style: solid;
+    border-width: 2px;
+    border-color: green;
+  }
+  .btn {
+    background-color: #2e8b57;
+    border: 3px solid #3c5a38;
+    color: #ffffff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+</style>
