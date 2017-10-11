@@ -152,9 +152,15 @@ Após a realização da atividade oficial é natural que algumas dúvidas tenham
 
 **Pré-aula**
 
+Vamos começar a estudar um outro tópido do desenvolvimento web, a estilização das páginas usando CSS. Faça uma pesquisa básica para já conhecer e saber do que se trata esta técnologia e assim contribuir para que nossa aula seja muito mais produtiva.
+
 **Aula**
 
+Nesta aula vamos começar a estilizar nossas páginas com CSS, vamos conhecer a estrutura básica para utilização do CSS e como é aplicado as páginas html. Vamos começar a trabalhar com cores, alterando a apresentação das nossas páginas html.
+
 **Pós-aula**
+
+Agora que já temos conhecimento inicial para estilizar nossas página já podemos começar a mudar algumas cores da nossa página de perdil de usuário.
 
 - [Voltar ao topo](#indice)
 
