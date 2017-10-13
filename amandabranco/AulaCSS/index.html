@@ -3,45 +3,20 @@
 	<head>
 
 		 <title> pimeira página HTML </title>
-
-		<style>
-			h1 {
-				color: red;
-			}
-
-			.importante {
-				color: blue;
-			}
-
-			#rodape{
-				/*style espessura, cor*/
-				border-style: solid green;
-				/*border-style:dashed;
-				border-width:1px;
-				border-color:green;
-				border-radius: 15px;*/
-			}
-
-			.artigo{
-			 
-				border:1px solid;
-				border-radius: 15px;
-			}
-
-			.btn{
-				background-color:#2E8B57;
-				border: 1px solid #3CB371;
-				color: #ffffff;
-				border-radius:15px;
-				text-transform: uppercase;
-				text-decoration: underline;
-			}
-
-		</style>
+		 <link rel="stylesheet" href="style.css">
 
 	</head>
 
 	<body>
+
+		<section class="perfil">
+			<figure>
+				<img src="perfil.jpg" alt="imagem de perfil">
+			</figure>
+
+			<img id="imagem-perfil-2" src="perfil.jpg" alt="imagem de perfil">
+
+		</section>
 
 		<table border="1">
 			<thead>
@@ -71,9 +46,11 @@
 
 		<br />
 
-		<img src="https://www.w3schools.com/html/pic_mountain.jpg">
+
+		<img  class="figuras" src="https://www.w3schools.com/html/pic_mountain.jpg">
 		<br />
-		<img src="pic_mountain.jpg" alt="imagem local" width="100x" height="100x">
+
+		<img src="pic_mountain.jpg" alt="imagem local" width="100x" height="100x"> 
 		
 		<br />
 
@@ -97,7 +74,6 @@
 
 		<p>
 		<article class="artigo">
-		isso é um paragrafo
 		Lorem ipsum dolor sit amet, consectetur adipiscing 
 		elit. <strong> Vestibulum varius </strong> a neque non luctus. Morbi et porttitor
 		velit, et aliquet ex. Duis tincidunt, neque nec hendrerit laoreet,
