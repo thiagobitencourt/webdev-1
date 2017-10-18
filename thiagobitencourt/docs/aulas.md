@@ -168,9 +168,15 @@ Agora que já temos conhecimento inicial para estilizar nossas página já podem
 
 **Pré-aula**
 
+Com as definições de cores que aprendemos na última aula já podemos melhorar a apresentação de nossas páginas html. Para que consigamos criar páginas web ricas em estética será necessário bastante experiência e vivência em "desenhar" e construir páginas. Ao longo dos estudos muitas dúvidas com relação a cores irá surgir e com a implementação da página de perfíl que estamos construindo imagino que algumas dúvidas já tenham surgido. Portanto, anote quais foram as dúvidas e dificuldades encontradas e tragam para a aula para que possamos discutir.
+
 **Aula**
 
+Agora que já conhecemos de cores e conseguimos melhorar a experiência das nossas páginas podemos observar que também vamos precisar apresentar conteúdos em diferentes tamanhos, formas e dimensões. Portanto, nesta aula vamos conhecer os atributos e valores de CSS que irão nos permitir alterar as esses atributos de nossas páginas.
+
 **Pós-aula**
+
+Pensando novamente na página de perfíl que estamos construindo, agora já podemos incrementá-la ainda mais, agora com alguns ajustes nas dimensões do conteúdo da página.
 
 - [Voltar ao topo](#indice)
 
@@ -178,9 +184,15 @@ Agora que já temos conhecimento inicial para estilizar nossas página já podem
 
 **Pré-aula**
 
+Ao longo da implementação da página de perfil de usuário você deve ter notado que por enquanto estamos construindo uma página "fixa" e sem nenhum comportamento. Para adicionar comportamento a uma página web vamos utilizar javascript, portanto faça uma pesquisa sobre esta tecnologia e busque entender do que se trata e qual o seu objetivo e assim nossas aula será muito mais produtiva.
+
 **Aula**
 
+Nesta aula vamos começar a estudar Javascript, uma linguagem de programação que vamos utilizar para enriquecer ainda mais nossas páginas web adicionar comportamento aos componentes da nossa página e facilitando a interação de um usuário com a página e assim melhorando ainda mais a experiência de uso.
+
 **Pós-aula**
+
+Agora que já tem um conhecimento inicial de javascript, adicione algum comportamento básico a sua página de perfil para já começar a praticar e entender melhor o uso desta tecnologia.
 
 - [Voltar ao topo](#indice)
 
