@@ -1,0 +1,44 @@
+.container{
+  padding: 15px 8%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.cabecalho{
+  margin-top: 40px;
+  background-color: #cccccc;
+  height: 100px;
+  border: 3px solid #cccccc;
+  border-radius: 30px;
+}
+
+.calculadora{
+  margin-top: 50px;
+  margin-left: 15%;
+}
+
+.input{
+    height:40px;
+}
+
+.input:focus{
+    border: 3px solid #6ccee4;
+}
+
+.btn{
+  height: 50px;
+  width: 120px;
+}
+
+.btn-green{
+  background-color: white;
+  border: 3px solid green;
+  border-radius: 20px;
+}
+
+.btn-green:hover{
+  cursor: pointer;
+  background-color: green;
+  border: border: 3px solid #cccccc ;
+  color: white;
+}
