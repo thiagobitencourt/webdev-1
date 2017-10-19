@@ -11,6 +11,11 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.menu li{
+  display: inline;
+  padding: 15px;
+}
+
 .artigo{
   border: 1px solid #000000;
   border-radius: 10px;
