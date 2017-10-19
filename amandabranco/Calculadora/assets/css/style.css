@@ -1,0 +1,36 @@
+.container{
+	padding: 15px 50px;
+	margin-left: 15%;
+	margin-right: 15%;
+
+}
+
+.cabecalho{
+	margin-top: 30px;
+	background-color: #cccccc;
+  	border: 3px solid #000000;
+  	border-radius: 30px;
+}
+
+.btn{
+	height: 45px;
+	padding: 10px;
+	cursor: pointer;
+	border: 3px solid green;
+	background-color: white;
+}
+
+.btn:hover{
+	cursor: pointer;
+  	background-color: green;
+}
+
+.input{
+	height: 45px;
+	padding: 10px;
+}
+
+.input:hover{
+	cursor: pointer;
+  	border:3px solid blue;
+}
