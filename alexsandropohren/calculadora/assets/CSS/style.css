@@ -1,0 +1,49 @@
+.container{
+  padding: 15px 7% 15px 7%;
+}
+
+.cabecalho{
+  padding: 15px;
+  height: 100%;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+}
+
+.btn{
+  height: 45px;
+  padding: 10px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.btn-green{
+  border-color: #4caf50;
+}
+
+.btn-green:hover{
+  color: white;
+  background-color: #4caf50;
+}
+
+.btn-blue{
+  border-color: #2196f3;
+}
+
+.btn-blue:hover{
+  color: white;
+  background-color: #2196f3;
+}
+
+.btn-red{
+  border-color: red;
+}
+
+.btn-red:hover{
+  color: white;
+  background-color: red;
+}
