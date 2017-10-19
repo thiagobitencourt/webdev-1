@@ -180,7 +180,21 @@ Pensando novamente na página de perfíl que estamos construindo, agora já pode
 
 - [Voltar ao topo](#indice)
 
-### Aula 11 Conceitos iniciais de JavaScript
+### Aula 11 Combinando seletores CSS e estrutura de um projeto web
+
+**Pré-aula**
+
+Novamente, ao implementar uma página html você deve ter se deparado com algumas dúvidas, com relação a estrutura da página, tags html, funcionamento do CSS e/ou atributos, valores e seletores de CSS. Traga estas dúvidas para a sala para que possamos discutir em grupo e assim todos aprendem juntos.
+
+**Aula**
+
+Nesta aula vamos ver um pouco mais de css, veremos como podemos combinar seletores css para aplicar estilos aos nossos elementos HTML. Nesta aula também vamos iniciar o desenvolvimento de um novo projeto e para que tenhamos mais organização e controle do nosso trabalho, vamos ver como podemos organizar melhor o nosso diretório para que cada coisa fique em um lugar adequado.
+
+**Pós-aula**
+
+Agora que já entende um pouco mais de seletores de CSS, utilize este conhecimento para melhorar a organização dos seus seletores CSS e a estrutura do seu arquivo de estilo. Também, melhore a estrutura do seu projeto, colocando cada arquivo no seu devido lugar, ou seja, em uma pasta correta.
+
+### Aula 12 Conceitos iniciais de JavaScript
 
 **Pré-aula**
 
@@ -196,7 +210,7 @@ Agora que já tem um conhecimento inicial de javascript, adicione algum comporta
 
 - [Voltar ao topo](#indice)
 
-### Aula 12 Manipulando a página através de JS
+### Aula 13 Manipulando a página através de JS
 
 **Pré-aula**
 
@@ -206,7 +220,7 @@ Agora que já tem um conhecimento inicial de javascript, adicione algum comporta
 
 - [Voltar ao topo](#indice)
 
-### Aula 13 Obtendo e validando informações através de formulários
+### Aula 14 Obtendo e validando informações através de formulários
 
 **Pré-aula**
 
@@ -216,7 +230,7 @@ Agora que já tem um conhecimento inicial de javascript, adicione algum comporta
 
 - [Voltar ao topo](#indice)
 
-### Aula 14 Interação com um serviço Ajax
+### Aula 15 Interação com um serviço Ajax
 
 **Pré-aula**
 
@@ -226,7 +240,7 @@ Agora que já tem um conhecimento inicial de javascript, adicione algum comporta
 
 - [Voltar ao topo](#indice)
 
-### Aula 15 Atividade Oficial
+### Aula 16 Atividade Oficial
 
 **Pré-aula**
 
@@ -236,7 +250,7 @@ Agora que já tem um conhecimento inicial de javascript, adicione algum comporta
 
 - [Voltar ao topo](#indice)
 
-### Aula 16 Atividade Parcial
+### Aula 17 Atividade Parcial
 
 **Pré-aula**
 
@@ -246,7 +260,7 @@ Agora que já tem um conhecimento inicial de javascript, adicione algum comporta
 
 - [Voltar ao topo](#indice)
 
-### Aula 17 Conhecendo alguns frameworks para desenvolvimento Web
+### Aula 18 Conhecendo alguns frameworks para desenvolvimento Web
 
 **Pré-aula**
 
@@ -256,7 +270,7 @@ Agora que já tem um conhecimento inicial de javascript, adicione algum comporta
 
 - [Voltar ao topo](#indice)
 
-### Aula 18 Conhecendo alguns servidores para disponibilizar aplicações web
+### Aula 19 Conhecendo alguns servidores para disponibilizar aplicações web
 
 **Pré-aula**
 
