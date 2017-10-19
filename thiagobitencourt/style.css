@@ -15,6 +15,29 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.menu li {
+  display: inline;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #cccccc;
+  background-color: white;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.menu li:hover {
+  background-color: black;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.menu li:hover a {
+  color: white;
+}
+
 .artigo {
   background-color: #cccccc;
 }
