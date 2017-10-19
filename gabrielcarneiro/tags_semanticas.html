@@ -1,45 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta charset="utf-8">
     <title>Tags semanticas</title>
-
-    <style media="screen">
-
-      h1 {
-        color : red;
-      }
-
-      h3 {
-        color : blue;
-      }
-
-      header {
-        color : #008000;
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-
-      .artigo{
-        border: 1px solid #000000;
-        border-radius: 10px;
-      }
-
-      .importante {
-        color: #080808;
-      }
-
-      .btn{
-        background-color: #2E8B57;
-        border : 1px solid #3CB371;
-        color: white;
-        border-radius: 10px;
-        text-transform: uppercase;
-        text-decoration: underline;
-      }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
     <header>
@@ -75,12 +43,35 @@
     <hr/>
 
     <section>
-            <p>As montanhas de algum lugar são bem legais, representação na figura 1.</p>
+      <div class="caixa">
+        <h3>Primeira div</h3>
+      </div>
 
+      <div class="caixa">
+        <h3>Segunda div</h3>
+      </div>
+    </section>
+
+
+    <section class="perfil">
+      <figure>
+        <img class="img-perfil" src="imagens/perfil.png" alt="">
+      </figure>
+
+      <p class="texto-comum">Um texto comum!</p>
+
+      <figure>
+        <img src="imagens/perfil.png" alt="">
+      </figure>
+    </section>
+
+
+    <section>
+            <p>As montanhas de algum lugar são bem legais, representação na figura 1.</p>
+        <figure class="figura">
             <img src="imagens/imagem1.jpg" alt="uma imagem dos mochileiros" width="800" height="400">
             <figcaption>Figura 1. Montanhas de algum lugar</figcaption>
         </figure>
-
     </section>
 
     <hr/>

@@ -1,0 +1,85 @@
+h1 {
+  color : red;
+}
+
+h3 {
+  color : blue;
+}
+
+header {
+  color : #008000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.artigo{
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+
+.importante {
+  color: #080808;
+}
+
+.btn{
+  background-color: #2E8B57;
+  border : 1px solid #3CB371;
+  color: white;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+.figura{
+  width: 500;
+  height: 300;
+  border: 1px solid red;
+}
+
+.perfil img.img-perfil{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.perfil img{
+  width: 200px;
+  height: 200px;
+
+}
+
+.caixa:hover{
+  background-color: green;
+  border-left: 25px solid red;
+}
+
+.caixa{
+  float: left;
+  display: inline-block;
+  background-color: blue;
+  height: 100px;
+  width: 20%;
+  margin: 50px;
+  margin top: 100px;
+  margin-right: 70px;
+  margin: 100px 70px 50px 50px;
+  border: 5px dotted red;
+  border-left: 25px solid green;
+}
+
+.caixa h3{
+  color: white;
+}
+
+.texto-comum:hover{
+  font-size: 25px;
+  color: orange;
+  border: 2px solid black;
+}
+
+.texto-comum{
+  font-size: 20px;
+}
