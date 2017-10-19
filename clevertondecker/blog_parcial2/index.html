@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyProfile</title>
+		 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+		<link rel="stylesheet" href="css/style.css">
+  	</head>
+ 
+
+			 <SECTION id="Cabeçalho"> <!-- Section Inicio-->
+   				<body> <!-- Body Inicio-->
+					<header> <!-- Header Inicio-->
+						<h1 class="artigo "> Find me</h1>
+					</header> <!-- Header Fim-->
+				</body> <!-- Body Fim-->
+			</SECTION><!-- Section Fim-->
+</SECTION id="cabeçalho"> <!-- Section FIM-->
+
+
+<hr/>
+
+
+         
+<br/>
+      <nav id="menuSuperior">
+    <ul class="menu">
+        <li ><a href="#" class="btn btn-large" align="right"  >Home</a></li>
+        <li ><a href="#" class="btn btn-large" align="right" >Produtos</a></li>
+        <li ><a href="#" class="btn btn-large" align="right" >Missão</a></li>
+        <li ><a href="#" class="btn btn-large" align="right" >Links</a></li>
+        <li ><a href="#" class="btn btn-large" align="right" >Contato</a></li>
+    </ul> 
+</nav>
+<hr/>
+
+ 
+
+
+
+			<section class="header">  <!-- Section Inicio-->
+				<figure>
+					<div>
+					<img id="perfil-imagem-2" src="perfil1.jpg" alt="Imagem de perfil" align="left">
+					<p> Sed id laoreet massa. Quisque ac metus libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;  eu mauris ac pulvinar. Donec at rhoncus ipsum. In non enim venenatis libero hendrerit bibendum ultricies ac augue.
+					</div>
+				</figure>
+			</section>  <!-- Section Fim-->
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><hr/>
+
+<!-- Testimonials section -->
+<section id="testimonials" class="section testimonials no-padding">
+
+          <li>
+            <div class="col-md-12">
+              <blockquote>
+                <h1>"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Phasellus non dolor nibh. Nullam elementum Aenean eu leo quam..." </h1>
+                <p>Rene Brown, Open Window production</p>
+              </blockquote>
+            </div>
+          </li>
+           <li>
+            <div class="col-md-12">
+              <blockquote>
+                   <h1>"Cras dictum tellus dui, vitae sollicitudin ipsum. Phasellus non dolor nibh. Nullam elementum tellus pretium feugiat shasellus non dolor nibh. Nullam elementum tellus pretium feugiat." </h1>
+                <p>Brain Rice, Lexix Private Limited.</p>
+              </blockquote>
+            </div>
+          </li>
+           <li>
+            <div class="col-md-12">
+              <blockquote>
+                <h1>"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Phasellus non dolor nibh. Nullam elementum Aenean eu leo quam..." </h1>
+                <p>Rene Brown, Open Window production</p>
+              </blockquote>
+            </div>
+          </li>
+</section>
+<!-- Testimonials section --> 
+
+
+<section id="account" class="section account no-padding">
+ <!-- Section Inicio-->
+   	<body> <!-- Body Inicio-->
+			<header> <!-- Header Inicio-->
+				<h1 class="artigo "> Account</h1>
+				<h3> Profile</h3><hr/>
+				<nav>
+					<p> Curabitur rutrum mi sem, id accumsan dui condimentum consequat. Quisque commodo ex eu augue dignissim placerat. Cras scelerisque ultrices sapien vitae molestie. Vestibulum orci mi, ultrices in tincidunt eu, vestibulum nec lectus. Cras dapibus lacus vel neque sollicitudin, ac suscipit massa porta. Nam lacinia, massa ut pretium interdum, ipsum diam accumsan purus, ac interdum diam odio non metus. Fusce pretium, mi in ultricies lacinia, magna magna convallis metus, eget rhoncus sapien dui eu turpis. Quisque eget lorem vitae diam luctus vehicula. Etiam pretium egestas nisi et viverra. Quisque congue sem id arcu suscipit gravida. Morbi id sollicitudin quam. </p>
+				</nav>
+			</header> <!-- Header Fim-->
+	</body> <!-- Body Fim-->
+</section><!-- Section Fim-->
+<br/>
+
+<section id="services" class="services account no-padding">
+ <!-- Section Inicio-->
+    <body> <!-- Body Inicio-->
+      <header> <!-- Header Inicio-->
+        <h1 class="artigo "> Services</h1>
+        <h3>Controle de navegação </h3><hr/>
+        <nav>
+      <div>
+O <em>Squid</em>, um servidor de <em>Proxy</em>, trabalha como saída principal da rede. Com isso, podemos centralizar nosso foco em segurança (políticas de acesso, autenticação, etc.) em uma única máquina.
+<br/><br/>
+O Squid trabalha com os principais protocolos da Internet, alguns deles são: HTTP, HTTPS, FTP.
+<br/><br/>
+O Squid é um Software Livre licenciado pela GPL, sua utilização pode nos trazer várias vantagens, como: 
+<ul>
+<li> Autenticação;
+<li> Controle de acesso;
+<li> Cache; 
+<li> Controle centralizado;
+<li> Registros de acesso, etc. 
+</ul><br/>
+
+Ele também atua como Proxy transparente evitando que usuários "espertinhos" possam burlar o controle de acesso.
+<br/><br/>
+Bem, chega de teoria e vamos começar o trabalho. Este tutorial é voltado à distribuições baseadas no <em>Debian</em>.
+<br/><br/>
+O Squid é formado de um único pacote, o que torna sua instalação extremamente fácil:
+<br/><br/>
+<strong># apt-get install squid</strong>
+<br/><br/>
+<br/><br/>
+
+Depois que instalamos o Squid, vamos renomear o arquivo de configuração para criarmos um do zero:
+<br/><br/>
+<strong># mv /etc/squid/squid.conf /etc/squid/squid.conf.orig<br/>
+# pico /etc/squid/squid.conf</strong>
+<br/><br/>
+<div class='codigo'>
+http_port 3128<br/>
+visible_hostname KORZOS
+<br/><br/>
+acl all src 0.0.0.0/0.0.0.0<br/>
+acl manager proto cache_object<br/>
+acl localhost src 127.0.0.1/255.255.255.255<br/>
+acl SSL_ports port 443 563<br/>
+acl Safe_ports port 21 80 443 563 70 210 280 488 59 777 901 1025-65535<br/>
+acl purge method PURGE<br/>
+acl CONNECT method CONNECT
+<br/><br/>
+http_access allow manager localhost<br/>
+http_access deny manager<br/>
+http_access allow purge localhost<br/>
+http_access deny purge<br/>
+http_access deny !Safe_ports<br/>
+http_access deny CONNECT !SSL_ports
+<br/><br/>
+acl redelocal src 192.168.0.0/24
+<br/><br/>
+http_access allow localhost<br/>
+http_access allow redelocal<br/>
+http_access deny all
+</div>
+<br/><br/>
+
+Depois, dê um:
+<br/><br/>
+<strong># /etc/init.d/squid restart</strong>
+<br/><br/>
+...Que seu Squid já deve estar em pleno funcionamento.
+<br/><br/>
+   
+        </nav>
+      </header> <!-- Header Fim-->
+  </body> <!-- Body Fim-->
+</section><!-- Section Fim-->
+<br/>
+
+
+<SECTION id="artigo"> <!-- Section Inicio-->
+   	<body> <!-- Body Inicio-->
+			<header> <!-- Header Inicio-->
+				<h1 class="artigo "> News</h1>
+				<h3> Curabitur rutrum mi sem</h3><hr/>
+				<nav>
+					<p> Curabitur rutrum mi sem, id accumsan dui condimentum consequat. Quisque commodo ex eu augue dignissim placerat. Cras scelerisque ultrices sapien vitae molestie. Vestibulum orci mi, ultrices in tincidunt eu, vestibulum nec lectus. Cras dapibus lacus vel neque sollicitudin, ac suscipit massa porta. Nam lacinia, massa ut pretium interdum, ipsum diam accumsan purus, ac interdum diam odio non metus. Fusce pretium, mi in ultricies lacinia, magna magna convallis metus, eget rhoncus sapien dui eu turpis. </p>
+				</nav>
+			</header> <!-- Header Fim-->
+	</body> <!-- Body Fim-->
+</SECTION><!-- Section Fim-->
+<br/>
+
+
+
+<SECTION id="Comentarios"> <!-- Section Inicio-->
+   	<body> <!-- Body Inicio-->
+			<header> <!-- Header Inicio-->
+				<h1 class="artigo"> Deixe um Comentário:</h1>
+<br/>
+					<form method="post" action="php/contact.php" name="cform" id="cform"> <!-- Form Inicio-->
+         				 <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your name..." >
+         				 <input name="email" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Email Address..." >
+				<nav><br/>
+					<textarea cols=60 id="opiniao" rows="5" name="opiniao" maxlength="300" wrap="hard" style="resize: none" placeholder="..." ></textarea>
+<br/><br/>
+					<button type="reset" class="btn btn-large"> Limpar </button value="Limpar">    <!--  Botão Limpa  -->   
+					<a href="#" class="btn btn-large">Voltar</a> </div>
+				</nav><br/>
+		</form>  <!-- Form Fim-->
+     </header>
+	</body> <!-- Body Fim-->
+</SECTION><!-- Section Fim-->
+<br/>
+					
+<br/>
+
+	
+<br/><br/>
+
+<!-- Footer section -->
+<section id="contact" class="section contact no-padding">  <!-- Section Inicio-->
+<footer class="footer">
+  <div class="footer-top section">
+        <div class="footer-col col-md-6">
+          <h5> Contacts :</h5>
+          <h5>Santa Catarina, Brazil.<br>
+            1800 1234 56789 / 98532100987<br>
+            Decker.cleverton@gmail.com
+          <br><br/>All Rights Reserved. Made with</h5><br/>
+        </div>
+        <div class="footer-col col-md-3">
+        </div>
+      </div>
+    </div>
+  </div>
+</section> <!-- Section Fim-->
+</footer><!-- footer top --> 
+        
+
+
+</html>  <!-- FIM html -->

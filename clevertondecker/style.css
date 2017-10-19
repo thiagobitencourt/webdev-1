@@ -1,0 +1,93 @@
+h1 {
+  color: black;
+}
+
+h3 {
+  color: black;
+}
+
+h2 {
+  color: black;
+}
+
+header {
+  color: black;
+  background-color:#828282;
+  border-radius: white solid;
+  padding: 0px;
+
+
+}
+
+.artigo {
+  background-color: #cccccc;
+  color: black;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid black;
+
+}
+
+.surprise:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: black;
+  margin: 0px;
+  padding-top: 0px;
+  border: 1px solid black;
+}
+
+.importante {
+  color: black;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid black;
+
+}
+
+#rodape {
+  /* style espe.. cor */
+  /*
+    border-style: dashed;
+    border-width: 1px;
+    border-color: green;
+  */
+  border: 1px solid black;
+  border-radius: 15px;
+  /*border-radius: 100px;*/
+}
+
+.btn {
+  background-color: #BCD2EE;  /* Fundo Botão */
+  border: 3px solid #1C1C1C;  /* borda preta */
+  color: black;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-decoration: underline;
+
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.figuras {
+  width: 300px;
+  height: 200px;
+}
+
+.perfil img.perfil-imagem {
+  width: 100px;
+  height: 100px;
+}
+
+.perfil img.perfil-imagem-2 {
+  width: 150px;
+  height: 100;
+  border: 1px solid black;
+}
+
+.texto-comum:hover {
+  font-size: 25px;
+  color: black;
+  border: 10px solid black;
+}

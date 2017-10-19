@@ -1,0 +1,155 @@
+h1 {
+  color: black;
+  text-indent: 600px
+  line-height: 22.4px;
+}
+
+h3 {
+  color: black;
+}
+
+h2 {
+  color: black;
+}
+
+p {
+  font-size: 13px;
+  line-height: 22.4px;
+  color: #fff;
+
+}
+
+header {
+  color: black;
+  background-color:black;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid black;
+  text-indent: 30px
+}
+
+.menu li {
+display: inline;
+padding-left: 15px;
+padding-right: 15px;
+background-color: black;
+border: 1px  solid  black;
+
+}
+
+
+.menu ul li a:hover {
+    background-color:#D6D6D6;
+    color: #6D6D6D;
+    border-bottom:3px solid #EA0000;
+}
+
+.artigo {
+  background-color: #181818;
+  color: #FFFFFF;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid black;
+
+}
+
+
+
+#rodape {
+  /* style espe.. cor */
+  /*
+    border-style: dashed;
+    border-width: 1px;
+    border-color: green;
+  */
+  border: 1px solid black;
+  border-radius: 15px;
+  /*border-radius: 100px;*/
+}
+
+
+/* ------------------------------------------------------------------------------
+  Botão estilo Inicio
+-------------------------------------------------------------------------------*/
+
+.btn {
+  background-color: #CDCDB4;
+  color: black;
+  font-size: 13px;
+  font-weight: 600;
+  border: 0;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.btn:hover, .btn:focus {
+  background-color: #3d3d3d;
+  color: #fff;
+}
+.btn-large {
+  padding: 15px 40px;
+}
+
+/* ------------------------------------------------------------------------------
+  Botão estilo FIM
+-------------------------------------------------------------------------------*/
+
+.perfil img.perfil-imagem-1 {
+  width: 150px;
+  height: 100;
+  border: 10px solid black;
+  margin: auto;
+  text-align: center;
+  padding: none;
+}
+
+/* ------------------------------------------------------------------------------
+   Footer
+-------------------------------------------------------------------------------*/
+.footer {
+  text-align: left;
+}
+.footer-top {
+  background-color: #fff;
+  padding-top: 50px;
+}
+.footer-bottom {
+  background-color: #fff;
+  padding: 20px 0;
+}
+.footer .footer-col {
+  margin-bottom: 80px;
+}
+
+.footer h3 {
+  margin-bottom: 20px;
+    color: #181818;
+}
+.footer h5 {
+  margin-bottom: 20px;
+    color: #181818;
+}
+.footer p {
+  color: #181818;
+}
+.footer a {
+  color: #fff;
+}
+.footer a:hover {
+  color: #fff;
+}
+.footer .footer-share {
+  margin-top: 0;
+}
+.footer .footer-share li {
+  display: inline-block;
+  float: none;
+}
+
+.footer .fa-heart {
+  color: #fff;
+  font-size: 16px;
+  margin: 0 2px;
+}
