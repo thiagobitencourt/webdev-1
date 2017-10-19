@@ -1,0 +1,65 @@
+h1 {
+  color: red;
+}
+
+h3 {
+  color: blue;
+}
+
+h2 {
+  color: pink;
+}
+
+header {
+  color: #e6e600;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.artigo {
+  background-color: #cccccc;
+}
+
+.importante {
+  color: #4B0082;
+}
+
+#rodape {
+  /* style espe.. cor */
+  /*
+    border-style: dashed;
+    border-width: 1px;
+    border-color: green;
+  */
+  border: 1px solid green;
+  border-radius: 15px;
+  /*border-radius: 100px;*/
+}
+
+.btn {
+  background-color: #3CB371;
+  border: 3px solid #2E8B57;
+  color: #ffffff;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.figuras {
+  width: 300px;
+  height: 200px;
+}
+
+.perfil img.perfil-imagem {
+  width: 100px;
+  height: 100px;
+}s
+
+.perfil img#perfil-imagem-2 {
+  width: 150px;
+  height: 100;
+}
+.fundo{
+	background-color = green;
+}
+
+
