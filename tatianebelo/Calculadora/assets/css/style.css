@@ -1,0 +1,57 @@
+
+h1 {
+  color: black;
+}
+
+header {
+  color: #F1F1F1;
+  background-color: rgba(#F1F1F1);
+}
+
+.container {
+
+	padding: 15px 50px 15px 15px;
+	
+}
+.cabecalho{
+	margin-top: 30%
+	height: 100px;
+	padding-left: 15px;
+  	padding-right: 15px;
+  	border-radius: 20px;
+  	background-color: pink;
+  	border: 1px solid #ccc]
+  	cursor: pointer;
+
+}
+
+.btn{ /*colocar botao que cursor pisca*/
+	height: 45px;
+	padding: 10px;
+	color: black;
+	background-color: white;
+	border: 2px solid black;
+
+}
+
+.btn-green{
+	border-color: black;
+}
+
+.btn-green:hover{
+	color: white;
+	background-color: red;
+}
+
+.btn-blue{
+	border-color: #4CAF50;
+}
+
+.btn-blue:hover{
+	color: white;
+	background-color: #2196f3
+}
+
+.text{
+	border-color: blue;
+}
