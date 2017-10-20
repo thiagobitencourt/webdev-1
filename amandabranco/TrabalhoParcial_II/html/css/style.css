@@ -4,7 +4,7 @@ button,
 input,
 select,
 textarea{
-	color: #28aacb;
+
 }
 
 body{
@@ -76,7 +76,6 @@ textarea{
 	font-size: 22px;
 	text-transform: uppercase;
 	color: #28aacb;
-	font-family: 
 }
 
 #menu-principal ul li a,
@@ -85,6 +84,7 @@ textarea{
 	font-size: 22px;
 	text-transform: uppercase;
 	color: #28aacb;
+	font-weight: 500;
 }
 
 #menu-principal ul li a:hover{
@@ -134,4 +134,42 @@ hr.linhaazul {
 
 .destaque-item a: hover{
 	color: #cccccc;
+	padding: 15px 0px;
+}
+
+#depoimento {
+	background-color: #cccccc;
+
+}
+
+#depoimento p{
+	font-size: 22px
+	color: 0e0f0f;
+	font-weight: normal;
+}
+
+#depoimento h3{
+	font-family:'Georgia',serif;
+
+}
+
+#rodape {
+	background-color:#28aacb;
+}
+
+#menu-rodape{
+	text-align: center;
+
+}
+
+#menu-rodape ul li{
+	display: inline;
+	margin: 0px 15px;
+}
+
+#menu-rodape ul li a{
+	font-size: 18px;
+	color:#fff;
+	text-transform: uppercase;
+	font-weight: 500;
 }
