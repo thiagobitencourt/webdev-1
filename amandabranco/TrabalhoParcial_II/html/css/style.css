@@ -4,7 +4,7 @@ button,
 input,
 select,
 textarea{
-	color: #00aeef;
+	color: #28aacb;
 }
 
 body{
@@ -55,8 +55,83 @@ textarea{
 
 #logo a {
 	background-image: url(../img/logo.jpg);
-	width: 214px;
-	height: 74px; 
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 100px; 
 	display: block;
 	text-indent: -9999px;
+}
+
+#menu-principal{
+	float: right;
+	margin-top: 25px;
+}
+
+#menu-principal ul li{
+	display: inline;
+	margin-left: 29px; 
+}
+
+#menu-principal ul li a{
+	font-size: 22px;
+	text-transform: uppercase;
+	color: #28aacb;
+	font-family: 
+}
+
+#menu-principal ul li a,
+#menu-principal ul li a:link,
+#menu-principal ul li a:visited{
+	font-size: 22px;
+	text-transform: uppercase;
+	color: #28aacb;
+}
+
+#menu-principal ul li a:hover{
+	color:#a4a4a4;
+}
+
+#menu-principal ul li a.ativo{
+	color:#a4a4a4;
+}
+
+hr.linhacinza {
+	border-top: 3px solid #cccccc;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+hr.linhaazul {
+	border-top:0px solid #28aacb;
+	border-bottom:3px solid #28aacb;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.destaque-item {
+	margin-top:30px;
+
+}
+
+.destaque-item h2{
+	font-size: 17px;
+	font-weight: 700;
+	color: #28aacb;
+}
+
+.destaque-item p{
+	font-size: 15px;
+	color: #2c2c2c;
+
+}
+
+.destaque-item a,
+.destaque-item a:link,
+.destaque-item a:visited {
+	font-size: 14px;
+	color: #28aacb;
+}
+
+.destaque-item a: hover{
+	color: #cccccc;
 }
