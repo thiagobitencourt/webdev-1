@@ -1,0 +1,48 @@
+.container {
+  padding: 15px 30px 15px 30px;
+
+}
+
+.cabecalho{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  border: 3px solid #ccc;
+}
+
+section {
+  padding-top: 20px;
+}
+
+.btn.green:hover{
+  cursor: pointer;
+  background-color: #4caf50;
+  text-decoration: overline;
+}
+
+.btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 3px solid #3cb371;
+  border-radius: 20px;
+  background-color:#ffffff;
+  text-transform: uppercase;
+}
+
+.btn.blue {
+  border-color: blue;
+}
+
+.btn.blue:hover {
+  background-color:blue;
+}
+
+.btn.red {
+  border-color: red;
+}
+
+.btn.red:hover {
+  background-color:red;
+}
