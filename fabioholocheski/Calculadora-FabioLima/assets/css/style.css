@@ -1,0 +1,35 @@
+.container{
+  padding: 15px 7% 15px 7%;
+}
+
+.cabecalho{
+  padding: 15px;
+  height: 100px;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  border: 2px solid #0000ff;
+}
+.btn {
+      border: none;
+      color: black;
+      padding: 15px 32px;
+      background-color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+}
+.btn-green{
+  border: 2px solid green;
+}
+.btn1:hover {
+    background-color: green;
+    color: white;
+}
+.btn2:hover{
+  background-color: blue;
+  color: white;
+}
+.btn-blue{
+  border: 2px solid blue;
+}
