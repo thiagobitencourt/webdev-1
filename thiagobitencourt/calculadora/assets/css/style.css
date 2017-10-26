@@ -11,12 +11,26 @@
   border: 1px solid #ccc;
 }
 
+.calculadora-input {
+  height: 45px;
+  font-size: 25px;
+}
+
+.calculadora .btns-line {
+  margin-bottom: 10px;
+}
+
+.calculadora .btns-line:first-child {
+  margin-top: 10px;
+}
+
 .btn {
   height: 45px;
   padding: 10px;
   background-color: white;
   border: 2px solid black;
   cursor: pointer;
+  min-width: 50px;
 }
 
 .btn-green {
