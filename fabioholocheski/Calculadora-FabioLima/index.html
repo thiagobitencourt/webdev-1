@@ -15,35 +15,35 @@
     </header>
   <section>
       <input disabled class="label" type="text">
-      <button class="btn btn-green btn1">Calcular</button>
+      <button type="button" onclick="calcular()" class="btn btn-green btn1">Calcular</button>
   </section>
 
   <section>
-    <button class="btnCalc btn-blue btn2"> 7 </button>
-    <button class="btnCalc btn-blue btn2"> 8 </button>
-    <button class="btnCalc btn-blue btn2"> 9 </button>
-    <button class="btnCalc btn-blue btn2"> / </button>
+    <button type="button" onclick="valor(this, event, 7)" class="btnCalc btn-blue btn2"> 7 </button>
+    <button type="button" onclick="valor(this, event, 8)" class="btnCalc btn-blue btn2"> 8 </button>
+    <button type="button" onclick="valor(this, event, 9)" class="btnCalc btn-blue btn2"> 9 </button>
+    <button type="button" onclick="valor(this, event, '/')" class="btnCalc btn-blue btn2"> / </button>
   </selection>
 
   <section>
-    <button class="btnCalc btn-blue btn2"> 4 </button>
-    <button class="btnCalc btn-blue btn2"> 5 </button>
-    <button class="btnCalc btn-blue btn2"> 6 </button>
-    <button class="btnCalc btn-blue btn2"> * </button>
+    <button type="button" onclick="valor(this, event, 4)" class="btnCalc btn-blue btn2"> 4 </button>
+    <button type="button" onclick="valor(this, event, 5)" class="btnCalc btn-blue btn2"> 5 </button>
+    <button type="button" onclick="valor(this, event, 6)" class="btnCalc btn-blue btn2"> 6 </button>
+    <button type="button" onclick="valor(this, event, '*')" class="btnCalc btn-blue btn2"> * </button>
   </section>
 
   <section>
-    <button class="btnCalc btn-blue btn2"> 1 </button>
-    <button class="btnCalc btn-blue btn2"> 2 </button>
-    <button class="btnCalc btn-blue btn2"> 3 </button>
-    <button class="btnCalc btn-blue btn2"> - </button>
+    <button type="button" onclick="valor(this, event, 1)" class="btnCalc btn-blue btn2"> 1 </button>
+    <button type="button" onclick="valor(this, event, 2)" class="btnCalc btn-blue btn2"> 2 </button>
+    <button type="button" onclick="valor(this, event, '3')" class="btnCalc btn-blue btn2"> 3 </button>
+    <button type="button" onclick="valor(this, event, '-')"class="btnCalc btn-blue btn2"> - </button>
   </section>
 
   <section>
-    <button class="btnCalc btn-blue btn2"> C </button>
-    <button class="btnCalc btn-blue btn2"> 0 </button>
-    <button class="btnCalc btn-blue btn2"> . </button>
-    <button class="btnCalc btn-blue btn2"> + </button>
+    <button type="button" onclick="valor(this, event, 'C')"class="btnCalc btn-blue btn2"> C </button>
+    <button type="button" onclick="valor(this, event, 0"class="btnCalc btn-blue btn2"> 0 </button>
+    <button type="button" onclick="valor(this, event, '.')"class="btnCalc btn-blue btn2"> . </button>
+    <button type="button" onclick="valor(this, event, '+')"class="btnCalc btn-blue btn2"> + </button>
   </section>
 
   <script src="src/calculadora.js"></script>
