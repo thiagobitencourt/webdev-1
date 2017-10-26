@@ -14,16 +14,44 @@
 	<header class = "container cabecalho" align = "center">
 	<h1> Calculadora</h1>
 	<span><a href="https://github.com/HiqueA" target="_blank">Henrique Azevedo</a></span>
+	<link rel = "stylesheet" href ="assets/css/style.css">
 	</header>
 
-
-
-	<section>
-	<input type="text">
-	<button type = "button" class="btn btn1">Aplicar</button>
+	 <section>
+     <input disabled class="label" type="text">
+     <button onclick="calcular()" class="btn btn-green btn1">Calcular</button>
 	</section>
 
+	<section>
+	<button onclick="valor(this, event, 7)" class="btnCalc btn-blue btn2"> 7 </button>
+   <button onclick="valor(this, event, 8)" class="btnCalc btn-blue btn2"> 8 </button>
+   <button onclick="valor(this, event, 9)" class="btnCalc btn-blue btn2"> 9 </button>
+   <button onclick="valor('/')" class="btnCalc btn-blue btn2"> / </button>
+ </section>
 
+ <section>
+   <button onclick="valor(this, event, 4)" class="btnCalc btn-blue btn2"> 4 </button>
+   <button onclick="valor(this, event, 5)" class="btnCalc btn-blue btn2"> 5 </button>
+   <button onclick="valor(this, event, 6)" class="btnCalc btn-blue btn2"> 6 </button>
+   <button onclick="valor('*')" class="btnCalc btn-blue btn2"> * </button>
+ </section>
+
+ <section>
+   <button onclick="valor(this, event, 1)" class="btnCalc btn-blue btn2"> 1 </button>
+   <button onclick="valor(this, event, 2)" class="btnCalc btn-blue btn2"> 2 </button>
+   <button onclick="valor(this, event, 3)" class="btnCalc btn-blue btn2"> 3 </button>
+   <button onclick="valor('-')" class="btnCalc btn-blue btn2"> - </button>
+ </section>
+
+ <section>
+   <button onclick="valor('R')" class="btnCalc btn-blue btn2"> R </button>
+   <button onclick="valor(this, event, 0)" class="btnCalc btn-blue btn2"> 0 </button>
+   <button onclick="valor('.')" class="btnCalc btn-blue btn2"> . </button>
+   <button onclick="valor('+')" class="btnCalc btn-blue btn2"> + </button>
+ </section>
+ 
+	<script src= "js/calculadora.js"></script>
+	
 
 
 </body>

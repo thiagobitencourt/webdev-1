@@ -1,43 +1,51 @@
 .container{
-	margin: 15px 7% 15px 7%;
+ padding: 15px 7% 15px 7%;
 }
 
 .cabecalho{
-	margin-top: 35px;
-	height : 100px;
-	background-color: #f1f1f1;
-	border-radius: 20%;
-	border-color: #ccc;
-	
-	
+ padding: 15px;
+ height: 100px;
+ background-color: #f1f1f1;
+ border-radius: 20px;
+ border: 2px solid #0000ff;
+}
+.btn {
+     border: none;
+     color: black;
+     padding: 15px 32px;
+     background-color: white;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+}
+.label {
+ padding: 15px 3px;
+ margin-top: 10px;
+ font-size: 25px;
 }
 
-.btn{
-	 background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
+.btnCalc {
+     margin: 3px;
+     color: black;
+     padding: 22px 22px;
+     background-color: white;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 15px;
 }
-.btn1 {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #4CAF50;
+.btn-green{
+ border: 2px solid green;
 }
-
 .btn1:hover {
-    background-color: #4CAF50;
-    color: white;
+   background-color: green;
+   color: white;
 }
-
-
-.input:focus {
-    background-color: yellow;
+.btn2:hover{
+ background-color: blue;
+ color: white;
+}
+.btn-blue{
+ border: 2px solid blue;
 }
