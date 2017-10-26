@@ -17,41 +17,60 @@
 	<link rel = "stylesheet" href ="assets/css/style.css">
 	</header>
 
-	 <section>
-     <input disabled class="label" type="text">
-     <button onclick="calcular()" class="btn btn-green btn1">Calcular</button>
-	</section>
 
-	<section>
-	<button onclick="valor(this, event, 7)" class="btnCalc btn-blue btn2"> 7 </button>
-   <button onclick="valor(this, event, 8)" class="btnCalc btn-blue btn2"> 8 </button>
-   <button onclick="valor(this, event, 9)" class="btnCalc btn-blue btn2"> 9 </button>
-   <button onclick="valor('/')" class="btnCalc btn-blue btn2"> / </button>
- </section>
+    <main class="container">
+      <section>
+        <input id="calculadora-display" disabled type="text" class="calculadora-input">
+      </section>
 
- <section>
-   <button onclick="valor(this, event, 4)" class="btnCalc btn-blue btn2"> 4 </button>
-   <button onclick="valor(this, event, 5)" class="btnCalc btn-blue btn2"> 5 </button>
-   <button onclick="valor(this, event, 6)" class="btnCalc btn-blue btn2"> 6 </button>
-   <button onclick="valor('*')" class="btnCalc btn-blue btn2"> * </button>
- </section>
+      <section class="calculadora">
+        <section class="btns-line">
+          <button type="button" value="7"  class="btn btn-blue numero">7</button>
+          <button type="button" value="8" class="btn btn-blue numero">8</button>
+          <button type="button" value="9" class="btn btn-blue numero">9</button>
+          <button type="button" value="+" class="btn btn-blue operacao">+</button>
+          <button type="button" class="btn btn-green">Calcular</button>
+        </section>
 
- <section>
-   <button onclick="valor(this, event, 1)" class="btnCalc btn-blue btn2"> 1 </button>
-   <button onclick="valor(this, event, 2)" class="btnCalc btn-blue btn2"> 2 </button>
-   <button onclick="valor(this, event, 3)" class="btnCalc btn-blue btn2"> 3 </button>
-   <button onclick="valor('-')" class="btnCalc btn-blue btn2"> - </button>
- </section>
+        <section class="btns-line">
+          <button type="button" value="4" class="btn btn-blue numero">4</button>
+          <button type="button" value="5" class="btn btn-blue numero">5</button>
+          <button type="button" value="6" class="btn btn-blue numero">6</button>
+          <button type="button" value="-" class="btn btn-blue operacao">-</button>
+        </section>
 
- <section>
-   <button onclick="valor('R')" class="btnCalc btn-blue btn2"> R </button>
-   <button onclick="valor(this, event, 0)" class="btnCalc btn-blue btn2"> 0 </button>
-   <button onclick="valor('.')" class="btnCalc btn-blue btn2"> . </button>
-   <button onclick="valor('+')" class="btnCalc btn-blue btn2"> + </button>
- </section>
- 
-	<script src= "js/calculadora.js"></script>
-	
+        <section class="btns-line">
+          <button type="button" value="1" class="btn btn-blue numero">1</button>
+          <button type="button" value="2" class="btn btn-blue numero">2</button>
+          <button type="button" value="3" class="btn btn-blue numero">3</button>
+          <button type="button" value="*" class="btn btn-blue operacao">*</button>
+        </section>
+
+        <section class="btns-line">
+          <button type="button" id="botao-limpar" class="btn btn-blue">C</button>
+          <button type="button" value="0" class="btn btn-blue numero">0</button>
+          <button type="button" class="btn btn-blue">.</button>
+          <button type="button" value="/" class="btn btn-blue operacao">/</button>
+        </section>
+
+      </section>
+    </main>
+
+    <script src="js/calculadora.js"></script>
+    <script>
+      console.log("Bem vindo ao fantástico mundo Javascript!");
+      var x = 10;
+      var y = 20;
+      var z = "abc";
+      console.log("A soma dos numeros é: " + (x + y));
+      // alert("A soma dos numeros é: " + (x + y));
+      /*
+       Tudo isso é
+       um comentario
+      */
+    </script>
+
+
 
 
 </body>

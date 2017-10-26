@@ -1,51 +1,61 @@
-.container{
- padding: 15px 7% 15px 7%;
+.container {
+  margin: 15px 7% 15px 7%;
 }
 
-.cabecalho{
- padding: 15px;
- height: 100px;
- background-color: #f1f1f1;
- border-radius: 20px;
- border: 2px solid #0000ff;
+.cabecalho {
+  margin-top: 35px;
+  padding: 15px;
+  height: 100px;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  border: 1px solid #ccc;
 }
+
+.calculadora-input {
+  height: 45px;
+  font-size: 25px;
+}
+
+.calculadora .btns-line {
+  margin-bottom: 10px;
+}
+
+.calculadora .btns-line:first-child {
+  margin-top: 10px;
+}
+
 .btn {
-     border: none;
-     color: black;
-     padding: 15px 32px;
-     background-color: white;
-     text-align: center;
-     text-decoration: none;
-     display: inline-block;
-     font-size: 16px;
-}
-.label {
- padding: 15px 3px;
- margin-top: 10px;
- font-size: 25px;
+  height: 45px;
+  padding: 10px;
+  background-color: white;
+  border: 2px solid black;
+  cursor: pointer;
+  min-width: 50px;
 }
 
-.btnCalc {
-     margin: 3px;
-     color: black;
-     padding: 22px 22px;
-     background-color: white;
-     text-align: center;
-     text-decoration: none;
-     display: inline-block;
-     font-size: 15px;
+.btn-green {
+  border-color: #4CAF50;
 }
-.btn-green{
- border: 2px solid green;
+
+.btn-green:hover {
+  color: white;
+  background-color: #4CAF50;
 }
-.btn1:hover {
-   background-color: green;
-   color: white;
+
+.btn-blue {
+  border-color: #2196f3;
 }
-.btn2:hover{
- background-color: blue;
- color: white;
+
+.btn-blue:hover {
+  color: white;
+  background-color: #2196f3 ;
 }
-.btn-blue{
- border: 2px solid blue;
+
+.btn-red {
+  border-color: #f44336;
+}
+
+.btn-red:hover {
+  color: white;
+  background-color: #f44336;
 }
