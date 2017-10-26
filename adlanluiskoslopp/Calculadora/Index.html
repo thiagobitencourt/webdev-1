@@ -1,70 +1,83 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-    <title>Trabalhando com Semantica</title>
-  	<link rel="stylesheet" href="Assets/CSS/Style.css">
+  <title>Trabalhando com Semantica</title>
+  <link rel="stylesheet" href="Assets/CSS/Style.css">
 
-    <title>Calculadora</title>
-  </head>
-  <body>
-    <header class="container cabecalho" align="center">
-      <h1>Calculadora</h1>
-      <span>
-        <a href="https://github.com/ALKoslopp" target="blank"> Adlan Luis Koslopp</a>
-      </span>
-   </header>
+  <title>Calculadora</title>
+</head>
+<body>
+  <header class="container cabecalho" align="center">
+    <h1>Calculadora</h1>
+    <span>
+      <a href="https://github.com/ALKoslopp" target="blank"> Adlan Luis Koslopp</a>
+    </span>
+  </header>
 
-   <section class="centralizado" align="center">
-     <input class"input" type="text" name="" value="">
-     <button class="btn green" type="button" name="calcular">Calcular</button>
+  <section class="centralizado" align="center">
+    <input id="calculadora-display" disabled class"input" type="text" name="" value="">
+    <button class="btn green" type="button" name="calcular">Calcular</button>
 
-     <table align="center">
-       <tbody>
-         <tr>
-           <th><button class="btn greenC"type="button" name="button"><b>Limpar</b></button></th>
-           <th><button class="btn greenC"type="button" name="button"><b>Raiz</b></button></th>
-           <th><button class="btn greenC"type="button" name="button"><b>%</b></button></th>
-           <th><button class="btn greenC"type="button" name="button"><b>dividir</b></button></th>
-         </tr>
+    <table align="center">
+      <tbody>
+        <tr>
+          <th><button class="btn greenC"type="button" name="reset"><b>Limpar</b></button></th>
+          <th><button class="btn greenC"type="button" name="button"><b>Raiz</b></button></th>
+          <th><button class="btn greenC"type="button" name="button"><b>%</b></button></th>
+          <th><button class="btn greenC"type="button" name="button"><b>dividir</b></button></th>
+        </tr>
 
-         <tr>
-           <th><button class="btn greenC"type="button" name="button"><b>7</b></button></th>
-           <th><button class="btn greenC"type="button" name="button"><b>8</b></button></th>
-           <th><button class="btn greenC"type="button" name="button"><b>9</b></button></th>
-           <th><button class="btn greenC"type="button" name="button"><b>multiplicar</b></button></th>
-         </tr>
+        <tr>
+          <th><button class="btn greenC"type="button" name="button"><b>7</b></button></th>
+          <th><button class="btn greenC"type="button" name="button"><b>8</b></button></th>
+          <th><button class="btn greenC"type="button" name="button"><b>9</b></button></th>
+          <th><button class="btn greenC"type="button" name="button"><b>multiplicar</b></button></th>
+        </tr>
 
-         <tr>
-           <th><button class="btn greenC"type="button" name="button"><b>4</b></button></th>
-           <th><button class="btn greenC"type="button" name="button"><b>5</b></button></th>
-           <th><button class="btn greenC"type="button" name="button"><b>6</b></button></th>
-           <th><button class="btn greenC"type="button" name="button"><b>Subtrair</b></button></th>
-         </tr>
+        <tr>
+          <th><button class="btn greenC"type="button" name="button"><b>4</b></button></th>
+          <th><button class="btn greenC"type="button" name="button"><b>5</b></button></th>
+          <th><button class="btn greenC"type="button" name="button"><b>6</b></button></th>
+          <th><button class="btn greenC"type="button" name="button"><b>Subtrair</b></button></th>
+        </tr>
 
-         <tr>
-           <th><button class="btn greenC"type="button" name="button"><b>1</b></button></th>
-           <th><button class="btn greenC"type="button" name="button"><b>2</b></button></th>
-           <th><button class="btn greenC"type="button" name="button"><b>3</b></button></th>
-           <th><button class="btn greenC"type="button" name="button"><b>Somar</b></button></th>
-         </tr>
+        <tr>
+          <th><button class="btn greenC"type="button" name="button"><b>1</b></button></th>
+          <th><button class="btn greenC"type="button" name="button"><b>2</b></button></th>
+          <th><button class="btn greenC"type="button" name="button"><b>3</b></button></th>
+          <th><button class="btn greenC"type="button" name="button"><b>Somar</b></button></th>
+        </tr>
 
-         <tr>
-           <th><button class="btn greenC"type="button" name="button"><b>0</b></button></th>
-           <th><button class="btn greenC"type="button" name="button"><b>,</b></button></th>
-           <th><button class="btn greenC"type="button" name="button"><b>=</b></button></th>
-           <th><button class="btn greenC"type="button" name="button"><b>+</b></button></th>
-         </tr>
-       </tbody>
-     </table>
+        <tr>
+          <th><button class="btn greenC"type="button" name="button"><b>0</b></button></th>
+          <th><button class="btn greenC"type="button" name="button"><b>,</b></button></th>
+          <th><button class="btn greenC"type="button" name="button"><b>=</b></button></th>
+          <th><button class="btn greenC"type="button" name="button"><b>+</b></button></th>
+        </tr>
+      </tbody>
+    </table>
 
-   </section>
+  </section>
 
-   <section>
-     <button class="btn blue" type="button" name="calcular">Calcular</button>
-     <button class="btn red" type="button" name="calcular">Calcular</button>
-   </section>
+  <section>
+    <button class="btn blue" type="button" name="calcular">Calcular</button>
+    <button class="btn red" type="button" name="calcular">Calcular</button>
+  </section>
 
-  </body>
+  <script src="src/Calculadora.js">
+
+  </script>
+
+  <script type="text/javascript">
+    console.log("olá Mundo!!");
+    var x = 10;
+    var y = 20;
+    console.log(x+y);
+    //alert("a soma dos numeros é: " + (x+y));
+
+  </script>
+
+</body>
 </html>
