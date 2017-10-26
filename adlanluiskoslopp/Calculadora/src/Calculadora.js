@@ -15,6 +15,31 @@ var func = function(){
 
 func();
 
+function calcular(){
+  alert("Voce clicou em Calcular");
+}
+
+//funao que executa quando clica no botao
+function value(){
+  console.log(this, value);
+}
+
 window.onload = function(){
-  console.log("Termonou o evento Onload")
+  console.log("Termonou o evento Onload");
+}
+
+function limpar(){
+  console.log("voce clicou em limpar!!")
+}
+
+//funcao que chama um seletor especifico
+var calcular = document.querySelector(".btn");
+console.log(calcular);
+
+var botaoLimpar = document.getElementById("limpar");
+botaoLimpar.addEventListener("click", limpar);
+
+var botoesNumero = document.querySelectorAll("button.numero");
+for(var i = 0; i < botoesNumero.lenght; i++){
+  botoesNumero[i].addEventListener("click", value);
 }

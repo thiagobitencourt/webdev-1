@@ -18,43 +18,43 @@
 
   <section class="centralizado" align="center">
     <input id="calculadora-display" disabled class"input" type="text" name="" value="">
-    <button class="btn green" type="button" name="calcular">Calcular</button>
+    <button onclick="calcular()" class="btn green" type="button" name="calcular">Calcular</button>
 
     <table align="center">
       <tbody>
         <tr>
-          <th><button class="btn greenC"type="button" name="reset"><b>Limpar</b></button></th>
-          <th><button class="btn greenC"type="button" name="button"><b>Raiz</b></button></th>
-          <th><button class="btn greenC"type="button" name="button"><b>%</b></button></th>
-          <th><button class="btn greenC"type="button" name="button"><b>dividir</b></button></th>
+          <th><button id="limpar" class="btn greenC"type="button" name="limpar"><b>Limpar</b></button></th>
+          <th><button value="raiz quadrada" class="btn greenC operacao"type="button" name="button"><b>Raiz</b></button></th>
+          <th><button value="%" class="btn greenC operacao"type="button" name="button"><b>%</b></button></th>
+          <th><button value="Dividir" class="btn greenC operacao"type="button" name="button"><b>dividir</b></button></th>
         </tr>
 
         <tr>
-          <th><button class="btn greenC"type="button" name="button"><b>7</b></button></th>
-          <th><button class="btn greenC"type="button" name="button"><b>8</b></button></th>
-          <th><button class="btn greenC"type="button" name="button"><b>9</b></button></th>
-          <th><button class="btn greenC"type="button" name="button"><b>multiplicar</b></button></th>
+          <th><button value="7" class="btn greenC numero"type="button" name="button"><b>7</b></button></th>
+          <th><button value="8" class="btn greenC numero"type="button" name="button"><b>8</b></button></th>
+          <th><button value="9" class="btn greenC numero"type="button" name="button"><b>9</b></button></th>
+          <th><button value="multiplicar" class="btn greenC operacao"type="button" name="button"><b>multiplicar</b></button></th>
         </tr>
 
         <tr>
-          <th><button class="btn greenC"type="button" name="button"><b>4</b></button></th>
-          <th><button class="btn greenC"type="button" name="button"><b>5</b></button></th>
-          <th><button class="btn greenC"type="button" name="button"><b>6</b></button></th>
-          <th><button class="btn greenC"type="button" name="button"><b>Subtrair</b></button></th>
+          <th><button value="4" class="btn greenC numero"type="button" name="button"><b>4</b></button></th>
+          <th><button value="5" class="btn greenC numero"type="button" name="button"><b>5</b></button></th>
+          <th><button value="6" class="btn greenC numero"type="button" name="button"><b>6</b></button></th>
+          <th><button value="subtrair" class="btn greenC operacao"type="button" name="button"><b>Subtrair</b></button></th>
         </tr>
 
         <tr>
-          <th><button class="btn greenC"type="button" name="button"><b>1</b></button></th>
-          <th><button class="btn greenC"type="button" name="button"><b>2</b></button></th>
-          <th><button class="btn greenC"type="button" name="button"><b>3</b></button></th>
-          <th><button class="btn greenC"type="button" name="button"><b>Somar</b></button></th>
+          <th><button value="1" class="btn greenC numero"type="button" name="button"><b>1</b></button></th>
+          <th><button value="2" class="btn greenC numero"type="button" name="button"><b>2</b></button></th>
+          <th><button value="3" class="btn greenC numero"type="button" name="button"><b>3</b></button></th>
+          <th><button value="somar" class="btn greenC operacao"type="button" name="button"><b>Somar</b></button></th>
         </tr>
 
         <tr>
-          <th><button class="btn greenC"type="button" name="button"><b>0</b></button></th>
+          <th><button value="0" class="btn greenC numeros"type="button" name="button"><b>0</b></button></th>
           <th><button class="btn greenC"type="button" name="button"><b>,</b></button></th>
-          <th><button class="btn greenC"type="button" name="button"><b>=</b></button></th>
-          <th><button class="btn greenC"type="button" name="button"><b>+</b></button></th>
+          <th><button value="=" class="btn greenC operacao"type="button" name="button"><b>=</b></button></th>
+          <th><button value="+" class="btn greenC operacao"type="button" name="button"><b>+</b></button></th>
         </tr>
       </tbody>
     </table>
