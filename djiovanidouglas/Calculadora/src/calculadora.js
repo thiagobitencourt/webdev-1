@@ -28,11 +28,11 @@ function calcular() {
 
 }
 
-function valor(element) {
- console.log(element);
+function valor(val) {
+ alert("Você clicou no botão: " + val);
 
 }
 
-function operacao() {
-
+function operacao(val) {
+ alert("Você clicou no botão: " + val);
 }
