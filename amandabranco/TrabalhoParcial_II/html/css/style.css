@@ -1,27 +1,4 @@
 
-html,
-button,
-input,
-select,
-textarea{
-
-}
-
-body{
-	font-size: 1em;
-	line-height: 1.4;
-}
-
-::-moz-selection{
-	background:#b3d4fc;
-	text-shadow: none;
-}
-
-::selection {
-	background: #b3d4fc;
-	text-shadow: none;
-}
-
 hr {
 	display: block;
 	height: 1px;
@@ -38,19 +15,12 @@ img{
 
 fieldset{
 	border: 0;
-	margin: 0;
-	padding: 0;
+	margin: 2;
+	padding: 2;
 }
 
 textarea{
 	resize: vertical;
-}
-
-.chromeframe{
-	margin: 0.2em 0;
-	background: #ccc;
-	color: #000;
-	padding: 0.2em 0;
 }
 
 #logo a {
@@ -138,6 +108,7 @@ hr.linhaazul {
 }
 
 #depoimento {
+	margin-top: 50px;
 	background-color: #cccccc;
 
 }
@@ -157,19 +128,144 @@ hr.linhaazul {
 	background-color:#28aacb;
 }
 
-#menu-rodape{
-	text-align: center;
-
-}
-
 #menu-rodape ul li{
 	display: inline;
 	margin: 0px 15px;
 }
 
-#menu-rodape ul li a{
+#menu-rodape ul li a,
+#menu-rodape ul li a:link,
+#menu-rodape ul li a:visited{
 	font-size: 18px;
 	color:#fff;
 	text-transform: uppercase;
 	font-weight: 500;
+}
+
+#menu-rodape ul li a:hover{
+	color: #cccccc;
+	padding: 15px 0px;
+}
+
+#rodape p {
+	color:#fff;
+	font-size: 11px;
+	text-align: center;
+}
+
+#main-interna{
+	padding: 30px 0 100px 0;
+}
+
+#titulo-pagina h1{
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 30px;
+
+}
+
+.imagem-sobre{
+	margin-top: 25px;
+	float: left;
+}
+
+.sidebar{
+	float: left;
+}
+
+.sidebar-item{
+	border-bottom: 3px solid #e9e9e9;
+	
+}
+
+.siderbar-item h1{
+	font-size: 20px;
+	margin:0px;
+	padding: 0;
+}
+
+.sidebar-item ul li{
+	margin-bottom: 20px;
+}
+
+.sidebar-item ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar-item ul li a,
+.sidebar-item ul li a:link,
+.sidebar-item ul li a:visited{
+	color: #28aacb;
+}
+
+.sidebar-item ul li a:hover{
+	color:#a4a4a4;
+}
+
+.post-comentario {
+	margin: 10px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+}
+
+#formulario input {
+	margin-top: 0px;
+	margin-bottom: 5px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+
+}
+
+#formulario textarea{
+	width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 10px;
+    resize: none;
+    margin-top: -15px;
+}
+
+.btn_submit{
+	background-color: #28aacb;
+    border: none;
+    width: 80px;
+    height: 40px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+}
+
+.pesquisa{
+	
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-image: url(../img/search_icone.png);
+    background-size: 40px, 40px;
+    background-position: -1px, 10px;
+    background-repeat: no-repeat;
+    padding-left: 42px
+}
+
+#formulario label{
+	padding: 5px;
+	display: block;
+	font-weight: bold;
 }
