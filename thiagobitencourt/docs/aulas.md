@@ -214,68 +214,74 @@ Agora que já tem um conhecimento inicial de javascript, adicione algum comporta
 
 **Pré-aula**
 
+Com o que vimos na aula passada você já foi capaz de adicionar algum comportamento a página web através de manipulação de alguns eventos. Pesquise um pouco mais sobre como manipular também o conteúdo das páginas através de javascript, ou seja, como trocar os texto de uma campo quando um usuário clica em um botão por exemplo.
+
 **Aula**
+
+Nesta aula vamos aprender como manipular os elementos html de uma página web, como obter os textos de campos e de elementos e como adicionar/alterar esses textos. Com isso, juntamente com manipulação de eventos, podemos adicionar comportamentos ainda mais complexos a nossas páginas. Vamos também ver como manipular as classes css dos elementos através de javascript.
 
 **Pós-aula**
 
+Após esta aula, estão aptos a adicionar comportamentos mais complexos as páginas web e construir sistemas utilizando estas tecnologias.
+
 - [Voltar ao topo](#indice)
 
-### Aula 14 Obtendo e validando informações através de formulários
+### Aula 14 Atividade Oficial
 
 **Pré-aula**
 
+Preparem-se para a atividade oficial, lembrem que o uso do Git, correta aplicação/uso de tags semânticas, criatividade e atendimento dos requisitos solicitados fazem parte da avaliação.
+
 **Aula**
+
+Nesta aula será aplicado uma atividade de desenvolvimento que irá compor a nota oficial do segundo bimestre.
 
 **Pós-aula**
 
+Após a realização da atividade oficial, você deve ter percebido que ainda há alguns assuntos que ainda podem ter restado algumas dúvidas. Reveja a atividade oficial e identifique quais são esses pontos, pois são oportunidade para estudo e para evolução.
+
 - [Voltar ao topo](#indice)
 
-### Aula 15 Interação com um serviço Ajax
+### Aula 15 Atividade Parcial
 
 **Pré-aula**
 
+Se ainda restam algumas dúvidas com relação aos assuntos que estudamos ao longo do semestre, anote quais são as dúvidas e traga para que possamos discutir em grupo.
+
 **Aula**
+
+Nesta aula vamos realizar alguns desafios para que possamos fixar os assuntos abordados no semestre e esta atividade irá compor a nota parcial do bimestre.
 
 **Pós-aula**
 
+Em aula, passei alguns assuntos que podem buscar por conta para aprender ainda mais sobre o desenvolvimento web e já se preparar para o próximo semestre.
+
 - [Voltar ao topo](#indice)
 
-### Aula 16 Atividade Oficial
+### Aula 16 - Atividades acadêmicas, encerramento.
 
 **Pré-aula**
 
+Se houverem anda alguma dúvida, anotem e tragam para a sala para que possamos discutir em grupo.
+
 **Aula**
+
+Estarei disponível para tirar dúvidas relacionadas a disciplina e aos conteúdos estudados. Podemos conversar ainda sobre alguns assuntos avançados, darei alguns apontamentos de quais devem ser os próximos passos para o desenvolvimento web e quais tecnologias podem ser estudadas para facilitar e agilizar o desenvolvimento de páginas web.
 
 **Pós-aula**
 
-- [Voltar ao topo](#indice)
+Continuem programando e se esforçando para se tornarem programadores de sucesso. Só depende de vocês mesmo.
 
-### Aula 17 Atividade Parcial
+### Aulas de sábado - Atividades acadêmicas
 
 **Pré-aula**
 
-**Aula**
-
-**Pós-aula**
-
-- [Voltar ao topo](#indice)
-
-### Aula 18 Conhecendo alguns frameworks para desenvolvimento Web
-
-**Pré-aula**
+Atividades acadêmicas
 
 **Aula**
 
-**Pós-aula**
-
-- [Voltar ao topo](#indice)
-
-### Aula 19 Conhecendo alguns servidores para disponibilizar aplicações web
-
-**Pré-aula**
-
-**Aula**
+Atividades acadêmicas
 
 **Pós-aula**
 
-- [Voltar ao topo](#indice)
+Atividades acadêmicas
