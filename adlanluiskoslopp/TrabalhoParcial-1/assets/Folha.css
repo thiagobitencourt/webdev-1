@@ -1,3 +1,11 @@
+.menu h1 {
+	margin-top: 1cm;
+	margin-left: 13cm;
+}
+
+
+
+
 main {
 	position: relative;
 	width: 450px;
@@ -8,7 +16,7 @@ main {
 
 a:link{
 	text-decoration: none;
-	color: #0099ff;	
+	color: #0099ff;
 }
 a:visited {
 	text-decoration: underline;
