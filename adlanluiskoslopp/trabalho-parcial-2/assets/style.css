@@ -108,10 +108,20 @@ select{
   margin-left: 143px;
 }
 
+
 .telefone{
   margin-left: 240px;
 }
 
 .areatexto{
-  margin-bottom: 1cm;
+  margin-left: 325px;
+  padding-left: 4cm;
+  padding-right: 3cm;
+  padding-top: 6cm;
+  margin-bottom: 2cm;
+}
+
+.menulogin{
+  margin-top: 30px;
+  margin-left: 32cm;
 }
