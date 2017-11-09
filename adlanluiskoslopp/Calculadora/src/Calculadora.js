@@ -17,30 +17,23 @@ function obterOperador2(operacao){
 }
 
 function calcular() {
-
-  var valorDisplay = display.value;
-  var operacao;
   var resultado
 
   switch(op) {
     case "SOMAR":
-      operacao = " + ";
-      var operador2 = obterOperador2(operacao);
+      var operador2 = obterOperador2(" + ");
       resultado = operador1 + operador2;
       break;
     case "SUBTRAIR":
-      operacao = " - ";
-      var operador2 = obterOperador2(operacao);
+      var operador2 = obterOperador2(" - ");
       resultado = operador1 - operador2;
       break;
     case "MULTIPLICAR":
-      operacao = " x ";
-      var operador2 = obterOperador2(operacao);
+      var operador2 = obterOperador2(" x ");
       resultado = operador1 * operador2;
       break;
     case "DIVIDIR":
-      operacao = " / ";
-      var operador2 = obterOperador2(operacao);
+      var operador2 = obterOperador2(" / ");
       resultado = operador1 / operador2;
       break;
     default:
@@ -95,7 +88,8 @@ function limpar() {
 }
 
 function ponto() {
-  console.log('Você clicou no "ponto"...');
+  display.value = display.value + ".";
+  
 }
 
 // Função chamada quando a página terminar de carregar!
