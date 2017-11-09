@@ -1,12 +1,58 @@
 var display;
-
+var operador1 ;
+var operador2;
+var op;
 /*
   Função que irá executar a operação requerida
 */
-function calcular() {
-    alert("Deve mostrar o resultado da operação!");
+
+function obterOperador2(operacao){
+  var valorDisplay = display.value;
+  var inicioCorte = valorDisplay.indexOf(operacao) + 3;
+  var substring = valorDisplay.substring(inicioCorte);
+
+  operador2 = parseFloat(substring);
+
+  return operador2;
 }
 
+function calcular() {
+
+  var valorDisplay = display.value;
+  var operacao;
+  var resultado
+
+  switch(op) {
+    case "SOMAR":
+      operacao = " + ";
+      var operador2 = obterOperador2(operacao);
+      resultado = operador1 + operador2;
+      break;
+    case "SUBTRAIR":
+      operacao = " - ";
+      var operador2 = obterOperador2(operacao);
+      resultado = operador1 - operador2;
+      break;
+    case "MULTIPLICAR":
+      operacao = " x ";
+      var operador2 = obterOperador2(operacao);
+      resultado = operador1 * operador2;
+      break;
+    case "DIVIDIR":
+      operacao = " / ";
+      var operador2 = obterOperador2(operacao);
+      resultado = operador1 / operador2;
+      break;
+    default:
+      console.log("Operação desconhecida!");
+  }
+  display.value = resultado;
+
+//
+
+
+    //alert("eu vou " + op + "com o valor " + operador1 + " e " + operador2);
+}
 /*
   Função que é chamada sempre que um usuario
   clica em um botão de numero da calculadora
@@ -17,28 +63,31 @@ function valor() {
   display.value = valorAtual + this.value;
 }
 
+
 function definirOperacao() {
   console.log(this.value);
 
   var operacao;
   switch(this.value) {
     case "SOMAR":
-      operacao = "+";
+      operacao = " + ";
       break;
     case "SUBTRAIR":
-      operacao = "-";
+      operacao = " - ";
       break;
     case "MULTIPLICAR":
-      operacao = "X";
+      operacao = " x ";
       break;
     case "DIVIDIR":
-      operacao = "/";
+      operacao = " / ";
       break;
     default:
       console.log("Operação desconhecida!");
   }
+  operador1 = parseFloat(display.value);
+  op = this.value;
 
-  display.value = display.value + operacao;
+  display.value = display.value + " " + operacao + " ";
 }
 
 function limpar() {
