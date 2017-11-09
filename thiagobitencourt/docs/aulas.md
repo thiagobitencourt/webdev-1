@@ -6,10 +6,18 @@
 - [Aula 02 - Git como controle de versão](#aula-02-git-como-controle-de-versão)
 - [Aula 03 - Github como repositório centralizado](#aula-03-github-como-repositório-centralizado)
 - [Aula 04 - Estrutura de uma página web](#aula-04-estrutura-de-uma-página-web)
-- [Aula 05 - Tags HTML para apresentação de conteúdos](#tags-html-para-apresentação-de-conteúdos)
-- [Aula 06 - Tags HTML de inserção de dados](#tags-html-de-inserção-de-dados)
-- [Aula 07 - Formulários HTML e validação de campos](#formulários-html-e-validação-de-campos)
-- [Aula 08 - Atividades Ofical e Parcial](#atividades-oficial-e-parcial)
+- [Aula 05 - Tags HTML para apresentação de conteúdos](#aula-05-tags-html-para-apresentação-de-conteúdos)
+- [Aula 06 - Tags HTML de inserção de dados](#aula-06-tags-html-de-inserção-de-dados)
+- [Aula 07 - Formulários HTML e validação de campos](#aula-07-formulários-html-e-validação-de-campos)
+- [Aula 08 - Atividades Ofical e Parcial](#aula-08-atividades-oficial-e-parcial)
+- [Aula 09 Conceitos iniciais de CSS e definição de cores](#aula-09-conceitos-iniciais-de-css-e-definição-de-cores)
+- [Aula 10 Seletores CSS e dimensionamento](#aula-10-seletores-css-e-dimensionamento)
+- [Aula 11 Combinando seletores CSS e estrutura de um projeto web](#aula-11-combinando-seletores-css-e-estrutura-de-um-projeto-web)
+- [Aula 12 Conceitos iniciais de JavaScript](#aula-12-conceitos-iniciais-de-javascript)
+- [Aula 13 Manipulando a página através de JS](#aula-13-manipulando-a-página-através-de-js)
+- [Aula 14 Atividade Oficial](#aula-14-atividade-oficial)
+- [Aula 15 Atividade Parcial](#aula-15-atividade-parcial)
+- [Aula 16 - Atividades acadêmicas e encerramento](#aula-16-atividades-acadêmicas-e-encerramento)
 
 Plano de aula estruturado em pré-aula, aula e pós-aula.
 
@@ -258,11 +266,11 @@ Em aula, passei alguns assuntos que podem buscar por conta para aprender ainda m
 
 - [Voltar ao topo](#indice)
 
-### Aula 16 - Atividades acadêmicas, encerramento.
+### Aula 16 - Atividades acadêmicas e encerramento
 
 **Pré-aula**
 
-Se houverem anda alguma dúvida, anotem e tragam para a sala para que possamos discutir em grupo.
+Se houverem anda alguma dúvida, anotem e tragam para a sala para que possamos discutir em grupo.is
 
 **Aula**
 
