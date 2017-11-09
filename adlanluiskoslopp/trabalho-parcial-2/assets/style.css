@@ -74,18 +74,44 @@ button{
 
 main{
   margin-top: 1cm;
-  margin-bottom: 1cm;
+  margin-left: 10cm;
+  margin-bottom: 2cm;
+}
+
+form{
+  margin-left: 5cm;
+}
+
+h3{
+  font: 20px,arial, verdana;
 }
 
 label{
   margin-left: 2cm;
   margin-bottom: 1cm;
+  font:16px arial, verdana, helvetica;
 }
 
 input{
-  margin-left: 2cm;
+  margin-left: 30px;
   margin-bottom: 1cm;
 }
 select{
+  margin-bottom: 1cm;
+}
+
+.senha{
+  margin-left: 175px;
+}
+
+.nick{
+  margin-left: 143px;
+}
+
+.telefone{
+  margin-left: 240px;
+}
+
+.areatexto{
   margin-bottom: 1cm;
 }

@@ -3,33 +3,34 @@
 	<head>
 		<meta  charset = " UTF-8 ">
 		<title> Crie seu Perfil</title>
-      <link rel="stylesheet" href="assets/StyleIndex.css">
+      <link rel="stylesheet" href="assets/style.css">
 	</head>
 
 	<body>
-	<font  align = " center " >
 		<main >
-			<h1 > Crie aqui seu Perfil para Página </ h1 >
+			<h1 > Crie aqui seu Perfil para Página </h1 >
 		</main >
 
-		<form >
-			<label  id = " nome " > Digite seu Nome </ label >
-        <Br >
-			<input  for = " nome "  type = " texto "  placeholder = " Escerva seu nome " />
-			<Br >
+		<form class="dados pessoais" >
+			<h3>Dados Pessoais</h3>
+			<label  id = " nome " > Nome </label>
+			<input class="senha" for = " nome "  type = " texto "  placeholder = " Escerva seu nome "/>
 
-			<label  id = " email " > Digite seu email </ label >
-        <br>
-			<input  for = " email "  type = " texto "  placeholder = " seu nome " />
-			<Br >
+			<label  id = " cell " > Data Nascimento</label >
+			<input class="senha" for = " cell "  type = "date"  placeholder = " Escreva seu numero de celular "/>
+			<br>
 
-			<label  id = " cell " > Digite seu telefone </ label >
-        <br>
-			<input  for = " cell "  type = " number "  placeholder = " Escreva seu numero de celular " />
-			<Br >
+			<label  id = " email " > Email </label >
+			<input class="senha" for = " email "  type = "email"  placeholder = " Escreva seu Email "/>
 
-			<label > Selecione seu Estado </label >
-        <br>
+			<label  id = " cell " > Telefone </label >
+			<input class="telefone" for = " cell "  type = "tel"  placeholder = " Escreva seu numero de celular "/>
+			<Br>
+
+			<label  id = " cell " > Endereço </label >
+			<input class="nick" for = " cell "  type = "tel"  placeholder = " Escreva o nome da sua Rua"/>
+
+			<label > Selecione seu Estado </label>
 			<select >
 				<option  selecione > Selecione Estado </option >
 				<option > AC </option >
@@ -60,15 +61,37 @@
 				<option > TO </option >
 			</select >
 			<Br >
+    </form>
+		<form class="dados login" method="post">
+			<h3>Dados de Login</h3>
+			<label  id = " nome " > Email ou Nome de Usuario </label>
+			<input  for = " nome "  type = " texto "  placeholder = "Email ou Nome de Usuario "/>
+
+			<label  id = " nome " > Confirma Email ou Nome de Usuario </label>
+			<input  for = " nome "  type = " texto "  placeholder = " Email ou Usuarios "/>
+			<br>
+
+			<label  id = " nome " > Senha </label>
+			<input class="senha"  for = " nome "  type = "password"  placeholder = "Escreva sua senha"/>
+
+			<label  id = " nome " >Confirma Senha </label>
+			<input class="senha" for = " nome "  type = "password"  placeholder = "Escreva sua Senha"/>
+			<br>
+
+			<label  id = " nome " > Nick Name</label>
+			<input class="nick" for = " nome "  type = " texto "  placeholder = "Nick Name"/>
 
 			<label > Imagem para Perfil </label >
-        <br>
 			<input  type="file"/>
-    </form>
+			<br>
+
+		</form>
 
     <br>
-    <button type="submit">Criar</button>
-    <button type="reset">Limpar</button>
+		<main>
+			<button type="submit">Criar</button>
+			<button type="reset">Limpar</button>
+		</main>
 
 
 	</body>
