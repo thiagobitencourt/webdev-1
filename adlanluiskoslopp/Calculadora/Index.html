@@ -1,83 +1,71 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="assets/css/Style.css">
+  </head>
+  <body>
 
-  <title>Trabalhando com Semantica</title>
-  <link rel="stylesheet" href="Assets/CSS/Style.css">
+    <header class="container cabecalho" align="center">
+      <h1>Calculadora</h1>
+      <span>
+        <a href="http://github.com/ALKoslopp" target="_blank">
+          Adlan Luis Koslopp
+        </a>
+      </span>
+    </header>
 
-  <title>Calculadora</title>
-</head>
-<body>
-  <header class="container cabecalho" align="center">
-    <h1>Calculadora</h1>
-    <span>
-      <a href="https://github.com/ALKoslopp" target="blank"> Adlan Luis Koslopp</a>
-    </span>
-  </header>
+    <main class="container">
+      <section>
+        <input id="calculadora-display" disabled type="text" class="calculadora-input">
+      </section>
 
-  <section class="centralizado" align="center">
-    <input id="calculadora-display" disabled class"input" type="text" name="" value="">
-    <button onclick="calcular()" class="btn green" type="button" name="calcular">Calcular</button>
+      <section class="calculadora">
+        <section class="btns-line">
+          <button type="button" value="7" class="btn btn-blue numero">7</button>
+          <button type="button" value="8" class="btn btn-blue numero">8</button>
+          <button type="button" value="9" class="btn btn-blue numero">9</button>
+          <button type="button" value="SOMAR" class="btn btn-blue operacao">+</button>
+          <button type="button" onclick="calcular()" class="btn btn-green">Calcular</button>
+        </section>
 
-    <table align="center">
-      <tbody>
-        <tr>
-          <th><button id="limpar" class="btn greenC"type="button" name="limpar"><b>Limpar</b></button></th>
-          <th><button value="raiz quadrada" class="btn greenC operacao"type="button" name="button"><b>Raiz</b></button></th>
-          <th><button value="%" class="btn greenC operacao"type="button" name="button"><b>%</b></button></th>
-          <th><button value="Dividir" class="btn greenC operacao"type="button" name="button"><b>dividir</b></button></th>
-        </tr>
+        <section class="btns-line">
+          <button type="button" value="4" class="btn btn-blue numero">4</button>
+          <button type="button" value="5" class="btn btn-blue numero">5</button>
+          <button type="button" value="6" class="btn btn-blue numero">6</button>
+          <button type="button" value="SUBTRACAO" class="btn btn-blue operacao">-</button>
+        </section>
 
-        <tr>
-          <th><button value="7" class="btn greenC numero"type="button" name="button"><b>7</b></button></th>
-          <th><button value="8" class="btn greenC numero"type="button" name="button"><b>8</b></button></th>
-          <th><button value="9" class="btn greenC numero"type="button" name="button"><b>9</b></button></th>
-          <th><button value="multiplicar" class="btn greenC operacao"type="button" name="button"><b>multiplicar</b></button></th>
-        </tr>
+        <section class="btns-line">
+          <button type="button" value="1" class="btn btn-blue numero">1</button>
+          <button type="button" value="2" class="btn btn-blue numero">2</button>
+          <button type="button" value="3" class="btn btn-blue numero">3</button>
+          <button type="button" value="MULTIPLICACAO" class="btn btn-blue operacao">*</button>
+        </section>
 
-        <tr>
-          <th><button value="4" class="btn greenC numero"type="button" name="button"><b>4</b></button></th>
-          <th><button value="5" class="btn greenC numero"type="button" name="button"><b>5</b></button></th>
-          <th><button value="6" class="btn greenC numero"type="button" name="button"><b>6</b></button></th>
-          <th><button value="subtrair" class="btn greenC operacao"type="button" name="button"><b>Subtrair</b></button></th>
-        </tr>
+        <section class="btns-line">
+          <button type="button" id="botao-limpar" class="btn btn-blue">C</button>
+          <button type="button" value="0" class="btn btn-blue numero">0</button>
+          <button type="button" class="btn btn-blue ponto">.</button>
+          <button type="button" value="DIVIDIR" class="btn btn-blue operacao">/</button>
+        </section>
 
-        <tr>
-          <th><button value="1" class="btn greenC numero"type="button" name="button"><b>1</b></button></th>
-          <th><button value="2" class="btn greenC numero"type="button" name="button"><b>2</b></button></th>
-          <th><button value="3" class="btn greenC numero"type="button" name="button"><b>3</b></button></th>
-          <th><button value="somar" class="btn greenC operacao"type="button" name="button"><b>Somar</b></button></th>
-        </tr>
+      </section>
+    </main>
 
-        <tr>
-          <th><button value="0" class="btn greenC numeros"type="button" name="button"><b>0</b></button></th>
-          <th><button class="btn greenC"type="button" name="button"><b>,</b></button></th>
-          <th><button value="=" class="btn greenC operacao"type="button" name="button"><b>=</b></button></th>
-          <th><button value="+" class="btn greenC operacao"type="button" name="button"><b>+</b></button></th>
-        </tr>
-      </tbody>
-    </table>
+    <script src="src/Calculadora.js"></script>
+    <script>
+      console.log("Bem vindo ao fantástico mundo Javascript!");
+      var x = 10;
+      var y = 20;
+      var z = "abc";
+      console.log("A soma dos numeros é: " + (x + y));
+      // alert("A soma dos numeros é: " + (x + y));
+      /*
+       Tudo isso é
+       um comentario
+      */
+    </script>
 
-  </section>
-
-  <section>
-    <button class="btn blue" type="button" name="calcular">Calcular</button>
-    <button class="btn red" type="button" name="calcular">Calcular</button>
-  </section>
-
-  <script src="src/Calculadora.js">
-
-  </script>
-
-  <script type="text/javascript">
-    console.log("olá Mundo!!");
-    var x = 10;
-    var y = 20;
-    console.log(x+y);
-    //alert("a soma dos numeros é: " + (x+y));
-
-  </script>
-
-</body>
+  </body>
 </html>
