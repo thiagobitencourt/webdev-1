@@ -17,68 +17,56 @@
   </header>
 
   <main class="container">
-      <section>
-        <input disabled type="text" class="calculadora-input">
-      </section>
+     <section>
+       <input id="calculadora-display" disabled type="text" class="calculadora-input">
+     </section>
 
-      <section class="calculadora">
-        <section class="btns-line">
-          <button type="button" onclick="valor(7)" class="btn btn-blue">7</button>
-          <button type="button" onclick="valor(8)" class="btn btn-blue">8</button>
-          <button type="button" onclick="valor(9)" class="btn btn-blue">9</button>
-          <button type="button" onclick="operacao('+')" class="btn btn-blue">+</button>
-          <button type="button" onclick="calcular()" class="btn btn-green">Calcular</button>
-        </section>
+     <section class="calculadora">
+       <section class="btns-line">
+         <button type="button" value="7" class="btn btn-blue numero">7</button>
+         <button type="button" value="8" class="btn btn-blue numero">8</button>
+         <button type="button" value="9" class="btn btn-blue numero">9</button>
+         <button type="button" value="SOMAR" class="btn btn-blue operacao"> + </button>
+         <button type="button" onclick="calcular()" class="btn btn-green">Calcular</button>
+       </section>
 
-        <section class="btns-line">
-          <button type="button" onclick="valor(4)" class="btn btn-blue">4</button>
-          <button type="button" onclick="valor(5)" class="btn btn-blue">5</button>
-          <button type="button" onclick="valor(6)" class="btn btn-blue">6</button>
-          <button type="button" onclick="operacao('-')" class="btn btn-blue">-</button>
-        </section>
+       <section class="btns-line">
+         <button type="button" value="4" class="btn btn-blue numero">4</button>
+         <button type="button" value="5" class="btn btn-blue numero">5</button>
+         <button type="button" value="6" class="btn btn-blue numero">6</button>
+         <button type="button" value="SUBTRAIR" class="btn btn-blue operacao">-</button>
+       </section>
 
-        <section class="btns-line">
-          <button type="button" onclick="valor(1)" class="btn btn-blue">1</button>
-          <button type="button" onclick="valor(2)" class="btn btn-blue">2</button>
-          <button type="button" onclick="valor(3)" class="btn btn-blue">3</button>
-          <button type="button" onclick="operacao('*')" class="btn btn-blue">*</button>
-        </section>
+       <section class="btns-line">
+         <button type="button" value="1" class="btn btn-blue numero">1</button>
+         <button type="button" value="2" class="btn btn-blue numero">2</button>
+         <button type="button" value="3" class="btn btn-blue numero">3</button>
+         <button type="button" value="MULTIPLICAR" class="btn btn-blue operacao">*</button>
+       </section>
 
-        <section class="btns-line">
-          <button type="button" class="btn btn-blue">C</button>
-          <button type="button" onclick="valor()" class="btn btn-blue">0</button>
-          <button type="button" class="btn btn-blue">.</button>
-          <button type="button" onclick="operacao('/')" class="btn btn-blue">/</button>
-        </section>
+       <section class="btns-line">
+         <button type="button" id="botao-limpar" class="btn btn-blue">C</button>
+         <button type="button" value="0" class="btn btn-blue numero">0</button>
+         <button type="button" class="btn btn-blue ponto">.</button>
+         <button type="button" value="DIVIDIR" class="btn btn-blue operacao">/</button>
+       </section>
 
-      </section>
-    </main>
+     </section>
+   </main>
 
-    <script src="src/calculadora.js"></script>
-
+   <script src="src/calculadora.js"></script>
    <script>
-       console.log("Bem vindo ao Fantastico mundo do JavaScript");
+     console.log("Bem vindo ao fantástico mundo Javascript!");
+     var x = 10;
+     var y = 20;
+     var z = "abc";
+     console.log("A soma dos numeros é: " + (x + y));
+     // alert("A soma dos numeros é: " + (x + y));
+     /*
+      Tudo isso é
+      um comentario
+     */
+   </script>
 
-       var x = 10;
-       var y = 20;
-
-     console.log("A soma dos numeros é:" + (x+y));
-
-    </script>
-
-     <script src="src/calculadora.js"></script>
-     <script>
-       console.log("Bem vindo ao fantástico mundo Javascript!");
-       var x = 10;
-       var y = 20;
-       var z = "abc";
-       console.log("A soma dos numeros é: " + (x + y));
-       // alert("A soma dos numeros é: " + (x + y));
-       /*
-        Tudo isso é
-        um comentario
-       */
-     </script>
-
-   </body>
- </html>
+ </body>
+</html>

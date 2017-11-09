@@ -1,38 +1,49 @@
-//console.log("Oi, eu sou o arquivo calculadora.js");
-
-// console.log(window);
-console.log(document.getElementById("calculadora-display"));
-
-function nomeDaFuncao(nome) {
- console.log("Estou dentro da função...");
- console.log("Recebi o parametro", nome);
+/*
+ Função que irá executar a operação requerida
+*/
+function calcular() {
+   alert("Deve mostrar o resultado da operação!");
 }
-// nomeDaFuncao("Meu nome");
 
-var func = function() {
- console.log("Função que esta na variavel");
+/*
+ Função que é chamada sempre que um usuario
+ clica em um botão de numero da calculadora
+*/
+// function valor(element, evento) {
+function valor() {
+ console.log(this.value);
 }
-// func();
 
-// window.onload = func;
+function definirOperacao(){
+ console.log(this.value);
+}
+
+function limpar() {
+ console.log("Limpar...");
+}
+
+function ponto() {
+ console.log("Você clicou no ponto !!!");
+
+}
+
+// Função chamada quando a página terminar de carregar!
 window.onload = function() {
  console.log("Terminou de carregar a página!");
+
+ var botaoLimpar = document.getElementById("botao-limpar");
+ botaoLimpar.addEventListener("click", limpar);
+
+ var botaoPonto = document.querySelector("button.ponto");
+ botaoPonto.addEventListener("click", ponto)
+
+ var botoesNumero = document.querySelectorAll("button.numero");
+ for(var i = 0; i < botoesNumero.length; i++) {
+   botoesNumero[i].addEventListener('click', valor);
+ }
+
+var botoesOperacao = document.querySelectorAll("button.operacao");
+for(var i = 0; i < botoesOperacao.length; i++) {
+ botoesOperacao[i].addEventListener('click', definirOperacao);
 }
-
-// window.onload = function() {
-//
-// }
-
-function calcular() {
- alert("Voce clicou em Calcular !!!");
-
-}
-
-function valor(val) {
- alert("Você clicou no botão: " + val);
-
-}
-
-function operacao(val) {
- alert("Você clicou no botão: " + val);
 }
