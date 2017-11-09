@@ -1,3 +1,5 @@
+var display;
+
 /*
   Função que irá executar a operação requerida
 */
@@ -11,15 +13,36 @@ function calcular() {
 */
 // function valor(element, evento) {
 function valor() {
-  console.log(this.value);
+  var valorAtual = display.value;
+  display.value = valorAtual + this.value;
 }
 
 function definirOperacao() {
   console.log(this.value);
+
+  var operacao;
+  switch(this.value) {
+    case "SOMAR":
+      operacao = "+";
+      break;
+    case "SUBTRAIR":
+      operacao = "-";
+      break;
+    case "MULTIPLICAR":
+      operacao = "X";
+      break;
+    case "DIVIDIR":
+      operacao = "/";
+      break;
+    default:
+      console.log("Operação desconhecida!");
+  }
+
+  display.value = display.value + operacao;
 }
 
 function limpar() {
-  console.log("Limpar...");
+  display.value = "";
 }
 
 function ponto() {
@@ -44,4 +67,6 @@ window.onload = function() {
   for(var i = 0; i < botoesOperacao.length; i++) {
     botoesOperacao[i].addEventListener('click', definirOperacao);
   }
+
+  display = document.getElementById("calculadora-display");
 }
