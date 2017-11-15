@@ -1,57 +1,62 @@
 
-h1 {
-  color: black;
-}
-
-header {
-  color: #F1F1F1;
-  background-color: rgba(#F1F1F1);
-}
-
 .container {
-
-	padding: 15px 50px 15px 15px;
-	
-}
-.cabecalho{
-	margin-top: 30%
-	height: 100px;
-	padding-left: 15px;
-  	padding-right: 15px;
-  	border-radius: 20px;
-  	background-color: pink;
-  	border: 1px solid #ccc]
-  	cursor: pointer;
-
+  margin: 15px 7% 15px 7%;
 }
 
-.btn{ /*colocar botao que cursor pisca*/
-	height: 45px;
-	padding: 10px;
-	color: black;
-	background-color: white;
-	border: 2px solid black;
-
+.cabecalho {
+  margin-top: 35px;
+  padding: 15px;
+  height: 100px;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  border: 1px solid #ccc;
 }
 
-.btn-green{
-	border-color: black;
+.calculadora-input {
+  height: 45px;
+  font-size: 25px;
 }
 
-.btn-green:hover{
-	color: white;
-	background-color: red;
+.calculadora .btns-line {
+  margin-bottom: 10px;
 }
 
-.btn-blue{
-	border-color: #4CAF50;
+.calculadora .btns-line:first-child {
+  margin-top: 10px;
 }
 
-.btn-blue:hover{
-	color: white;
-	background-color: #2196f3
+.btn {
+  height: 45px;
+  padding: 10px;
+  background-color: white;
+  border: 2px solid black;
+  cursor: pointer;
+  min-width: 50px;
 }
 
-.text{
-	border-color: blue;
+.btn-green {
+  border-color: #4CAF50;
+}
+
+.btn-green:hover {
+  color: white;
+  background-color: #4CAF50;
+}
+
+.btn-blue {
+  border-color: #2196f3;
+}
+
+.btn-blue:hover {
+  color: white;
+  background-color: #2196f3 ;
+}
+
+.btn-red {
+  border-color: #f44336;
+}
+
+.btn-red:hover {
+  color: white;
+  background-color: #f44336;
 }
