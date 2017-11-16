@@ -2,6 +2,7 @@ var display;
 var operador1 ;
 var operador2;
 var op;
+var operacaoErrada;
 /*
   Função que irá executar a operação requerida
 */
@@ -17,6 +18,29 @@ function obterOperador2(operacao){
 }
 
 function calcular() {
+  if(operacaoErrada){
+    console.log("esta errado");
+
+    var painelDeErro = document.getElementById("erro");
+    //painelDeErro.innerText = "a sua operacao esta errada!!" //injeta esse texto no html no id erro
+    var listaDeErros = document.getElementById("lista-erros");
+
+    if(!listaDeErros){
+      //listaDeErros.class = ""; podemos adicionar uma classe no html
+      listaDeErros = document.createElement("ul");
+      listaDeErros.id = "lista-erros"; //nesse caso estamos adicionando um id lá no ul do html
+      //listaDeErros.onclick = ""; podemos tambem adicionar um evento de onclick
+      painelDeErro.appendChild(listaDeErros); //adiciona a painal de erros a lista dos erros
+    }
+
+    var itemDeErro document.createElement("li");//criando os elementos da lista
+
+    itemDeErro.innerText = "Operacao Errada!!" + display.value;
+    listaDeErros.appendChild(itemDeErro); //adiciona a lista de erro os itens de erro
+
+    return;
+  }
+
   var resultado
 
   switch(op) {
@@ -41,7 +65,7 @@ function calcular() {
   }
   display.value = resultado;
 
-//
+
 
 
     //alert("eu vou " + op + "com o valor " + operador1 + " e " + operador2);
@@ -58,6 +82,14 @@ function valor() {
 
 
 function definirOperacao() {
+
+  if(op){
+    operacaoErrada = true;
+
+
+  }
+
+
   console.log(this.value);
 
   var operacao;
@@ -89,7 +121,7 @@ function limpar() {
 
 function ponto() {
   display.value = display.value + ".";
-  
+
 }
 
 // Função chamada quando a página terminar de carregar!
