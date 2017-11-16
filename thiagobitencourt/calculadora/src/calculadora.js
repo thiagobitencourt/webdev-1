@@ -1,6 +1,7 @@
 var display;
 var operador1;
 var op;
+var operacaoErrada = false;
 
 function obterOperador2(operacao) {
     var valorDisplay = display.value;
@@ -16,8 +17,26 @@ function obterOperador2(operacao) {
   Função que irá executar a operação requerida
 */
 function calcular() {
-    var resultado;
+    if(operacaoErrada) {
+      console.log("Esta errado!!!");
 
+      var painelDeErro = document.getElementById("erro");
+      var listaDeErros = document.getElementById("lista-erros");
+
+      if(!listaDeErros) {
+        listaDeErros = document.createElement("ul");
+        listaDeErros.id = "lista-erros";
+        painelDeErro.appendChild(listaDeErros);
+      }
+
+      var itemDeErro = document.createElement("li");
+      itemDeErro.innerText = "Operação errada: " + display.value;
+
+      listaDeErros.appendChild(itemDeErro);
+      return;
+    }
+
+    var resultado;
     switch(op) {
       case "SOMAR":
         resultado = operador1 + obterOperador2("+ ");
@@ -52,6 +71,10 @@ function valor() {
 }
 
 function definirOperacao() {
+  if(op) {
+    operacaoErrada = true;
+  }
+
   var operacao;
   switch(this.value) {
     case "SOMAR":
