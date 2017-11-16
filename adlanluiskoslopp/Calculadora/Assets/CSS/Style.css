@@ -5,14 +5,12 @@
 .alerta{
   border: 5px solid #ccc;
   border-radius: 10px;
-  height: 40px;
   margin-bottom: 15px;
 }
 
 .alerta-erro{
   border: 5px solid #f44336;
   border-radius: 10px;
-  height: 40px;
   margin-bottom: 15px;
   color:red
 }
