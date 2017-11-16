@@ -1,51 +1,82 @@
-.container{
-  padding: 15px 7% 15px 7%;
+.container {
+  margin: 15px 7% 15px 7%;
 }
 
-.cabecalho{
+.alerta {
+  min-height: 40px;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+.alerta-erro {
+  border-color: #f44336;
+  color: red;
+}
+
+.cabecalho {
+  margin-top: 35px;
   padding: 15px;
   height: 100px;
   background-color: #f1f1f1;
   border-radius: 20px;
-  border: 2px solid #0000ff;
+  border: 1px solid #ccc;
 }
-.btn {
-      border: none;
-      color: black;
-      padding: 15px 32px;
-      background-color: white;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-}
-.label {
-  padding: 15px 3px;
-  margin-top: 10px;
+
+.calculadora-input {
+  height: 45px;
   font-size: 25px;
 }
 
-.btnCalc {
-      margin: 3px;
-      color: black;
-      padding: 22px 22px;
-      background-color: white;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 15px;
+.calculadora .btns-line {
+  margin-bottom: 10px;
 }
-.btn-green{
-  border: 2px solid green;
+
+.calculadora .btns-line:first-child {
+  margin-top: 10px;
 }
-.btn1:hover {
-    background-color: green;
-    color: white;
+
+.btn {
+  height: 45px;
+  padding: 10px;
+  background-color: white;
+  border: 2px solid black;
+  cursor: pointer;
+  min-width: 50px;
 }
-.btn2:hover{
-  background-color: blue;
+
+.btn-green {
+  border-color: #4CAF50;
+}
+
+.btn-green:hover {
   color: white;
+  background-color: #4CAF50;
 }
-.btn-blue{
-  border: 2px solid blue;
+
+.btn-blue {
+  border-color: #2196f3;
+}
+.Limpar-Erros{
+  color: red;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+}
+.Limpar-Erros::before{
+  content: "x";
+}
+.btn-blue:hover {
+  color: white;
+  background-color: #2196f3 ;
+}
+
+.btn-red {
+  border-color: #f44336;
+}
+
+.btn-red:hover {
+  color: white;
+  background-color: #f44336;
 }
