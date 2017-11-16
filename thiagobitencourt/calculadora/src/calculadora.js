@@ -101,6 +101,12 @@ function definirOperacao() {
 
 function limpar() {
   display.value = "";
+  operacaoErrada = false;
+  op = undefined;
+}
+
+function limparErros() {
+  document.getElementById("erro").innerHTML = "";
 }
 
 function ponto() {
