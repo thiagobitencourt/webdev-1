@@ -1,6 +1,7 @@
 var display;
 var operador1;
 var op;
+var operacaoErrada = false;
 
 function obterOperador2(operacao) {
     var valorDisplay = display.value;
@@ -16,31 +17,40 @@ function obterOperador2(operacao) {
   Função que irá executar a operação requerida
 */
 function calcular() {
-    // alert("Deve mostrar o resultado da operação!");
-    // alert(display.value);
-    var valorDisplay = display.value;
-    var operacao;
-    var resultado;
+    if(operacaoErrada) {
+      console.log("Esta errado!!!");
 
+      var painelDeErro = document.getElementById("erro");
+      var listaDeErros = document.getElementById("lista-erros");
+
+      if(!listaDeErros) {
+        listaDeErros = document.createElement("ul");
+        listaDeErros.id = "lista-erros";
+        painelDeErro.appendChild(listaDeErros);
+      }
+
+      var itemDeErro = document.createElement("li");
+      itemDeErro.innerText = "Operação errada: " + display.value;
+
+      listaDeErros.appendChild(itemDeErro);
+      return;
+    }
+
+    var resultado;
     switch(op) {
       case "SOMAR":
-        operacao = "+ ";
-        var operador2 = obterOperador2(operacao);
-        resultado = operador1 + operador2;
+        resultado = operador1 + obterOperador2("+ ");
         break;
       case "SUBTRAIR":
-        operacao = "- ";
-        var operador2 = obterOperador2(operacao);
+        var operador2 = obterOperador2("- ");
         resultado = operador1 - operador2;
         break;
       case "MULTIPLICAR":
-        operacao = "x ";
-        var operador2 = obterOperador2(operacao);
+        var operador2 = obterOperador2("x ");
         resultado = operador1 * operador2;
         break;
       case "DIVIDIR":
-        operacao = "/ ";
-        var operador2 = obterOperador2(operacao);
+        var operador2 = obterOperador2("/ ");
         resultado = operador1 / operador2;
         break;
       default:
@@ -61,6 +71,10 @@ function valor() {
 }
 
 function definirOperacao() {
+  if(op) {
+    operacaoErrada = true;
+  }
+
   var operacao;
   switch(this.value) {
     case "SOMAR":
@@ -87,10 +101,13 @@ function definirOperacao() {
 
 function limpar() {
   display.value = "";
+  operacaoErrada=false;
+  op=undefined;
+
 }
 
 function ponto() {
-  console.log('Você clicou no "ponto"...');
+  display.value = display.value + ".";
 }
 
 // Função chamada quando a página terminar de carregar!
