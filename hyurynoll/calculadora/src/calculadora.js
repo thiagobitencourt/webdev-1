@@ -133,7 +133,6 @@ function ponto() {
 }
 
 function recalcular(){
-  this.value.calcular;
 }
 
 
