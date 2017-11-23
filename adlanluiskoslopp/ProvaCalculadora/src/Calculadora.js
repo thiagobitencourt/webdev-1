@@ -94,7 +94,7 @@ function statusOperacao(){
 // function valor(element, evento) {
 
 function mostraDisplay(){
-  display.value
+  display.value = listaStatus;
   //console.log("eu vou aparecer no display");
 }
 
