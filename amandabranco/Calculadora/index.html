@@ -18,12 +18,12 @@
 
     <main class="container">
       <section>
-      <div  class="alerta alerta-erro">
-        <p id="erro"></p>
-        <button class="limpar-erros" type="button" onclick="limparErros()"> limpar erros </button>
-        
-      </div>
-    </section>
+        <div class="alerta alerta-erro">
+          <p id="erro"></p>
+          <button type="button" class="limpar-erros" onclick="limparErros()">limpar erros</button>
+        </div>
+      </section>
+
       <section>
         <input id="calculadora-display" disabled type="text" class="calculadora-input">
       </section>
@@ -59,6 +59,18 @@
         </section>
 
       </section>
+
+      <hr>
+      <p> Obervações </p>
+      
+      <section class="historico">
+        <div id="historico-op">
+        </div>
+        
+        <button type="button" onclick="limparHistorico()" class="btn btn-hgreen btn-h">Limpar histórico</button>
+      
+      </section>
+      
     </main>
 
     <script src="src/calculadora.js"></script>
@@ -74,6 +86,5 @@
        um comentario
       */
     </script>
-
   </body>
 </html>
