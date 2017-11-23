@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Calculadora - Thiago Bitencourt</title>
+    <title>Calculadora - Fabio Lima</title>
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
@@ -58,9 +58,20 @@
           <button type="button" class="btn btn-blue ponto">.</button>
           <button type="button" value="DIVIDIR" class="btn btn-blue operacao">/</button>
         </section>
-
       </section>
+
+        <hr color="#000000">
+        <section>
+          <div class="alerta alerta-erro">
+            <p id="operacoescoretas"></p>
+          </div>
+          <div>
+            <button type="button" class="btn btn-green" onclick="LimparErros()" >Limpar</button>
+          </div>
+        </section>
+
     </main>
+
 
     <script src="src/calculadora.js"></script>
     <script>
