@@ -32,11 +32,12 @@ function historicoDeAcertos(){
 
       var itemCorreto = document.createElement("button");
 
-	  itemCorreto.innerText = "Operação: " + op +" Operador 1: "+operador1+ " Operador 2: ";
+	  itemCorreto.innerText = "Operação: " + op +" Operador 1: "+operador1+ " Operador 2: "+operador3;
 
       listaDeAcertos.appendChild(itemCorreto);
 	  return;
 }
+
 
 function calcular() {
     if(operacaoErrada) {
