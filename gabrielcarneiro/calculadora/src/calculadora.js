@@ -17,6 +17,7 @@ function obterOperador2(operacao) {
   Função que irá executar a operação requerida
 */
 function calcular() {
+
     if(operacaoErrada) {
       console.log("Esta errado!!!");
 
@@ -39,25 +40,51 @@ function calcular() {
     var resultado;
     switch(op) {
       case "SOMAR":
-        resultado = operador1 + obterOperador2("+ ");
+        var operador2 = obterOperador2("+ ");
+        resultado = operador1 + operador2;
+        addHistorico(operador1, op, operador2);
         break;
       case "SUBTRAIR":
         var operador2 = obterOperador2("- ");
         resultado = operador1 - operador2;
+        addHistorico(operador1, op, operador2);
         break;
       case "MULTIPLICAR":
-        var operador2 = obterOperador2("x ");
+        var operador2 = obterOperador2("X ");
         resultado = operador1 * operador2;
+        addHistorico(operador1, op, operador2);
         break;
       case "DIVIDIR":
         var operador2 = obterOperador2("/ ");
         resultado = operador1 / operador2;
+        addHistorico(operador1, op, operador2);
         break;
       default:
         console.log("Operação desconhecida!");
     }
 
+
     display.value = resultado;
+}
+
+function addHistorico(op1, operacao, op2){
+  var historicoDeOperacoes = document.getElementById("historico-operacoes");
+  var listaDeOperacoes = document.getElementById("lista-operacoes");
+
+  if(!listaDeOperacoes) {
+    listaDeOperacoes = document.createElement("ul");
+    listaDeOperacoes.id = "lista-operacoes";
+
+    historicoDeOperacoes.appendChild(listaDeOperacoes);
+  }
+
+  var itemDeHistorico = document.createElement("li");
+  itemDeHistorico.className += "item-historico";
+  itemDeHistorico.innerText = "Operação: " + operacao+ " operador1 = " +  op1 +
+  " operador2 = " + op2;
+
+  listaDeOperacoes.appendChild(itemDeHistorico);
+  return;
 }
 
 /*
@@ -103,10 +130,15 @@ function limpar() {
   display.value = "";
   operacaoErrada = false;
   op = undefined;
+  operador1 = undefined;
 }
 
 function limparErros() {
   document.getElementById("erro").innerHTML = "";
+}
+
+function limparHistorico() {
+  document.getElementById("historico-operacoes").innerHTML = "";
 }
 
 function ponto() {

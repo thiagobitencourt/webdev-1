@@ -87,3 +87,38 @@
   color: white;
   background-color: #f44336;
 }
+
+#historico-operacoes{
+  min-height: 10px;
+  margin-top :40px;
+  border: 1px solid black;
+  width: 45%;
+  border-radius: 30px;
+  padding-left: 10px;
+  color: #0d085f;
+}
+
+#lista-operacoes{
+  list-style-type:none;
+}
+
+.item-historico{
+  background-color: #6bef70;
+  border: 1px solid #116914;
+  min-height: 20px;
+  margin: 5px;
+  padding: 5px;
+  width: 370px;;
+}
+.item-historico:hover{
+  cursor :pointer;
+  background-color: #bbf3bd;
+  border: 1px solid white;
+}
+
+.limpar-historico{
+  color: green;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+}
