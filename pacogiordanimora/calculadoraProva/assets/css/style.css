@@ -99,18 +99,3 @@
   border-color: #f44336;
   color: red;
 }
-
-.limpar-acertos {
-  color: red;
-  background-color: transparent;
-  border: 0px;
-  cursor: pointer;
-}
-
-.limpar-acertos::before {
-  content: "x ";
-}
-
-.limpar-acertos:hover {
-  text-decoration: underline;
-}

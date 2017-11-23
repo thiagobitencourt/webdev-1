@@ -2,6 +2,7 @@ var display;
 var operador1;
 var op;
 var operacaoErrada = false;
+var operacao;
 
 function obterOperador2(operacao) {
     var valorDisplay = display.value;
@@ -35,46 +36,49 @@ function calcular() {
       listaDeErros.appendChild(itemDeErro);
       return;
     }else {
-      console.log("Esta certo!!");
-
-      var painelDeAcerto = document.getElementById("acerto");
-      var listaDeAcertos = document.getElementById("lista-acertos");
-
-      if(!listaDeAcertos) {
-        listaDeAcertos = document.createElement("ul");
-        listaDeAcertos.id = "lista-acertos";
-        painelDeAcerto.appendChild(listaDeAcertos);
-      }
-
-      var itemDeAcerto = document.createElement("li");
-      itemDeAcerto.innerText = "Operação errada: " + display.value;
-
-      listaDeAcertos.appendChild(itemDeAcerto);
-      return;
-    }
 
     var resultado;
     switch(op) {
       case "SOMAR":
         resultado = operador1 + obterOperador2("+ ");
+        operacao = "SOMAR";
         break;
       case "SUBTRAIR":
         var operador2 = obterOperador2("- ");
         resultado = operador1 - operador2;
+        operacao = "SUBTRAIR";
         break;
       case "MULTIPLICAR":
         var operador2 = obterOperador2("x ");
         resultado = operador1 * operador2;
+        operacao = "MULTIPLICAR";
         break;
       case "DIVIDIR":
         var operador2 = obterOperador2("/ ");
         resultado = operador1 / operador2;
+        operacao = "DIVIDIR";
         break;
       default:
         console.log("Operação desconhecida!");
     }
+    console.log("Esta certo!!");
 
+    var painelDeAcerto = document.getElementById("acerto");
+    var listaDeAcertos = document.getElementById("lista-acertos");
+
+    if(!listaDeAcertos) {
+      listaDeAcertos = document.createElement("ul");
+      listaDeAcertos.id = "lista-acertos";
+      painelDeAcerto.appendChild(listaDeAcertos);
+    }
+
+    var itemDeAcerto = document.createElement("li");
+    itemDeAcerto.innerText = "Operação = " + operacao + " Operador 1 = " + operador1 + " Operador 2 = " + operador2;
+
+    listaDeAcertos.appendChild(itemDeAcerto);
+    return;
     display.value = resultado;
+  }
 }
 
 /*
