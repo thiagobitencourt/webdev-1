@@ -18,54 +18,67 @@ function obterOperador2(operacao) {
 */
 function calcular() {
 
-    if(operacaoErrada){
-      console.log("está errado");
+    if(operacaoErrada) {
+      console.log("Esta errado!!!");
 
       var painelDeErro = document.getElementById("erro");
       var listaDeErros = document.getElementById("lista-erros");
 
-      if(!listaDeErros){
+      if(!listaDeErros) {
         listaDeErros = document.createElement("ul");
-        listaDeErros.id = "lista-erros"; 
+        listaDeErros.id = "lista-erros";
         painelDeErro.appendChild(listaDeErros);
       }
 
       var itemDeErro = document.createElement("li");
-      itemDeErro.innerText = "operacao errada: " + display.value;
+      itemDeErro.innerText = "Operação errada: " + display.value;
 
       listaDeErros.appendChild(itemDeErro);
-  
       return;
     }
 
     var resultado;
-
     switch(op) {
       case "SOMAR":
-        operacao = "+ ";
-        var operador2 = obterOperador2(operacao);
-        resultado = operador1 + operador2;
+        resultado = operador1 + obterOperador2("+ ");
         break;
       case "SUBTRAIR":
-        operacao = "- ";
-        var operador2 = obterOperador2(operacao);
+        var operador2 = obterOperador2("- ");
         resultado = operador1 - operador2;
         break;
       case "MULTIPLICAR":
-        operacao = "x ";
-        var operador2 = obterOperador2(operacao);
+        var operador2 = obterOperador2("x ");
         resultado = operador1 * operador2;
         break;
       case "DIVIDIR":
-        operacao = "/ ";
-        var operador2 = obterOperador2(operacao);
+        var operador2 = obterOperador2("/ ");
         resultado = operador1 / operador2;
         break;
       default:
         console.log("Operação desconhecida!");
     }
 
+    addHistorico();
     display.value = resultado;
+}
+
+function addHistorico(){
+  var historicoOperacoes = document.getElementById("historico-op");
+  var listaDeOperacoes = document.getElementById("lista-operacoes");
+
+  if(!listaDeOperacoes) {
+    listaDeOperacoes = document.createElement("ul");
+    listaDeOperacoes.id = "lista-operacoes";
+
+    historicoOperacoes.appendChild(listaDeOperacoes);
+  }
+
+  var itemDoHistorico = document.createElement("li");
+  itemDoHistorico.className += "item-historico";
+  itemDoHistorico.innerText = "Operação: " + display.value;
+
+  listaDeOperacoes.appendChild(itemDoHistorico);
+  return;
 }
 
 /*
@@ -79,8 +92,7 @@ function valor() {
 }
 
 function definirOperacao() {
-
-  if(op){
+  if(op) {
     operacaoErrada = true;
   }
 
@@ -112,14 +124,19 @@ function limpar() {
   display.value = "";
   operacaoErrada = false;
   op = undefined;
+  operador1 = undefined;
 }
 
-function limparErros(){
-  document.getElementById("lista-erros").innerHTML = "";
+function limparErros() {
+  document.getElementById("erro").innerHTML = "";
+}
+
+function limparHistorico() {
+  document.getElementById("historico-op").innerHTML = "";
 }
 
 function ponto() {
-  console.log('Você clicou no "ponto"...');
+  display.value = display.value + ".";
 }
 
 // Função chamada quando a página terminar de carregar!
@@ -143,3 +160,4 @@ window.onload = function() {
 
   display = document.getElementById("calculadora-display");
 }
+
