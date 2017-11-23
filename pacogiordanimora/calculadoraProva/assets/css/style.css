@@ -87,3 +87,30 @@
   color: white;
   background-color: #f44336;
 }
+
+#container > ul{
+  color: green;
+  text-decoration: underline;
+  column-rule-color:
+}
+
+
+.alerta-acerto {
+  border-color: #f44336;
+  color: red;
+}
+
+.limpar-acertos {
+  color: red;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+}
+
+.limpar-acertos::before {
+  content: "x ";
+}
+
+.limpar-acertos:hover {
+  text-decoration: underline;
+}

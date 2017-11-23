@@ -34,6 +34,23 @@ function calcular() {
 
       listaDeErros.appendChild(itemDeErro);
       return;
+    }else {
+      console.log("Esta certo!!");
+
+      var painelDeAcerto = document.getElementById("acerto");
+      var listaDeAcertos = document.getElementById("lista-acertos");
+
+      if(!listaDeAcertos) {
+        listaDeAcertos = document.createElement("ul");
+        listaDeAcertos.id = "lista-acertos";
+        painelDeAcerto.appendChild(listaDeAcertos);
+      }
+
+      var itemDeAcerto = document.createElement("li");
+      itemDeAcerto.innerText = "Operação errada: " + display.value;
+
+      listaDeAcertos.appendChild(itemDeAcerto);
+      return;
     }
 
     var resultado;
@@ -107,6 +124,10 @@ function limpar() {
 
 function limparErros() {
   document.getElementById("erro").innerHTML = "";
+}
+
+function limparAcertos() {
+  document.getElementById("acerto").innerHTML = "";
 }
 
 function ponto() {
