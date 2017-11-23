@@ -87,3 +87,46 @@
   color: white;
   background-color: #f44336;
 }
+
+
+
+.lista-Resultados{
+  min-height: 40px;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  border-color: green;
+}
+
+.limpar-results {
+  color: white;
+  background-color: green;
+  border: 2px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.limpar-results::before {
+  content: "x ";
+}
+
+.limpar-results:hover {
+  text-decoration: underline;
+}
+
+
+.resultadoLista{
+  color: white;
+  background-color: black;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 90px;
+  text-align: center;
+}
+
+.resultadoLista:houver{
+  background-color: purple;
+}
+

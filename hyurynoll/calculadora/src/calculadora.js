@@ -62,16 +62,16 @@ function calcular() {
         
       var painelResults = document.getElementById("result");
        var listaDeResults = document.getElementById("lista-results");
-       
+       var botaoResultado = document.getElementById("botao-result");
         
-        listaDeResults = document.createElement("ul");
-        listaDeResults.id = "lista-results";
-        painelResults.appendChild(listaDeResults);
+       botaoResultado = document.createElement("ul");
+       botaoResultado.id = "botao-result";
+        painelResults.appendChild(botaoResultado);
 
-      var result = document.createElement("li");
+      var result = document.createElement("button");
       result.innerText = operador1 +" "+ op +" "+ operador2+" ="+ resultado ;
 
-      listaDeResults.appendChild(result);
+      botaoResultado.appendChild(result);
       return;
 
 }
@@ -132,6 +132,10 @@ function ponto() {
   display.value = display.value + ".";
 }
 
+function recalcular(){
+  this.value.calcular;
+}
+
 
 // Função chamada quando a página terminar de carregar!
 window.onload = function() {
@@ -154,3 +158,5 @@ window.onload = function() {
 
   display = document.getElementById("calculadora-display");
 }
+
+
