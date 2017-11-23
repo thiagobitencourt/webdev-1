@@ -3,6 +3,7 @@
 
 <head>
   <title>Calculadora - Paco</title>
+  <meta charset="utf-8">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -18,36 +19,46 @@
   <div>
     <section>
       <input type="text" class="inputBut">
-      <button type="button" class="btn btn-green">Calcular</button>
     </section>
   </div>
-  <div>
+  <section class="calculadora">
     <section class="space">
-      <button type="button" class="btn btn-green btnCalc">B</button>
-      <button type="button" class="btn btn-green btnCalc">B</button>
-      <button type="button" class="btn btn-green btnCalc">B</button>
-      <button type="button" class="btn btn-green btnCalc">B</button>
+      <button type="button" value="7" class="btn btn-green btnCalc numero">7</button>
+      <button type="button" value="8" class="btn btn-green btnCalc numero">8</button>
+      <button type="button" value="9" class="btn btn-green btnCalc numero">9</button>
+      <button type="button" value="+" class="btn btn-green btnCalc operacao">+</button>
+      <button type="button" class="btn btn-green" onclick="calcular();">Calcular</button>
     </section>
     <section class="space">
-      <button type="button" class="btn btn-green btnCalc">B</button>
-      <button type="button" class="btn btn-green btnCalc">B</button>
-      <button type="button" class="btn btn-green btnCalc">B</button>
-      <button type="button" class="btn btn-green btnCalc">B</button>
+      <button type="button" value="4" class="btn btn-green btnCalc numero">4</button>
+      <button type="button" value="5" class="btn btn-green btnCalc numero">5</button>
+      <button type="button" value="6" class="btn btn-green btnCalc numero">6</button>
+      <button type="button" value="-" class="btn btn-green btnCalc operacao">-</button>
     </section>
     <section class="space">
-      <button type="button" class="btn btn-green btnCalc">B</button>
-      <button type="button" class="btn btn-green btnCalc">B</button>
-      <button type="button" class="btn btn-green btnCalc">B</button>
-      <button type="button" class="btn btn-green btnCalc">B</button>
+      <button type="button" value="1" class="btn btn-green btnCalc numero">1</button>
+      <button type="button" value="2" class="btn btn-green btnCalc numero">2</button>
+      <button type="button" value="3" class="btn btn-green btnCalc numero">3</button>
+      <button type="button" value="*" class="btn btn-green btnCalc operacao">*</button>
     </section>
     <section class="space">
-      <button type="button" class="btn btn-green btnCalc">B</button>
-      <button type="button" class="btn btn-green btnCalc">B</button>
-      <button type="button" class="btn btn-green btnCalc">B</button>
-      <button type="button" class="btn btn-green btnCalc">B</button>
+      <button type="button" id="botao-limpar" class="btn btn-green btnCalc">C</button>
+      <button type="button" value="0" class="btn btn-green btnCalc numero">0</button>
+      <button type="button" class="btn btn-green btnCalc">.</button>
+      <button type="button" value="/" class="btn btn-green btnCalc operacao">/</button>
     </section>
-  </div>
-  <!-- Atividade - Fazer botões da calculadora 9x9 -->
+  </section>
+
+<script src="src/calculadora.js"></script>
+<script>
+  console.log("Bem vindo ao fantástico mundo do Javascript");
+  var x = 10;
+  var y = 20;
+  var z = "abc";
+  console.log("A soma dos números é " + (x + y));
+  //alert("A soma dos números é " + (x + y));
+</script>
+
 </body>
 
 </html>
