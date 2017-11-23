@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> Novo Artigo </title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body class ="fundo">
+		<header class = "cabecalho">
+
+			<h1> Tibao da Depressao </h1>
+			<p> Esse blog tem o intuito de trazer topicos e assuntos engraçados a respeito do jogo Tibia </p>
+			<nav>
+				<a href = "index.html"> Pagina Inicial</a href>
+				<a href = "perfil.html"> Informaçoes dos autores</a href>
+				<a href = "novo_artigo.html"> Crie um artigo você também</a href>
+			</nav>
+			
+					
+		</header>
+		
+		
+		<form name = "novo_artigo-form" action = "index.html" method = "GET">
+			<section>
+				<label for = "inp-txt"><strong>Titulo</strong> </label>
+				<input id="inp-txt" type ="text"  value= ""/>
+		
+				<br />
+				<br />
+				<label for = "inp-txt"><strong>Descricao<strong> </label>
+				<input id="inp-txt" type ="text"  value= "" />
+			
+		
+		
+			
+				<br />
+				<br />
+				<label for = "inp-date"><strong>Data de publicacao</strong> </label>
+				<input id="inp-date" type ="date"  value= ""/>
+		
+				<br />
+				<br />
+				<section>
+					<p> TAGS </p>
+					<input type="radio" name="tags" value="Pk" checked> Pk<br />
+					<input type="radio" name="tags" value="Fun"> Fun<br />
+					<input type="radio" name="tags" value="Quest"> 	Quest<br />
+					<input type="radio" name="tags" value="Kill"> Kill<br />
+				</section>
+				
+				<label for = "inp-cor"><strong>Cor do Titulo</strong> </label>
+				<input id="inp-cor" type ="color"  value= ""/>
+				<br />
+				<label ><strong>Conteudo do Artigo</strong> </label>
+				<br />
+				<textarea name="comentário" rows="15" cols="100"></textarea>
+				
+				</section>	
+			
+		
+				<br />
+				<br />
+				<button input type = "submit">Cadastrar</button>
+				<button type = "reset">Limpar</button>
+		</form>	
+		
+	
+		
+		
+		
+		
+				
+		<footer>
+		<p> Proprietario Bitz</p>
+		<p> Email para contato : tibaodepressao@gmail.com</p>
+		<time datetime=”2017-09-20">20/9/2017</time>
+		</footer>
+	</body>
+</html>
