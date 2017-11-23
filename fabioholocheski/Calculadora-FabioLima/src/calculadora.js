@@ -3,6 +3,7 @@ var operador1;
 var op;
 var operacaoErrada = false;
 
+
 function obterOperador2(operacao) {
     var valorDisplay = display.value;
 
@@ -13,9 +14,30 @@ function obterOperador2(operacao) {
     return operador2;
 }
 
+
 /*
   Função que irá executar a operação requerida
 */
+
+function historicoDeAcertos(){
+	var operador3 = obterOperador2("-");
+	var painelDeAcertos = document.getElementById("salvar");
+      var listaDeAcertos = document.getElementById("lista-salvos");
+
+      if(!listaDeAcertos) {
+        listaDeAcertos = document.createElement("ul");
+        listaDeAcertos.id = "lista-erros";
+        painelDeAcertos.appendChild(listaDeAcertos);
+      }
+
+      var itemCorreto = document.createElement("button");
+
+	  itemCorreto.innerText = "Operação: " + op +" Operador 1: "+operador1+ " Operador 2: ";
+
+      listaDeAcertos.appendChild(itemCorreto);
+	  return;
+}
+
 function calcular() {
     if(operacaoErrada) {
       console.log("Esta errado!!!");
@@ -35,6 +57,8 @@ function calcular() {
       listaDeErros.appendChild(itemDeErro);
       return;
     }
+
+     historicoDeAcertos();
 
     var resultado;
     switch(op) {
@@ -58,6 +82,8 @@ function calcular() {
     }
 
     display.value = resultado;
+
+
 }
 
 /*
@@ -104,8 +130,12 @@ function limpar() {
   operacaoErrada = false;
   op = undefined;
 }
-function LimparErros(){
-    document.getElementById("erro").innerHTML = "";
+
+function limparErros() {
+  document.getElementById("erro").innerHTML = "";
+}
+function limparHistorico() {
+  document.getElementById("salvar").innerHTML = "";
 }
 
 function ponto() {

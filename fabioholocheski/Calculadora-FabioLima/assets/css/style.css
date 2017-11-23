@@ -49,7 +49,12 @@
 .btn-green {
   border-color: #4CAF50;
 }
-
+.btn-limpar{
+  border-color: #ff3300;
+}
+.btn-limpar:hover{
+  background-color: #ff3300;
+}
 .btn-green:hover {
   color: white;
   background-color: #4CAF50;
@@ -79,4 +84,15 @@
 .btn-red:hover {
   color: white;
   background-color: #f44336;
+}
+.displayOperacoesCorretas{
+  min-height: 40px;
+  width: 100%;
+  border: 1px solid #4d2600;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  background-color: #adad85;
+}
+.displayOperacoes{
+  border: 1px solid #4d2600;
 }
