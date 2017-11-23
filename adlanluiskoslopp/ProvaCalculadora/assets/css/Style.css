@@ -24,6 +24,22 @@
   border: 1px solid #ccc;
 }
 
+.statusPainel{
+  padding-top: 50px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.statusPainel div{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-top: 50px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
 .calculadora-input {
   height: 45px;
   font-size: 25px;

@@ -1,8 +1,10 @@
 var display;
-var operador1 ;
+var operador1;
 var operador2;
 var op;
 var operacaoErrada = false;
+var resultado
+var displayStatus;
 /*
   Função que irá executar a operação requerida
 */
@@ -41,7 +43,7 @@ function calcular() {
       return;
     }
 
-  var resultado
+  //var resultado
 
   switch(op) {
     case "SOMAR":
@@ -64,12 +66,25 @@ function calcular() {
       console.log("Operação desconhecida!");
   }
   display.value = resultado;
-
+  statusOperacao();
 
 
 
     //alert("eu vou " + op + "com o valor " + operador1 + " e " + operador2);
 }
+
+function statusOperacao(){
+  displayStatus = document.getElementById("statusOperacao");
+  var listaStatus;
+
+  //listaStatus = document.createElement("div");
+  displayStatus.innerText = "Operacao: " + operador1 + " " + op + " "+ operador2;
+  //displayStatus = listaStatus;
+  //return displayStatus;
+}
+
+
+
 /*
   Função que é chamada sempre que um usuario
   clica em um botão de numero da calculadora
@@ -148,6 +163,7 @@ window.onload = function() {
   for(var i = 0; i < botoesOperacao.length; i++) {
     botoesOperacao[i].addEventListener('click', definirOperacao);
   }
+
 
   display = document.getElementById("calculadora-display");
 }
