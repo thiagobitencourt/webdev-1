@@ -25,7 +25,8 @@
 }
 
 .statusPainel{
-  padding-top: 50px;
+  height: 100px;
+  padding-top: 5px;
   margin-top: 10px;
   border: 1px solid #ccc;
   border-radius: 20px;
@@ -35,9 +36,15 @@
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
-  padding-top: 50px;
+  padding: 10px 10px 10px 10px;
   border: 1px solid #ccc;
   border-radius: 20px;
+  color: green;
+}
+
+.statusPainel div:hover{
+  color: white;
+  background-color: #2196f3 ;
 }
 
 .calculadora-input {

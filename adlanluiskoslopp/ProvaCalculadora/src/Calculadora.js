@@ -77,10 +77,10 @@ function statusOperacao(){
   displayStatus = document.getElementById("statusOperacao");
   var listaStatus;
 
-  //listaStatus = document.createElement("div");
-  displayStatus.innerText = "Operacao: " + operador1 + " " + op + " "+ operador2;
-  //displayStatus = listaStatus;
-  //return displayStatus;
+  listaStatus = document.createElement("div");
+  listaStatus.innerText = "Operacao: " + op + " Operador1: "+ operador1 + " Operador2: " + operador2;
+  displayStatus.appendChild(listaStatus);
+  displayStatus.onclick = console.log("ops");;
 }
 
 
@@ -130,6 +130,10 @@ function definirOperacao() {
   display.value = display.value + " " + operacao + " ";
 }
 
+function apagarStatus(){
+  displayStatus.innerText = " ";
+}
+
 function limpar() {
   display.value = "";
   operacaoErrada = false;
@@ -164,6 +168,8 @@ window.onload = function() {
     botoesOperacao[i].addEventListener('click', definirOperacao);
   }
 
+  var limparStatus = document.getElementById("limparStatus");
+  limparStatus.addEventListener("click", apagarStatus);
 
   display = document.getElementById("calculadora-display");
 }
