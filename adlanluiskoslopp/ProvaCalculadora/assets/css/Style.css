@@ -28,7 +28,7 @@
   height: 100px;
   padding-top: 5px;
   margin-top: 10px;
-  border: 1px solid #ccc;
+  border: 7px solid #ccc;
   border-radius: 20px;
 }
 
@@ -37,7 +37,7 @@
   margin-right: 10px;
   margin-bottom: 10px;
   padding: 10px 10px 10px 10px;
-  border: 1px solid #ccc;
+  border: 3px solid #ccc;
   border-radius: 20px;
   color: green;
 }

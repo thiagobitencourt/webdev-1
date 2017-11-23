@@ -5,6 +5,7 @@ var op;
 var operacaoErrada = false;
 var resultado
 var displayStatus;
+var listaStatus;
 /*
   Função que irá executar a operação requerida
 */
@@ -75,12 +76,13 @@ function calcular() {
 
 function statusOperacao(){
   displayStatus = document.getElementById("statusOperacao");
-  var listaStatus;
+
 
   listaStatus = document.createElement("div");
   listaStatus.innerText = "Operacao: " + op + " Operador1: "+ operador1 + " Operador2: " + operador2;
+
   displayStatus.appendChild(listaStatus);
-  displayStatus.onclick = console.log("ops");;
+  displayStatus.addEventListener("click", mostraDisplay);
 }
 
 
@@ -90,6 +92,13 @@ function statusOperacao(){
   clica em um botão de numero da calculadora
 */
 // function valor(element, evento) {
+
+function mostraDisplay(){
+  display.value
+  //console.log("eu vou aparecer no display");
+}
+
+
 function valor() {
   var valorAtual = display.value;
   display.value = valorAtual + this.value;
