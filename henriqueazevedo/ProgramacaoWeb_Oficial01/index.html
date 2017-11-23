@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> Tibao da Depressao </title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+	</head>
+		
+	<body class = "fundo">
+		<header class = "cabecalho">
+
+			<h1> Tibao da Depressao </h1>
+			<p> Esse blog tem o intuito de trazer topicos e assuntos engraçados a respeito do jogo Tibia </p>
+			<nav>
+				<a href = "index.html"> Pagina Inicial</a href>
+				<a href = "perfil.html"> Informaçoes dos autores</a href>
+				<a href = "novo_artigo.html"> Crie um artigo você também</a href>
+			</nav>
+			
+					
+		</header>
+		
+		
+		<aside>
+			<nav>
+				<ul class = "textolink">
+					<li><a href = "https://www.tibiabr.com/"> Outro Artigo 1</a href></li>
+					<li><a href = "https://www.tibiabr.com/"> Outro Artigo 2</a href></li>
+				</ul>
+			</nav>
+			<p>Tags</p>
+			<li><a href = "">Fun</a></li>
+			<li><a href = "">Kill</a></li>
+			<li><a href = "">Pk</a></li>
+			<li><a href = "">Quest</a></li>
+			
+			<form action=" " method="post">
+				<label for="busca">Buscar</label>
+				<input type="search" id="busca" name="q">
+				<button type="submit">OK</button>
+			</form>
+		</aside>
+		
+		
+		<br />
+		<hr />
+		<br />
+		<article class="artigo">
+			<header>
+				<h2><strong>Joaozinho</strong></h2>	
+			</header>
+			
+			<main>
+				<p> Tentativa de executar POI</p>
+			</main>
+				<p> Tags</p>
+					<li><a href = "">Fun</a></li>
+					<li><a href = "">Kill</a></li>
+					<li><a href = "">Quest</a></li>
+			<br />
+			<script>
+		        function incrementaValor(valorMaximo){
+		            var value = parseInt(document.getElementById('resultado').value,10);
+		            value = isNaN(value) ? 0 : value;
+		            if(value >= valorMaximo) {
+		                value = valorMaximo;
+		            }else{
+		                value++;
+		            }
+		            document.getElementById('resultado').value = value;
+		        }
+		        function decrementaValor(valorMinimo){
+		            var value = parseInt(document.getElementById('resultado').value,10);
+		            value = isNaN(value) ? 0 : value;
+		            if(value <= valorMinimo) {
+		                value = 0;
+		            }else{
+		                value--;
+		            }
+		            document.getElementById('resultado').value = value;
+		        }
+		    </script>
+					<div>
+						<a href="#" onclick="incrementaValor(10);return false;">Like</a>
+						<input class="label" name="resultado" id="resultado" value="0">
+						<a href="#" onclick="decrementaValor(0); return false;">Deslike</a>
+
+					</div>
+			
+			<footer>
+				<section>
+				<hr />
+					<h5>Mateuzinho</h5>
+					<p><h6>Nego morreu tudo mto sarro</h6></p>
+					
+				</section>
+				
+				
+				<form name ="coment-form" action = "index.html" method = "GET">
+					<label for = "inp-txt"><strong> Nome:</strong> </label>
+					<input id="inp-txt" type ="text"  value= ""/>
+		
+					<br />
+					<br />
+					<label for = "inp-txt"><strong>Comentário<strong> </label>
+					<textarea>
+					</textarea>
+		
+					<br />
+					<br />
+				
+					<button input type = "submit">Comentar</button>
+
+					<button type = "reset">Limpar</button>
+				
+				
+				</form>
+				<hr />
+			</footer>
+		</article>
+		
+		
+		
+		<article>
+			<header>
+				<h2><strong> Kekel</strong></h2>	
+			</header>
+			
+			<main>
+				<p> Pklizando lvl 8</p>
+			</main>
+			
+					<p> Tags</p>
+					<li><a href = "">Fun</a></li>
+					<li><a href = "">Kill</a></li>
+					<li><a href = "">Pk</a></li>
+					
+			<br />
+				
+			
+			<footer>
+				<section>
+				<hr />
+					<h5>Pk de SD</h5>
+					<p><h6>Mato tudo msm esses noob</h6></p>
+					
+				</section>
+				
+				
+				<form name ="coment-form" action = "index.html" method = "GET">
+					<label for = "inp-txt"><strong> Nome:</strong> </label>
+					<input id="inp-txt" type ="text"  value= ""/>
+		
+					<br />
+					<br />
+					<label for = "inp-txt"><strong>Comentário<strong> </label>
+					<textarea>
+					</textarea>
+		
+					<br />
+					<br />
+				
+					<button input type = "submit">Comentar</button>
+
+					<button type = "reset">Limpar</button>
+				
+				
+				</form>
+				<hr />
+				
+			</footer>
+		
+		
+		</article>
+		
+		<footer class = "footer">
+		<p> Proprietario Bitz</p>
+		<p> Email para contato : tibaodepressao@gmail.com</p>
+		<time datetime=”2017-09-20">20/9/2017</time>
+		</footer>
+	
+	
+	
+	</body>
+</html>
