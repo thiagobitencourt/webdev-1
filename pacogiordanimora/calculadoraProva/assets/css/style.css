@@ -88,14 +88,33 @@
   background-color: #f44336;
 }
 
-#container > ul{
-  color: green;
-  text-decoration: underline;
-  column-rule-color:
+
+.painel-acertos  li{
+  border: 1px solid black;
+  height: 15px;
+  width: 500px;
+  color: Black;
+  padding: 10px;
+  margin: 10px;
+  background-color: yellow;
 }
 
+.painel-acertos  li:hover{
+  cursor: pointer;
+  border: 1px solid red;
+  height: 15px;
+  width: 500px;
+  color: #FFF;
+  padding: 10px;
+  margin: 10px;
+  background-color: green;
+}
 
-.alerta-acerto {
-  border-color: #f44336;
-  color: red;
+.btn-red {
+  border-color: red;
+}
+
+.btn-red:hover {
+  color: white;
+  background-color: red;
 }

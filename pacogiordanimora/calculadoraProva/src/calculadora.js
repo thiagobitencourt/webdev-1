@@ -2,7 +2,7 @@ var display;
 var operador1;
 var op;
 var operacaoErrada = false;
-var operacao;
+var operacao2;
 
 function obterOperador2(operacao) {
     var valorDisplay = display.value;
@@ -14,9 +14,6 @@ function obterOperador2(operacao) {
     return operador2;
 }
 
-/*
-  Função que irá executar a operação requerida
-*/
 function calcular() {
     if(operacaoErrada) {
       console.log("Esta errado!!!");
@@ -40,23 +37,24 @@ function calcular() {
     var resultado;
     switch(op) {
       case "SOMAR":
+        var operador2 = obterOperador2("+ ");
         resultado = operador1 + obterOperador2("+ ");
-        operacao = "SOMAR";
+        operacao2 = "SOMAR";
         break;
       case "SUBTRAIR":
         var operador2 = obterOperador2("- ");
-        resultado = operador1 - operador2;
-        operacao = "SUBTRAIR";
+        resultado = operador1 - obterOperador2("- ");
+        operacao2 = "SUBTRAIR";
         break;
       case "MULTIPLICAR":
         var operador2 = obterOperador2("x ");
-        resultado = operador1 * operador2;
-        operacao = "MULTIPLICAR";
+        resultado = operador1 * obterOperador2("x ");;
+        operacao2 = "MULTIPLICAR";
         break;
       case "DIVIDIR":
         var operador2 = obterOperador2("/ ");
-        resultado = operador1 / operador2;
-        operacao = "DIVIDIR";
+        resultado = operador1 / obterOperador2("/ ");
+        operacao2 = "DIVIDIR";
         break;
       default:
         console.log("Operação desconhecida!");
@@ -73,19 +71,16 @@ function calcular() {
     }
 
     var itemDeAcerto = document.createElement("li");
-    itemDeAcerto.innerText = "Operação = " + operacao + " Operador 1 = " + operador1 + " Operador 2 = " + operador2;
+    itemDeAcerto.innerText = "Operação = " + operacao2 + " Operador 1 = " + operador1 + " Operador 2 = " + operador2;
 
     listaDeAcertos.appendChild(itemDeAcerto);
-    return;
     display.value = resultado;
+    return;
+
   }
 }
 
-/*
-  Função que é chamada sempre que um usuario
-  clica em um botão de numero da calculadora
-*/
-// function valor(element, evento) {
+
 function valor() {
   var valorAtual = display.value;
   display.value = valorAtual + this.value;
