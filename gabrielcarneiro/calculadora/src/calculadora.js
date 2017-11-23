@@ -67,6 +67,11 @@ function calcular() {
     display.value = resultado;
 }
 
+function exibirItemHistorico(){
+  var string = this.innerText;
+  display.value = string;
+}
+
 function addHistorico(op1, operacao, op2){
   var historicoDeOperacoes = document.getElementById("historico-operacoes");
   var listaDeOperacoes = document.getElementById("lista-operacoes");
@@ -82,6 +87,7 @@ function addHistorico(op1, operacao, op2){
   itemDeHistorico.className += "item-historico";
   itemDeHistorico.innerText = "Operação: " + operacao+ " operador1 = " +  op1 +
   " operador2 = " + op2;
+  itemDeHistorico.onclick = exibirItemHistorico;
 
   listaDeOperacoes.appendChild(itemDeHistorico);
   return;
