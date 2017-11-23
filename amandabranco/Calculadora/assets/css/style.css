@@ -2,7 +2,7 @@
   margin: 15px 7% 15px 7%;
 }
 
-.alerta{
+.alerta {
   min-height: 40px;
   width: 100%;
   border: 1px solid #ccc;
@@ -10,25 +10,23 @@
   border-radius: 15px;
 }
 
-.alerta-erro{
+.alerta-erro {
   border-color: #f44336;
   color: red;
-
 }
 
-.limpar-erros{
+.limpar-erros {
   color: red;
   background-color: transparent;
-  border:0px;
+  border: 0px;
   cursor: pointer;
-
 }
 
-.limpar-erros::before{
-  content: "x";
+.limpar-erros::before {
+  content: "x ";
 }
 
-.limpar-erros:hover{
+.limpar-erros:hover {
   text-decoration: underline;
 }
 
@@ -88,64 +86,53 @@
 .btn-red:hover {
   color: white;
   background-color: #f44336;
-.container {
-  margin: 15px 7% 15px 7%;
 }
 
-.cabecalho {
-  margin-top: 35px;
-  padding: 15px;
-  height: 100px;
-  background-color: #f1f1f1;
-  border-radius: 20px;
-  border: 1px solid #ccc;
+#historico-op{
+  min-height: 40px;
+  width: 100%;
+  border-radius: 20px
+
 }
 
-.calculadora-input {
-  height: 45px;
-  font-size: 25px;
-}
-
-.calculadora .btns-line {
-  margin-bottom: 10px;
-}
-
-.calculadora .btns-line:first-child {
-  margin-top: 10px;
-}
-
-.btn {
-  height: 45px;
-  padding: 10px;
-  background-color: white;
-  border: 2px solid black;
-  cursor: pointer;
-  min-width: 50px;
-}
-
-.btn-green {
+.btn-hgreen {
   border-color: #4CAF50;
 }
+.btn-h {
+  border-color: #4CAF50;
+  margin-top: 50px;
+}
 
-.btn-green:hover {
+.btn-h:hover {
   color: white;
   background-color: #4CAF50;
 }
 
-.btn-blue {
-  border-color: #2196f3;
+.historico{
+  min-height: 40px;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  border-radius: 15px;
 }
 
-.btn-blue:hover {
-  color: white;
-  background-color: #2196f3 ;
+.item-historico{
+  width: 500px;
+  min-height: 10px;
+  margin: 8px;
+  padding: 8px;
+  background-color: #28aacb;
+  border: 1px solid #ccc;
+  color:white;
+}
+.item-historico:hover{
+  cursor :pointer;
+  background-color: #a3edff;
+  border: 1px;
+  color: black;
+
 }
 
-.btn-red {
-  border-color: #f44336;
-}
-
-.btn-red:hover {
-  color: white;
-  background-color: #f44336;
+#lista-operacoes{
+  list-style-type:none;
 }
