@@ -17,6 +17,7 @@ function obterOperador2(operacao) {
   Função que irá executar a operação requerida
 */
 function calcular() {
+
     if(operacaoErrada) {
       console.log("Esta errado!!!");
 
@@ -39,7 +40,8 @@ function calcular() {
     var resultado;
     switch(op) {
       case "SOMAR":
-        resultado = operador1 + obterOperador2("+ ");
+        var operador2 = obterOperador2("+ ");
+        resultado = operador1 + operador2;
         break;
       case "SUBTRAIR":
         var operador2 = obterOperador2("- ");
@@ -56,8 +58,22 @@ function calcular() {
       default:
         console.log("Operação desconhecida!");
     }
-
     display.value = resultado;
+        
+      var painelResults = document.getElementById("result");
+       var listaDeResults = document.getElementById("lista-results");
+       
+        
+        listaDeResults = document.createElement("ul");
+        listaDeResults.id = "lista-results";
+        painelResults.appendChild(listaDeResults);
+
+      var result = document.createElement("li");
+      result.innerText = operador1 +" "+ op +" "+ operador2+" ="+ resultado ;
+
+      listaDeResults.appendChild(result);
+      return;
+
 }
 
 /*
@@ -69,7 +85,6 @@ function valor() {
   var valorAtual = display.value;
   display.value = valorAtual + this.value;
 }
-
 function definirOperacao() {
   if(op) {
     operacaoErrada = true;
@@ -109,9 +124,14 @@ function limparErros() {
   document.getElementById("erro").innerHTML = "";
 }
 
+function limparResults(){
+   document.getElementById("result").innerHTML = "";
+}
+
 function ponto() {
   display.value = display.value + ".";
 }
+
 
 // Função chamada quando a página terminar de carregar!
 window.onload = function() {
