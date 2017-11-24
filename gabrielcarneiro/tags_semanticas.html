@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta charset="utf-8">
     <title>Tags semanticas</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
     <header>
@@ -11,7 +15,7 @@
         <p>Esta pagina é importante porque está cheia de lorem ipsum</p>
 
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="formulario.html">Formulario</a></li>
             </ul>
@@ -39,12 +43,35 @@
     <hr/>
 
     <section>
-            <p>As montanhas de algum lugar são bem legais, representação na figura 1.</p>
+      <div class="caixa">
+        <h3>Primeira div</h3>
+      </div>
 
+      <div class="caixa">
+        <h3>Segunda div</h3>
+      </div>
+    </section>
+
+
+    <section class="perfil">
+      <figure>
+        <img class="img-perfil" src="imagens/perfil.png" alt="">
+      </figure>
+
+      <p class="texto-comum">Um texto comum!</p>
+
+      <figure>
+        <img src="imagens/perfil.png" alt="">
+      </figure>
+    </section>
+
+
+    <section>
+            <p>As montanhas de algum lugar são bem legais, representação na figura 1.</p>
+        <figure class="figura">
             <img src="imagens/imagem1.jpg" alt="uma imagem dos mochileiros" width="800" height="400">
             <figcaption>Figura 1. Montanhas de algum lugar</figcaption>
         </figure>
-
     </section>
 
     <hr/>
@@ -67,7 +94,7 @@
             <span>Publicação: hoje</span>
         </header>
         <main>
-            <p>
+            <p class="artigo">
              Existem <strong>muitas</strong> variações disponíveis de passagens de Lorem Ipsum,
              mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor,
              ou palavras aleatórias que não parecem nem um pouco convincentes. S
@@ -85,7 +112,7 @@
 
                 <div>
                     <label>Nome:</label>
-                    <input type="text" name="" placeholder="Escreva seu nome">
+                    <input type="text" placeholder="Escreva seu nome">
                 </div>
 
                 <div>
@@ -93,7 +120,7 @@
                     <textarea max-length="140"></textarea>
                 </div>
 
-                <button type="submit">Comentar</button>
+                <button type="submit" class="btn">Comentar</button>
 
             </form>
 
