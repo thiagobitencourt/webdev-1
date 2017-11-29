@@ -1,31 +1,118 @@
-			h1 {
-				color: red;
-			}
+h1 {
+  color: red;
+}
 
-			.importante {
-				color: blue;
-			}
+h3 {
+  color: blue;
+}
 
-			#rodape{
-				/*style espessura, cor*/
-				border-style: solid green;
-				/*border-style:dashed;
-				border-width:1px;
-				border-color:green;
-				border-radius: 15px;*/
-			}
+h2 {
+  color: pink;
+}
 
-			.artigo{
-			 
-				border:1px solid;
-				border-radius: 15px;
-			}
+header {
+  color: #e6e600;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
-			.btn{
-				background-color:#2E8B57;
-				border: 1px solid #3CB371;
-				color: #ffffff;
-				border-radius:15px;
-				text-transform: uppercase;
-				text-decoration: underline;
-			}
+.artigo {
+  background-color: #cccccc;
+}
+
+.importante {
+  color: #4B0082;
+}
+
+/*.escondido{
+  display: none;*/
+}
+
+.rodape {
+  /* style espe.. cor */
+  /*
+    border-style: dashed;
+    border-width: 1px;
+    border-color: green;
+  */
+  border: 1px solid green;
+  border-radius: 15px;
+  /*border-radius: 100px;*/
+}
+
+.btn {
+  background-color: #3CB371;
+  border: 3px solid #2E8B57;
+  color: #ffffff;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.btn:hover{
+  /*cursor: pointer;
+  cursor: wait;
+  cursor: help;*/
+  cursor: move;
+}
+
+.figuras {
+  width: 300px;
+  height: 200px;
+}
+
+.perfil img.perfil-imagem {
+  width: 100px;
+  height: 100px;
+}
+
+.perfil img#perfil-imagem-2 {
+  width: 150px;
+  height: 100;
+  border-radius: 50%;
+}
+
+.caixa:hover{
+  background-color: green;
+  border-left: 5px dotted red;
+
+}
+
+.texto-comum:hover{
+  font-size: 25px;
+  color: orange;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.caixa{
+
+  border: 1px solid red;
+  background-color: blue;
+  height: 50px;
+  /*width: 50%;*/
+  margin: 40px 70px;
+  /*margin-top: 40px;
+  padding: 8px;
+  margin-left: 60px;
+
+  /*margin:40px 30px 25px 60px;*/ /*o mesmo que definir cada um, cima direito em baixo esquerdo*/ 
+
+}
+.caixa h3{
+ color: white;
+}
+
+.texto-comum{
+  font-size:10px;
+}
+
+.flutuando{
+  margin:0px;
+  padding:0px;
+}
+
+.flutuando div{
+  float: left;
+  width: 140px;
+  background: green;
+  margin:3px;
+}
