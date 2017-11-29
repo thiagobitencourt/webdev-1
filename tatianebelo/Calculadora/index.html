@@ -11,8 +11,8 @@
     <header class="container cabecalho" align="center">
       <h1>Calculadora</h1>
       <span>
-        <a href="http://github.com/thiagobitencourt" target="_blank">
-          Thiago Bitencourt
+        <a href="https://github.com/TatiBelo16" target="_blank">
+         Tatiane Belo
         </a>
       </span>
     </header>
@@ -22,6 +22,7 @@
       <section>
         <div class="alerta alerta-erro">
           <p id="erro"></p>
+         <button type="button" class="limpar-erros" onclick="limparErros()">limpar erros</button>
         </div>
       </section>
 
@@ -60,16 +61,34 @@
         </section>
 
       </section>
-    </main>
+
+      <header class="cont" align="center">
+
+        <section class="calc">
+      <button id "borda" type="input" value="calculadora-display" disabled="text" class="btn btn-blue operacao"> Operaçao  </button>
+    </section>
+
+      <section>
+          <button type="input" value="calculadora-display" disabled="text" class="btn btn-blue operacao"> Operação </button>
+      </section>
+    </header>
+
+    <section>
+      <br>
+         <button type="button" id="limpar" class="btn btn-blue"onclick="limparErros()"> X Limpar Histórico</button>
+    </section>
+
+       </main>
 
     <script src="js/calculadora.js"></script>
+    
     <script>
       console.log("Bem vindo ao fantástico mundo Javascript!");
       var x = 10;
-      var y = 20;
+      var y = 15;
       var z = "abc";
       console.log("A soma dos numeros é: " + (x + y));
-      // alert("A soma dos numeros é: " + (x + y));
+        // alert("A soma dos numeros é: " + (x + y));
       /*
        Tudo isso é
        um comentario

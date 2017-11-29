@@ -19,7 +19,7 @@
   margin-top: 35px;
   padding: 15px;
   height: 100px;
-  background-color: #f1f1f1;
+  background-color:  #009999;
   border-radius: 20px;
   border: 1px solid #ccc;
 }
@@ -72,3 +72,30 @@
   color: white;
   background-color: #f44336;
 }
+
+
+.cont{
+  margin-top: 35px;
+  padding: 15px;
+  height: 120px;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: #80ffbf;
+
+}
+
+.calc {
+  margin-top: 15px;
+ margin-left: 100px;
+ margin-right: 100px;
+ margin-bottom: 5px;
+}
+
+.limpar {
+
+border:1px;
+background-color: #00264d;
+cursor: pointer;
+}
+
