@@ -1,3 +1,4 @@
+<!-- preciso de 5,56-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,26 +25,26 @@
 		<div>
 			<label for="inp-text">Nome </label>
 			<br>
-			<input class= "input" id="inp-text" type="text"/>
+			<input class= "input" id="nome" type="text"/>
 		</div>	
 				<br>
 		<div>
 		<label for="inp-text">Sobrenome </label>
 			<br>
-		<input class="input" id="inp-text" type="text"/>
+		<input class="input" id="sbrnome" type="text"/>
 		</div>
 				<br>
-
+		<div>
 		<label for="date">Data de Nascimento </label>
 			<br>
-		<input id="inp-date" type="date"/>
-
+		<input id="data" type="date"/>
+		</div>
 				<br>
 
 		<section>
 			<label> Formacao: </label>
 				<br>
-			<select>
+			<select class="select">
 				<option> Ensino básico </option>
 				<option> Ensino fundamental </option>
 				<option> Ensino médio </option>
@@ -55,16 +56,25 @@
 		<div>
 		<label> Qualificacoes: </label>
 			<br>
-		<textarea class="textarea"></textarea>
+		<textarea id="quali"class="textarea"></textarea>
 		</div>
 				<br>
 
 		<section>
-			<input type="submit" value="Salvar!"/>
-			<input type="reset" value="Limpar"/>
+			<button type= "submit" class="btn" >Salvar</button>
+			<button type= "reset" class="btn" >Limpar</button>
 		</section>
 	</section>
-
+	<br>
+	<br>
+		
+	<section>
+        <div class="lista-canditados">
+          <p id="result" class="resultadoLista"></p>
+          <br>
+        </div>
+        <button type="button" class="limpar-results" onclick="limparResults()">Limpar Results</button>
+      </section>
 
 
 </body>
