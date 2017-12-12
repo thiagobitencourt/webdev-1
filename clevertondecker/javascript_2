@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title> testes Javascript2</title>
+	<meta charset="UTF-8"/>
+</head>
+<body>
+	<h1>Acenda a lâmpada</h1>
+	<img src="lampada_apagada.jpg"/>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5 LocalStorage API</title>
+	
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<header>
+	<h1>List of Names</h1>
+</header>
+
+<form class="pure-form pure-form-aligned">
+	<fieldset>
+		<div class="pure-control-group">
+				<label for="name">Name</label>
+				<input id="name" type="text" placeholder="Username" required>
+		</div>
+
+		<div class="pure-control-group">
+				<label for="email">Email Address</label>
+				<input id="email" type="email" placeholder="Email Address" required>
+		</div>
+		
+		<div class="pure-controls">
+				<button type="submit" class="pure-button pure-button-primary">Submit</button>
+		</div>
+	</fieldset>
+</form>
+
+<section id="guestList">
+	
+</section>
+
+<script src="js/ContactListService.js"></script>
+<script src="js/ListController.js"></script>
+
+</body>
+</html>

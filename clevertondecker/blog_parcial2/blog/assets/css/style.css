@@ -1,0 +1,197 @@
+body {
+ background-color: "#999999";
+}
+
+
+h1 {
+  color: black;
+  text-indent: 600px
+  line-height: 22.4px;
+}
+
+h3 {
+  color: black;
+}
+
+h2 {
+  color: black;
+}
+
+p {
+  font-size: 13px;
+  line-height: 22.4px;
+  color: black;
+}
+
+header {
+  color: black;
+  background-color: #FFFFFF;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid black;
+  text-indent: 30px
+
+}
+
+.cabecalho {
+  border-top: 60px;
+  padding: 35px;
+  height: 100px;
+  border: 1px solid white;
+  border-radius: 25px;
+  text-indent: 350px
+
+}
+
+.container {
+  margin: 15px 7% 15px 7%;
+}
+
+.espaco{
+  margin: 15px 7% 15px 7%;
+  text-indent: 35px
+}
+
+.artigo {
+  background-color: #181818;
+  color: #FFFFFF;
+  border: 2px solid white;
+
+}
+
+.menu li {
+  display:inline
+
+
+}
+
+#rodape {
+  /* style espe.. cor */
+  /*
+    border-style: dashed;
+    border-width: 1px;
+    border-color: green;
+  */
+  border: 1px solid black;
+  border-radius: 15px;
+  /*border-radius: 100px;*/
+}
+
+
+/* ------------------------------------------------------------------------------
+  Botão estilo Inicio
+-------------------------------------------------------------------------------*/
+
+.btn {
+  background-color: #CDCDB4;
+  color: black;
+  font-size: 13px;
+  font-weight: 600;
+  border: 0;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.btn:hover, .btn:focus {
+  display: inline-block;
+  background-color: #3d3d3d;
+  color: #fff;
+}
+.btn-large {
+  padding: 25px 60px;
+}
+
+/* ------------------------------------------------------------------------------
+  Botão estilo FIM
+-------------------------------------------------------------------------------*/
+
+.perfil img.perfil-imagem-1 {
+  width: 150px;
+  height: 100;
+  border: 10px solid black;
+  border-right: 10px;
+  margin: auto;
+  text-align: center;
+  padding: none;
+}
+
+/* ------------------------------------------------------------------------------
+   Footer
+-------------------------------------------------------------------------------*/
+.footer {
+  text-align: left;
+}
+.footer-top {
+  background-color: #181818;
+  padding-top: 50px;
+}
+.footer-bottom {
+  background-color: #313454;
+  padding: 20px 0;
+}
+.footer .footer-col {
+  margin-bottom: 80px;
+  font-size: 21px;
+}
+.footer h5 {
+  color: #fff;
+}
+.footer h5 {
+  margin-bottom: 20px;
+}
+.footer p {
+  color: rgba(255, 255, 255, 0.25);
+}
+.footer a {
+  color: rgba(255, 255, 255, 0.50);
+}
+.footer a:hover {
+  color: #e84545;
+}
+.footer .footer-share {
+  margin-top: 0;
+}
+.footer .footer-share li {
+  display: inline-block;
+  float: none;
+}
+.footer .footer-share a {
+  border: none;
+  font-size: 21px;
+  color: rgba(255, 255, 255, 0.25);
+}
+.footer .fa-heart {
+  color: #e84545;
+  font-size: 11px;
+  margin: 0 2px;
+}	
+
+
+
+/* Estilos gerais da página
+--------------------------------- */
+body{
+     margin:0;
+     background:#EEEEEE;
+}
+/* Estilos da class bloco_texto
+--------------------------------- */
+.bloco_texto{
+     font-family:Arial;
+     font-size:16px;
+     font-weight:bold;
+     color:#fff;
+     text-align:justify; /* Justifica o texto do bloco_texto */
+     line-height:30px;
+     width:300px;
+     margin: 200px auto 0 auto; /* Alinha o bloco_texto no centro da página e a 200px do topo */
+     padding:10px;
+     background:#262626;
+     border:4px solid #06f;
+     border-radius:10px;
+}
+
+Leia mais em: http://www.maikbasso.com.br/2012/02/comentarios-em-css.html#ixzz50E5VOl3A
+
