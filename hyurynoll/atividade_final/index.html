@@ -4,9 +4,9 @@
 	<title>Noll's Job's</title>
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="background">
 	<header align="center" class="container cabecalho">
-		<h1>Noll's Job's</h1>
+		<h1 class="h1">Noll's Job's</h1>
 		<span>
         <a href="http://github.com/HLNoll" target="_blank">
             Hyury Noll
@@ -15,27 +15,28 @@
 	</header>
 
 	<header>
-		<h1>Informe seus dados:</h1>
+		<h1 align="center">Informe seus dados:</h1>
 	</header>
 
 
 
-	<section>
-		<label for="inp-text">Nome </label>
+	<section class="dados">
+		<div>
+			<label for="inp-text">Nome </label>
 			<br>
-		<input id="inp-text" type="text" placeholder="digite seu nome"/>
-				
+			<input class= "input" id="inp-text" type="text"/>
+		</div>	
 				<br>
-
+		<div>
 		<label for="inp-text">Sobrenome </label>
 			<br>
-		<input id="inp-text" type="text" placeholder="digite seu sobrenome"/>
-				
+		<input class="input" id="inp-text" type="text"/>
+		</div>
 				<br>
 
-		<label for="inp-text">Data de Nascimento </label>
+		<label for="date">Data de Nascimento </label>
 			<br>
-		<input id="inp-text" type="date"/>
+		<input id="inp-date" type="date"/>
 
 				<br>
 
@@ -51,11 +52,11 @@
 		</section>
 		
 				<br>
-
+		<div>
 		<label> Qualificacoes: </label>
 			<br>
-		<textarea maxlength="25"></textarea>
-
+		<textarea class="textarea"></textarea>
+		</div>
 				<br>
 
 		<section>

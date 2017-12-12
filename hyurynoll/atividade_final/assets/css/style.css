@@ -6,7 +6,57 @@
   margin-top: 35px;
   padding: 15px;
   height: 100px;
-  background-color: #f1f1f1;
+  background-color: #ff8c1a;
   border-radius: 20px;
-  border: 1px solid #ccc;
+  border: 10px solid #ffa64d;
+}
+
+.h1 {
+	color: #330000;
+}
+
+.background {
+	background-color:#ffe6e6;
+}
+
+.dados {
+  padding: 100px;
+  height: 600px;
+  background-color: #ff8c1a;
+  border-radius: 20px;
+  border: 10px solid #ffa64d;
+  font-size: 150%;
+}
+
+
+.input[type=text]{   
+    border-radius:25px;
+    -moz-border-radius:30px;
+    -webkit-border-radius:15px;
+    box-shadow: 3px 3px 6px #333333;    
+    -moz-box-shadow: 3px 3px 6px #333333;
+    -webkit-box-shadow: 6px 1px 2px #333333;
+    background: #cccccc; 
+    border:1px solid #000000;
+    width:300px;
+    height:50px;
+
+}
+ 
+.textarea{
+    border: 1px solid #000000;
+    background:#cccccc;
+    width:300px;
+    height:80px;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: 1px 1px 2px #333333;    
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+
+
+.direita{
+	top: 70%;
+	right: 60%;
 }
