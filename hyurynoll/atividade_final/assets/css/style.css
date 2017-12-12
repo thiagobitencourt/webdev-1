@@ -68,28 +68,16 @@
   background-color: #2196f3 ;
 }
 
-
-.lista-canditados{
-  min-height: 40px;
-  width: 100%;
-  border: 1px solid #ccc;
-  margin-bottom: 15px;
-  border-radius: 15px;
-  border-color: green;
-}
-.resultadoLista{
-  color: white;
-  background-color: black;
-  margin-top: 10px;
-  margin-left: 30px;
-  margin-right: 30px;
-  border-radius: 90px;
-  text-align: center;
-}
-.limpar-results::before {
-  content: "x ";
+.select{
+  width: 300px;
+  height: 50px;
+  font-size: 70%;
+  background-color: #cccccc;
 }
 
-.limpar-results:hover {
-  text-decoration: underline;
+.data{
+  width: 300px;
+  height: 50px;
+  font-size: 70%;
+   background-color: #cccccc;
 }
