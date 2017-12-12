@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>MyProfile</title>
+		<title>Tecsystem</title>
 		 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
 		<link rel="stylesheet" href="assets/css/main.css">
     <script src="src/principal.js"></script>
@@ -158,46 +158,22 @@
   <h1 class="artigo "> Qualificação:</h1>
   <table cellspacing="10">
         <tr>
-         <td>
-          <label for="rua">Curso superior:</label>
-         </td>
-         <td align="left">
-           <input type="text" name="curso">
-         </td>
-         <td>
-          <label for="numero" >tempo de experiência:</label>
-         </td>
-         <td align="left">
-          <input type="text" name="numero" size="4" >
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <label for="empregado">Empregado: </label>
-         </td>
-         <td align="left">
-          <input type="text" name="empregado" value=Sim/Não>
-         </td>
-        </tr>
-        <tr>
+         <tr>
          <td>
           <label for="estado">Qualificação:</label>
          </td>
          <td align="left">
 
-   <select name="Setor"> 
-        <option value="1">Prog.Front End</option> 
-        <option value="2">Prog. Back end</option> 
-        <option value="3">Infra</option> 
-        <option value="4">Especialista Windows server</option> 
-        <option value="5">Especialista Linux</option> 
-        <option value="6">WebDesigner</option> 
+   <select name="Formação"> 
+        <option value="1">Ensino Básico</option> 
+        <option value="2">Ensino Fundamental</option> 
+        <option value="2">Ensino Médio</option> 
+        <option value="2">Ensino Superior</option> 
      </tr>
+         <td align="left">
+     
     </table>
     </fieldset>
-
-
-          
 <br/><br/>
          
 
