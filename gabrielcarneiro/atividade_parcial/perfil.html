@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Perfil</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Quem Somos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+
+    <h1><strong><i>Cadastre-se!</i></strong></h1>
+
+      <div>
+        <form>
+
+          <h3>Informações gerais</h3>
+
+          <div>
+            <span>
+              <label>Nome: </label>
+              <input type="text" placeholder="Digite seu nome">
+            </span>
+            <span>
+              <label>Sobrenome: </label>
+              <input type="text" placeholder="Digite seu sobrenome">
+            <span>
+              <label>Data Nascimento: </label>
+              <input type="date" >
+            </span>
+        </div>
+
+        <div>
+            <label>Sexo: </label>
+            <select>
+                <option selected>Masculino</option>
+                <option>Feminino</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="lista-escolaridade">Escolaridade:</label>
+            <ul name="lista-escolaridade">
+                <li>
+                    <input type="radio" name="escolaridade"  id="radio-1/">
+                    <label for="radio-1">Ensino Fundamental</label>
+                </li>
+                <li>
+                    <input type="radio" name="escolaridade" id="radio-2" >
+                    <label for="radio-2">Ensino Médio</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="escolaridade" id="radio-3" >
+                    <label for="radio-3">Ensino Superior</label>
+                </li>
+            </ul>
+          </div>
+
+        <div>
+          <h3>Informações de contato</h3>
+          <span>
+            <label>Email: </label>
+            <input type="tel" placeholder="Digite seu e-mail" maxlength="10">
+          </span>
+
+          <span>
+            <label>Telefone: </label>
+            <input type="tel" placeholder="Telefone" maxlength="10">
+          </span>
+
+          <span>
+            <label>Site/Mídia Social: </label>
+            <input type="URL" placeholder="exemplo.com/usuario" maxlength="10">
+          </span>
+        </div>
+
+        <div>
+            <h3>Sobre mim</h3>
+
+            <label for="sobre-mim">Quem sou: </label>
+            <textarea name="sobre-mim" maxlength="400" placeholder="Conte-nos um pouco sobre você!"></textarea>
+
+            <h4>Principais interesses: </h4>
+
+                <label for="lista-escolaridade">Interesses: </label>
+                <ul name="lista-escolaridade"  >
+                    <li>
+                        <input type="checkbox" name="interesses" id="int-musica" >
+                        <label for="">Música</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="interesses" id="int-arte" >
+                        <label for="">Arte</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="interesses" id="int-tecnologia" >
+                        <label for="">Tecnologia</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="interesses" id="int-esporte" >
+                        <label for="">Esporte</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="interesses" id="int-cinema" >
+                        <label for="">Cinema</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="interesses" id="int-literatura" >
+                        <label for="">Literatura</label>
+                    </li>
+                </ul>
+            </div>
+
+          <div>
+              <h4>Escolha a sua senha: </h4>
+            <span>
+              <label>Senha: </label>
+              <input type="password" placeholder="Senha" >
+            </span>
+
+            <span>
+              <label>Digite novamente: </label>
+              <input type="password" placeholder="Digite novamente" >
+            </span>
+
+            <span>
+              <button type="submit" value="submit">Enviar</button>
+              <button type="reset" value="reset">Limpar</button>
+            </span>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <footer>
+
+    <div>
+      <small><p>Venha nos visitar: Rua XV de Novembro, 261</p></small>
+    </div>
+
+    <div>
+      <a href=""><img src="img/facebook.png"></a>
+      <a href=""><img src="img/twitter.png"></a>
+    </div>
+
+    </footer>
+
+</body>
+</html>

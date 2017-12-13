@@ -1,0 +1,76 @@
+.container{
+  padding: 15px 7% 15px 7%;
+}
+
+.cabecalho{
+  padding: 15px;
+  height: 100px;
+  background-color: #FF00FF;
+  border-radius: 20px;
+  border: 2px solid #0000ff;
+}
+.fundo{
+  background-color: #0000FF;
+}
+.btn {
+  height: 45px;
+  padding: 10px;
+  background-color: green;
+  border: 2px solid black;
+  cursor: pointer;
+  min-width: 50px;
+}
+.btn:hover{
+  background-color: green;
+  border: 2px solid green;
+}
+.centralizarimg{
+margin-left: 400px;
+}
+.artigo{
+  padding: 10px;
+
+  border: 2px solid #1a53ff;
+  background-color: #ccd9ff;
+}
+a:link {
+   color: red;
+   margin-right: 15px;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: #000000;
+}
+a:active {
+    color: blue;
+}
+a:link {
+ text-decoration: none;
+}
+a:hover {
+ text-decoration: underline;
+}
+.footer {
+    position: relative;
+    bottom:0;
+    width:100%;
+}
+input, textarea {
+    width: 200px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+}
+.label{
+  width: 20px;
+  margin-right: 10px;
+  margin-left: 0px;
+}
+.posicionarlabel{
+  margin-left: 55px;
+}

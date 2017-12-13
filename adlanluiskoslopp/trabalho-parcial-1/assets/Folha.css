@@ -1,0 +1,41 @@
+.menu h1 {
+	margin-top: 1cm;
+	margin-left: 13cm;
+}
+
+
+
+
+main {
+	position: relative;
+	width: 450px;
+	height: 100px;
+	margin-top: 1cm;
+	margin-left: 11cm;
+}
+
+a:link{
+	text-decoration: none;
+	color: #0099ff;
+}
+a:visited {
+	text-decoration: underline;
+	color: #ff0066;
+}
+
+a:hover{
+	text-decoration: underline, overline;
+	color: #003399;
+	background: #ffff00;
+}
+
+article {
+	position: absolute;
+	margin-top: 1cm;
+}
+
+div {
+	position: absolute;
+	margin-top: 5cm;
+	margin-left: 8cm;
+}

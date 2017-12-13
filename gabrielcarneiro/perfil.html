@@ -11,17 +11,28 @@
     <br/>
     <br/>
 
-    <form name="perfil-form">
+    <form name="perfil-form" action="index.html" method="get" >
 
-        <label for="nome-usuario"><b>Nome:</b></label>
-        <input id="nome-usuario" type="text" placeholder="Digite seu nome" >
+        <div >
 
-        <label for="sobrenome-usuario"><b>Sobrenome:</b></label>
-        <input id="sobrenomenome-usuario" type="text" placeholder="Digite seu sobrenome" >
+            <label  for="nome-usuario"><b>Nome:</b></label>
+            <input name="nome" id="nome-usuario" type="text" placeholder="Digite seu nome" required>
 
-        <button type="submit">Salvar</button>
-        <button type="reset">Limpar</button>
+        </div>
 
+
+        <div>
+
+            <label for="sobrenome-usuario"><b>Sobrenome:</b></label>
+            <input name="sobrenome" id="sobrenomenome-usuario" type="text" placeholder="Digite seu sobrenome" required>
+
+        </div>
+
+
+        <div>
+            <button type="submit">Salvar</button>
+            <button type="reset">Limpar</button>
+        </div>
 
     </form>
 

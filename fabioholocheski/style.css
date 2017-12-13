@@ -1,0 +1,68 @@
+
+  h1{
+    color: red;
+  }
+  h3 {
+    color: blue;
+  }
+  h2 {
+    color: pink;
+  }
+  header {
+    color:  #00ff00;
+    background-color: grey;
+  }
+  .artigo{
+    background-color: #666666;
+    border-style: solid;
+    border-width: 15px;
+  }
+  .importante{
+    color: #ff00ff;
+  }
+  #rodape {
+    border-style: solid;
+    border-width: 2px;
+    border-color: green;
+  }
+  .btn {
+    background-color: #2e8b57;
+    border: 3px solid #3c5a38;
+    color: #ffffff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  .figuras{
+    width: 300px;
+    height: 200px;
+    background-color: green;
+  }
+  .perfil img {
+    width: 100px;
+    height: 100px;
+    border-radius: 90px;
+  }
+  .texto-comum {
+    font-size: 16px;
+  }
+  .caixa:hover{
+    background-color: green;
+    border-left: 5px dotted red;
+  }
+  .texto-comum:hover{
+    font-size: 25px;
+    color: orange;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  .caixa{
+    border-left:  15px solid green;
+    background-color: blue;
+    height: 50px;
+    margin: 40px 50px;
+
+  }
+  .caixa h3{
+    color: white;
+  }

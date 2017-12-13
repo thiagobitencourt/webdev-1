@@ -1,0 +1,137 @@
+h1 {
+  color: yellow;
+}
+
+h4 {
+  color: blue;
+}
+
+.menu ul li {
+  background-color: white;
+  height: 50px;
+  display: inline;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 3px solid #cccccc;
+}
+
+.menu ul li:hover{
+  background-color: red;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  text-decoration-color: #000000;
+}
+
+.artigo {
+  background-color: #cccccc;
+  border: 3px solid #000000;
+  border-radius: 5px;
+}
+
+header {
+  color: #e6e600;
+  background-color: #cccccc;
+  background-image: url(Fundo.png);
+}
+
+.importante {
+  color: red;
+}
+
+#rodape {
+  /*todas essas linhas fora subtituida por uma so
+  border-style: dashed;
+  border-width: 1px;
+  border-color: green;
+  */
+  border: 1px dotted green;
+}
+/*
+.escondido{
+  display:none;
+}*/
+
+.escondido:hover {
+  display: block;
+}
+
+.btn{
+  cursor: pointer;
+}
+
+.btn{
+  background-color: #3cb371;
+  border: 3px solid  #2e8b57;
+  color: #ffffff;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.Figuras {
+  width: 300px;
+  height: 200px;
+}
+
+.div1:hover {
+  background-color: red;
+  border-left: 20px solid blue;
+
+}
+
+.div1{
+  float: left;
+
+  border: 5px solid blue;
+  border-left: 20px solid black;
+
+  background-color: #ffff00;
+  height: 50%;
+/*  margin: 50px;para a tag inteira */
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: 60px;
+  margin-right: 40px;
+  /*poderiamos fazer assim atmbém em uma so linha
+  margin: 40px 30px 40px 60px
+  a sequencia de cima coresponde a mesma da linha escrita nesse bloco
+  se escrevermos assim
+  margin: 40px 70px;
+  ele ira aplicar 40px em cima e em baixo e 70px no dois lados*/
+  padding-top: 50px; /* o mesmo se aplica ao pagging */
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.div div.div2{
+  background-color: #7cfc00;
+}
+
+.textoComum:hover {
+  border: 20px solid blue;
+}
+
+.perfil img{
+  width: 100px;
+  height: 50px;
+}
+/*no caso se tivermos uma outra classe dentro de outra teremos que aplicar esse tipo de herarquia */
+.perfil img.perfil-imagem{
+  width: 100px;
+  height: 50px;
+}
+
+.perfil img#perfil-imagem-2{
+  width: 100px;
+  height: 75px;
+
+  border-radius: 30px;
+}
+
+.flutuando div{
+  float:left;
+  width: 30%;
+}
