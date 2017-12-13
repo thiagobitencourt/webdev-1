@@ -1,0 +1,265 @@
+
+<!-- Necessito  de 6,42 para passar, fiz o melhor que consegui.-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tecsystem</title>
+		 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+		<link rel="stylesheet" href="assets/css/main.css">
+    <script src="src/principal.js"></script>
+  	</head>
+    <body> <!-- Body Inicio-->
+
+			 <SECTION id="Cabeçalho"> <!-- Section Inicio-->
+					<header class="artigo cabecalho"> <!-- Header Inicio-->
+						<h1 class="artigo container"> Tecsystem - Trabalhe Conosco</h1>
+					</header> <!-- Header Fim-->
+			</SECTION><!-- Section Fim-->
+</SECTION id="cabeçalho"> <!-- Section FIM-->
+
+
+
+<p>Entre com seus dados: </p>
+
+
+<!-- DADOS PESSOAIS-->
+<fieldset>
+<h1 class="artigo "> Dados cadastrais:</h1>
+ <table cellspacing="10">
+  <tr>
+   <td>
+       <label for="nome">Nome: </label>
+   </td>
+   <td align="left">
+       <input type="text" name="email">
+   </td>
+   <td>
+       <label for="sobrenome">Sobrenome: </label>
+   </td>
+   <td align="left">
+       <input type="text" name="sobrenome">
+   </td>
+   <td></b>
+      <label for="imagem">Imagem de perfil:</label>
+   </td>
+   <td>
+       <input type="file" name="imagem" >
+
+  </tr>
+  <tr>
+   <td>
+    <label>Nascimento: </label>
+   </td>
+   <td align="left">
+      <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
+      <select name="Mês"> 
+      <option value="ac">Janeiro</option> 
+      <option value="al">Fevereiro</option> 
+      <option value="am">Abril</option> 
+      <option value="ap">Maio</option> 
+      <option value="ba">Junho</option> 
+      <option value="ce">Julho</option> 
+      <option value="df">Agosto</option> 
+      <option value="ap">Outubro</option> 
+      <option value="ba">Setembro</option> 
+      <option value="ce">Novembro</option> 
+      <option value="df">Dezembro</option> 
+      </select>
+      <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="rg">RG: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="rg" size="13" maxlength="13"> 
+   </td>
+  </tr>
+  <tr>
+   <td>
+      <label>CPF:</label>
+   </td>
+   <td align="left">
+      <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+   </td>
+  </tr>
+ 
+  </table>
+</fieldset>
+
+<br />
+
+
+   
+
+
+
+<!-- ENDEREÇO -->
+<fieldset>
+<h1 class="artigo "> Endereço:</h1>
+ <table cellspacing="10">
+
+  <tr>
+   <td>
+    <label for="rua">Rua:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="rua">
+   </td>
+   <td>
+    <label for="numero">Numero:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="numero" size="4">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="bairro">Bairro: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="bairro">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="estado">Mês:</label>
+   </td>
+   <td align="left">
+    
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="cidade">Cidade: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="cidade">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="cep">CEP: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+   </td>
+  </tr>
+ </table>
+</fieldset>
+<br />
+
+
+<!-- QUALIFICAÇÂO -->
+  <fieldset>
+
+  <h1 class="artigo "> Qualificação:</h1>
+  <table cellspacing="10">
+        <tr>
+         <tr>
+         <td>
+          <label for="estado">Qualificação:</label>
+         </td>
+         <td align="left">
+
+   <select name="Formação"> 
+        <option value="1">Ensino Básico</option> 
+        <option value="2">Ensino Fundamental</option> 
+        <option value="2">Ensino Médio</option> 
+        <option value="2">Ensino Superior</option> 
+     </tr>
+         <td align="left">
+     
+    </table>
+    </fieldset>
+<br/><br/>
+         
+
+
+<!-- ENVIA FORM COM JS-->
+
+<header>
+  <h1 class="artigo">Enviar / Salvar  Contato:</h1>
+</header>
+
+<form class="pure-form pure-form-aligned">
+  <fieldset>
+    <div class="pure-control-group">
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Username" required>
+    </div>
+    <br/>
+    <div class="pure-control-group">
+        <label for="email">Email Address</label>
+        <input id="email" type="email" placeholder="Email Address" required>
+    </div>
+    <br/>
+    <div class="pure-controls">
+        <button type="submit" class="btn btn-large pure-button-primary">Enviar</button>
+    </div>
+
+  </fieldset>
+</form>
+
+<section id="guestList">
+  
+</section>
+
+<script src="js/ContactListService.js"></script>
+<script src="js/ListController.js"></script>
+
+
+
+<br/><br/><br/><br/><br/><br/><hr/>
+
+
+
+
+
+<SECTION id="Comentarios"> <!-- Section Inicio-->
+			<header> <!-- Header Inicio-->
+				<h1 class="artigo "> Deixe um Comentário:</h1>
+<br/>
+					<form method="post" action="php/contact.php" name="cform" id="cform"> <!-- Form Inicio-->
+         				 <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your name..." >
+         				 <input name="email" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Email Address..." >
+			     	<nav><br/>
+				    	<textarea cols=60 id="opiniao" rows="5" name="opiniao" maxlength="300" wrap="hard" style="resize: none" placeholder="..." ></textarea>
+<br/><br/>
+					    <button type="reset" class="btn btn-large"> Limpar </button value="Limpar">    <!--  Botão Limpa  -->   
+				      <a href="" class="btn btn-large ">Enviar</a> </div>
+		       </nav><br/>
+		     </form>  <!-- Form Fim-->
+    </header>
+</SECTION><!-- Section Fim-->
+					
+<br/>
+
+	
+<br/><br/>
+
+<!-- Footer section -->
+<section id="contato" class="section contact no-padding">  <!-- Section Inicio-->
+<footer class="footer">
+  <div class="footer-top section">
+        <div class="footer-col col-md-6 espaco">
+          <h5> Contacts :</h5>
+          <h5><br>
+            SC, Brazil
+            47 98820-0160<br>
+            Decker.cleverton@gmail.com
+          <br><br/>All Rights Reserved. Made with</h5><br/>
+        </div>
+        <div class="footer-col col-md-3">
+        </div>
+      </div>
+    </div>
+  </div>
+</section> <!-- Section Fim-->
+</footer><!-- footer top --> 
+        
+
+</body> <!-- Body Fim-->
+</html>  <!-- FIM html -->
