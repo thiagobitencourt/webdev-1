@@ -1,0 +1,84 @@
+<!-- preciso de 5,56-->
+<!DOCTYPE html>
+<html>
+<head>
+</script>
+	<title>Noll's Job's</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body class="background">
+	<header align="center" class="container cabecalho">
+		<h1 class="h1">Noll's Job's</h1>
+		<span>
+        <a href="http://github.com/HLNoll" target="_blank">
+            Hyury Noll
+        </a>
+      </span>
+	</header>
+
+	<header>
+		<h1 align="center">Informe seus dados:</h1>
+	</header>
+
+
+
+	<section class="dados">
+		<div>
+			<label for="inp-text">Nome </label>
+			<br>
+			<input class= "input" id="nome" type="text"/>
+		</div>	
+				<br>
+		<div>
+		<label for="inp-text">Sobrenome </label>
+			<br>
+		<input class="input" id="sbrnome" type="text"/>
+		</div>
+				<br>
+		<div>
+		<label for="date">Data de Nascimento </label>
+			<br>
+		<input class="data" id="data" type="date"/>
+		</div>
+				<br>
+
+		<section>
+			<label> Formacao: </label>
+				<br>
+			<select class="select">
+				<option> Ensino básico </option>
+				<option> Ensino fundamental </option>
+				<option> Ensino médio </option>
+				<option> Ensido superior </option>
+			</select>
+		</section>
+		
+				<br>
+		<div>
+		<label> Qualificacoes: </label>
+			<br>
+		<textarea id="quali"class="textarea"></textarea>
+		</div>
+				<br>
+
+		<section>
+			<button type= "submit" class="btn" onclick="salvar()">Salvar</button>
+			<button type= "reset" class="btn" onclick="limpar()">Limpar</button>
+		</section>
+	</section>
+	<br>
+	<br>
+
+
+	<footer>
+		<span>Hyury Luis Da Silva Noll</span>
+	</footer>
+
+
+
+
+	 <script src="src/jobs.js"></script>
+
+</body>
+</html>
