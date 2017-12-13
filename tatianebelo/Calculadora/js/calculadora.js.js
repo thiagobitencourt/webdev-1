@@ -133,37 +133,3 @@ window.onload = function() {
 
   display = document.getElementById("calculadora-display");
 }
-
-
-
-function operacao() {
-
-	 var resultado;
-    switch(op) {
-      case "SOMAR":
-        resultado = operador1 + obterOperador2("+ ");
-        break;
-         case "DIVIDIR":
-        var operador2 = obterOperador2("/ ");
-        resultado = operador1 / operador2;
-        break;
-
-function definirOperacao() {
-  if(op) {
-    operacaoErrada = true;
-  }
-
-  var operacao;
-  switch(this.value) {
-    case "SOMA":
-      operacao = " + ";
-      break;
-    
-    case "DIVIDI":
-      operacao = " / ";
-      break;
- 
-	  var limpar = document.getElementById("botao-limpar");
-  botaoLimpar.addEventListener("click", limpar);
-   
-   }
