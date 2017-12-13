@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<!--Preciso de 6,17 para passar-->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+<body>
+
+    <header align="center" class="container cabecalho">
+    <h1>LuxSystem</h1>
+    <h3>Formulário</h3>
+  </header>
+
+
+  <h2><center>Informe seus Dados:</center></h2>
+
+<section align="center" class=" cabecalho">
+  <div>
+      <label for="inp-text"> <b>Nome:</b></label>
+      <input id="inp-text" type=text"" placeholder="Digite seu Nome" required>
+  </div>
+
+<br>
+
+  <div>
+      <label for="inp-sobrenome"> <b>Sobrenome:</b></label>
+      <input id="inp-sobrenome" type=text"" placeholder="Digite seu Sobrenome" required>
+  </div>
+
+  </section>
+
+<section align="center" class=" cabecalho">
+
+<div>
+
+    <label for="Formação"><b>Formação:</b></label>
+    <select name="Formação">
+      <option value="Opções">Escolha uma das Opções</option>
+      <option value="SeniorJS">Ensino Básico</option>
+      <option value="SeniorCSS">Ensino Fundamental</option>
+      <option value="JuniorCSS">Ensino Médio</option>
+      <option value="PlenoCSS">Ensino Superior</option>
+    </select>
+</div>
+<br>
+
+  <div>
+      <label for="Qualificações"><b>Qualificações:</b></label>
+      <select name="Qualificação">
+        <option value="Opções">Escolha uma das Opções</option>
+        <option value="SeniorCSS">Senior em CSS</option>
+        <option value="JuniorCSS">Junior em CSS</option>
+        <option value="PlenoCSS">Pleno em CSS</option>
+        <option value="SeniorJS">Senior em Java Script</option>
+        <option value="JuniorJS">Junior em Java Script</option>
+        <option value="PlenoJS">Pleno em Java Script</option>
+        <option value="SeniorHtml">Senior em HTML</option>
+        <option value="JuniorHtml">Junior em HTML</option>
+        <option value="PlenoHTml">Pleno em HTML</option>
+      </select>
+  </div>
+<br>
+  <div>
+      <label for="Data" ><b>Data Nascimento:</b></label>
+      <input type="date" id="Data" required />
+  </div>
+  </section>
+
+<br>
+
+ <button type="button" onclick="salvar()" class="btn ">Salvar</button>
+ <button type="button" onclick="limpar()" class="btn ">Limpar</button>
+ <button type="button" onclick="adicionar()" class="btn ">Adicionar</button>
+ <button type="button" onclick="remover()" class="btn ">Remover Todos</button>
+
+
+  <script src="src/LuxSystem.js"></script>
+
+  </body>
+</html>
